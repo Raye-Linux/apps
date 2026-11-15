@@ -1,0 +1,431 @@
+# French words of the Registry Editor.
+msgid ""
+msgstr ""
+"Project-Id-Version: raye-regedit\n"
+"PO-Revision-Date: 2026-11-11 12:00+0000\n"
+"Last-Translator: Raye Linux\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+
+msgid "Registry Editor"
+msgstr "Éditeur du Registre"
+
+msgctxt "@item the name a new value starts with"
+msgid "New value"
+msgstr "Nouvelle valeur"
+
+msgctxt "@action:inmenu"
+msgid "Import…"
+msgstr "Importer…"
+
+msgctxt "@action:inmenu"
+msgid "Export…"
+msgstr "Exporter…"
+
+msgctxt "@action:inmenu"
+msgid "Exit"
+msgstr "Quitter"
+
+msgctxt "@action:inmenu"
+msgid "Text value"
+msgstr "Valeur texte"
+
+msgctxt "@action:inmenu"
+msgid "Number value"
+msgstr "Valeur numérique"
+
+msgctxt "@action:inmenu"
+msgid "Yes/No value"
+msgstr "Valeur Oui/Non"
+
+msgctxt "@action:inmenu"
+msgid "List value"
+msgstr "Valeur liste"
+
+msgctxt "@action:inmenu"
+msgid "Modify…"
+msgstr "Modifier…"
+
+msgctxt "@item shortcut"
+msgid "Enter"
+msgstr "Entrée"
+
+msgctxt "@action:inmenu"
+msgid "Delete"
+msgstr "Supprimer"
+
+msgctxt "@item shortcut"
+msgid "Del"
+msgstr "Suppr"
+
+msgctxt "@action:inmenu"
+msgid "Undo"
+msgstr "Annuler la modification"
+
+msgctxt "@item shortcut"
+msgid "Ctrl+Z"
+msgstr "Ctrl+Z"
+
+msgctxt "@action:inmenu"
+msgid "Copy key name"
+msgstr "Copier le nom de la clé"
+
+msgctxt "@action:inmenu"
+msgid "Find…"
+msgstr "Rechercher…"
+
+msgctxt "@item shortcut"
+msgid "Ctrl+F"
+msgstr "Ctrl+F"
+
+msgctxt "@action:inmenu"
+msgid "Find next"
+msgstr "Rechercher le suivant"
+
+msgctxt "@item shortcut"
+msgid "F3"
+msgstr "F3"
+
+msgctxt "@action:inmenu"
+msgid "Address bar"
+msgstr "Barre d’adresse"
+
+msgctxt "@action:inmenu"
+msgid "Refresh"
+msgstr "Actualiser"
+
+msgctxt "@item shortcut"
+msgid "F5"
+msgstr "F5"
+
+msgctxt "@action:inmenu"
+msgid "Add to Favorites…"
+msgstr "Ajouter aux favoris…"
+
+msgctxt "@action:inmenu"
+msgid "Remove Favorite…"
+msgstr "Supprimer un favori…"
+
+msgctxt "@action:inmenu"
+msgid "About Registry Editor"
+msgstr "À propos de l’Éditeur du Registre"
+
+msgid "Finished searching through the registry."
+msgstr "La recherche dans le Registre est terminée."
+
+msgctxt "@title:menu"
+msgid "File"
+msgstr "Fichier"
+
+msgctxt "@title:menu"
+msgid "Edit"
+msgstr "Édition"
+
+msgctxt "@title:menu"
+msgid "View"
+msgstr "Affichage"
+
+msgctxt "@title:menu"
+msgid "Favorites"
+msgstr "Favoris"
+
+msgctxt "@title:menu"
+msgid "Help"
+msgstr "Aide"
+
+msgctxt "@label"
+msgid "Address"
+msgstr "Adresse"
+
+msgid "There is no key named %1."
+msgstr "Aucune clé ne s’appelle %1."
+
+msgctxt "@title:column"
+msgid "Name"
+msgstr "Nom"
+
+msgctxt "@title:column"
+msgid "Type"
+msgstr "Type"
+
+msgctxt "@title:column"
+msgid "Data"
+msgstr "Données"
+
+msgid "This key has no values. Right-click to add one."
+msgstr "Cette clé n’a aucune valeur. Faites un clic droit pour en ajouter une."
+
+msgid "This key has no values of its own. Open it to see what is inside."
+msgstr "Cette clé n’a pas de valeur à elle. Ouvrez-la pour voir ce qu’elle contient."
+
+msgid "Waiting for the password…"
+msgstr "En attente du mot de passe…"
+
+msgid "Changes here apply to everyone on this PC and need root access."
+msgstr "Les modifications faites ici s’appliquent à tous les utilisateurs de ce PC et demandent l’accès root."
+
+msgid "These values are read only."
+msgstr "Ces valeurs sont en lecture seule."
+
+msgid "A copy of each file is kept before it is changed. Ctrl+Z takes a change back."
+msgstr "Une copie de chaque fichier est gardée avant toute modification. Ctrl+Z annule une modification."
+
+msgctxt "@action:inmenu"
+msgid "Copy data"
+msgstr "Copier les données"
+
+msgctxt "@title:window"
+msgid "Value"
+msgstr "Valeur"
+
+msgctxt "@title:window"
+msgid "Edit value"
+msgstr "Modifier la valeur"
+
+msgctxt "@action:button"
+msgid "Close"
+msgstr "Fermer"
+
+msgctxt "@action:button"
+msgid "OK"
+msgstr "OK"
+
+msgctxt "@label"
+msgid "Value name"
+msgstr "Nom de la valeur"
+
+msgctxt "@label"
+msgid "Value data"
+msgstr "Données de la valeur"
+
+msgid "This value is locked for everyone on this PC, or the file cannot be changed here."
+msgstr "Cette valeur est verrouillée pour tous les utilisateurs de ce PC, ou le fichier ne peut pas être modifié ici."
+
+msgctxt "@title:window"
+msgid "New number value"
+msgstr "Nouvelle valeur numérique"
+
+msgctxt "@title:window"
+msgid "New Yes/No value"
+msgstr "Nouvelle valeur Oui/Non"
+
+msgctxt "@title:window"
+msgid "New list value"
+msgstr "Nouvelle valeur liste"
+
+msgctxt "@title:window"
+msgid "New text value"
+msgstr "Nouvelle valeur texte"
+
+msgid "Type true or false."
+msgstr "Tapez true ou false."
+
+msgid "Write the list as ['one', 'two']."
+msgstr "Écrivez la liste ainsi : ['un', 'deux']."
+
+msgctxt "@title:window"
+msgid "Delete this value?"
+msgstr "Supprimer cette valeur ?"
+
+msgctxt "@action:button"
+msgid "Delete"
+msgstr "Supprimer"
+
+msgid "%1 goes back to its default value in the apps that read it. Ctrl+Z puts it back."
+msgstr "%1 reprend sa valeur par défaut dans les applications qui la lisent. Ctrl+Z la remet."
+
+msgctxt "@title:window"
+msgid "Find"
+msgstr "Rechercher"
+
+msgctxt "@action:button"
+msgid "Find next"
+msgstr "Rechercher le suivant"
+
+msgctxt "@label"
+msgid "Find what"
+msgstr "Rechercher"
+
+msgctxt "@label"
+msgid "Look at"
+msgstr "Regarder dans"
+
+msgctxt "@option:check"
+msgid "Keys"
+msgstr "Clés"
+
+msgctxt "@option:check"
+msgid "Values"
+msgstr "Valeurs"
+
+msgctxt "@option:check"
+msgid "Data"
+msgstr "Données"
+
+msgctxt "@option:check"
+msgid "Match whole string only"
+msgstr "Respecter la chaîne entière"
+
+msgctxt "@title:window"
+msgid "Add to Favorites"
+msgstr "Ajouter aux favoris"
+
+msgctxt "@label"
+msgid "Favorite name"
+msgstr "Nom du favori"
+
+msgctxt "@title:window"
+msgid "Remove Favorite"
+msgstr "Supprimer un favori"
+
+msgctxt "@action:button"
+msgid "Remove"
+msgstr "Supprimer"
+
+msgctxt "@title:window"
+msgid "Import into the registry?"
+msgstr "Importer dans le Registre ?"
+
+msgctxt "@action:button"
+msgid "Import"
+msgstr "Importer"
+
+msgid "Nothing in this file can be imported here."
+msgstr "Rien dans ce fichier ne peut être importé ici."
+
+msgid "One value will be changed. A copy of each file is kept first."
+msgid_plural "%1 values will be changed. A copy of each file is kept first."
+msgstr[0] "Une valeur va être modifiée. Une copie de chaque fichier est gardée avant."
+msgstr[1] "%1 valeurs vont être modifiées. Une copie de chaque fichier est gardée avant."
+
+msgid "One value is skipped: its key is not here, or cannot be changed."
+msgid_plural "%1 values are skipped: their key is not here, or cannot be changed."
+msgstr[0] "Une valeur est ignorée : sa clé n’est pas ici, ou ne peut pas être modifiée."
+msgstr[1] "%1 valeurs sont ignorées : leur clé n’est pas ici, ou ne peut pas être modifiée."
+
+msgctxt "@title:window"
+msgid "Registry Editor"
+msgstr "Éditeur du Registre"
+
+msgid "Version %1"
+msgstr "Version %1"
+
+msgid "Shows the settings of your apps and of the system as one tree, and changes them the careful way: only the value's line changes, a copy of the file is kept first, and Ctrl+Z takes a change back."
+msgstr "Montre les paramètres de vos applications et du système dans un seul arbre, et les modifie avec soin : seule la ligne de la valeur change, une copie du fichier est gardée avant, et Ctrl+Z annule une modification."
+
+msgctxt "@title:window"
+msgid "Export registry file"
+msgstr "Exporter un fichier de Registre"
+
+msgctxt "@item file type"
+msgid "Registry files (*.rayereg)"
+msgstr "Fichiers de Registre (*.rayereg)"
+
+msgctxt "@title:window"
+msgid "Import registry file"
+msgstr "Importer un fichier de Registre"
+
+msgctxt "@action:button"
+msgid "Cancel"
+msgstr "Annuler"
+
+msgctxt "@item value type"
+msgid "Number"
+msgstr "Nombre"
+
+msgctxt "@item value type"
+msgid "Yes/No"
+msgstr "Oui/Non"
+
+msgctxt "@item value type"
+msgid "List"
+msgstr "Liste"
+
+msgctxt "@item value type"
+msgid "Text"
+msgstr "Texte"
+
+msgctxt "@item value type"
+msgid "Decimal number"
+msgstr "Nombre décimal"
+
+msgctxt "@item value type"
+msgid "List of text"
+msgstr "Liste de textes"
+
+msgctxt "@item value type, %1 is a GVariant type such as (ii)"
+msgid "Value (%1)"
+msgstr "Valeur (%1)"
+
+msgid "This value must be of the type %1."
+msgstr "Cette valeur doit être du type %1."
+
+msgid "Type a whole number."
+msgstr "Tapez un nombre entier."
+
+msgid "Type yes or no."
+msgstr "Tapez yes ou no."
+
+msgid "This value must stay on one line."
+msgstr "Cette valeur doit tenir sur une seule ligne."
+
+msgid "There is already a value named %1."
+msgstr "Une valeur s’appelle déjà %1."
+
+msgid "Open a folder first, then add the value there."
+msgstr "Ouvrez d’abord un dossier, puis ajoutez-y la valeur."
+
+msgid "This is not a valid value: %1"
+msgstr "Cette valeur n’est pas valide : %1"
+
+msgid "The key %1 is no longer there."
+msgstr "La clé %1 n’existe plus."
+
+msgid "The change was not allowed."
+msgstr "La modification n’a pas été autorisée."
+
+msgid "The value could not be changed."
+msgstr "La valeur n’a pas pu être modifiée."
+
+msgid "The file could not be saved: %1"
+msgstr "Le fichier n’a pas pu être enregistré : %1"
+
+msgid "Exported one key."
+msgid_plural "Exported %1 keys."
+msgstr[0] "Une clé exportée."
+msgstr[1] "%1 clés exportées."
+
+msgid "The file could not be opened."
+msgstr "Le fichier n’a pas pu être ouvert."
+
+msgid "This is not a file the Registry Editor made (line %1)."
+msgstr "Ce fichier ne vient pas de l’Éditeur du Registre (ligne %1)."
+
+msgid "Imported one value."
+msgid_plural "Imported %1 values."
+msgstr[0] "Une valeur importée."
+msgstr[1] "%1 valeurs importées."
+
+msgctxt "@item the top of the registry tree"
+msgid "Computer"
+msgstr "Ordinateur"
+
+msgid "Read only: this file comes with the %1 package, and an edit here would stop updates from changing it."
+msgstr "Lecture seule : ce fichier vient du paquet %1, et le modifier ici empêcherait les mises à jour de le changer."
+
+msgid "%1 can't be changed in Registry Editor: a program running as root would load what it names."
+msgstr "%1 ne peut pas être modifié dans l’Éditeur du Registre : un programme exécuté en tant que root chargerait ce qu’il désigne."
+
+msgid "This file comes with a package and is read only here."
+msgstr "Ce fichier vient d’un paquet et il est en lecture seule ici."
+
+msgid "This file can't be changed in Registry Editor."
+msgstr "Ce fichier ne peut pas être modifié dans l’Éditeur du Registre."
+
+msgid "%1 could not be changed."
+msgstr "%1 n’a pas pu être modifié."

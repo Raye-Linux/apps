@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- Raye Calendar: a page with its violet band, two rings and a dot on today -->
+  <defs>
+    <linearGradient id="band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a52ff"/>
+      <stop offset="1" stop-color="#6a2fe6"/>
+    </linearGradient>
+  </defs>
+  <rect x="7" y="10" width="50" height="46" rx="8" fill="#f6f3fb"/>
+  <path d="M7 18a8 8 0 0 1 8-8h34a8 8 0 0 1 8 8v6H7z" fill="url(#band)"/>
+  <rect x="18" y="5" width="5" height="11" rx="2.5" fill="#3a2a5e"/>
+  <rect x="41" y="5" width="5" height="11" rx="2.5" fill="#3a2a5e"/>
+  <g fill="#c9b8f2">
+    <rect x="14" y="30" width="7" height="6" rx="1.5"/>
+    <rect x="25" y="30" width="7" height="6" rx="1.5"/>
+    <rect x="36" y="30" width="7" height="6" rx="1.5"/>
+    <rect x="14" y="40" width="7" height="6" rx="1.5"/>
+    <rect x="25" y="40" width="7" height="6" rx="1.5"/>
+    <rect x="47" y="30" width="5" height="6" rx="1.5"/>
+  </g>
+  <circle cx="40.5" cy="43" r="5.5" fill="#7b3cff"/>
+  <circle cx="40.5" cy="43" r="2" fill="#ffffff"/>
+</svg>

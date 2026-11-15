@@ -1,0 +1,148 @@
+{
+  "apps": {
+    "org.kde.konsole.desktop": {
+      "name": {"en": "Terminal", "fr": "Terminal"},
+      "comment": {"en": "Type commands and run tools", "fr": "Saisir des commandes et lancer des outils"},
+      "keywords": {"en": "command;shell;prompt;console;cmd;", "fr": "commande;invite;console;cmd;"},
+      "icon": "utilities-terminal"
+    },
+    "org.kde.kate.desktop": {
+      "name": {"en": "Text Editor", "fr": "Éditeur de texte"},
+      "comment": {"en": "Write and edit text files", "fr": "Écrire et modifier des fichiers texte"},
+      "keywords": {"en": "notepad;notes;text;code;", "fr": "bloc-notes;notes;texte;code;"},
+      "icon": "accessories-text-editor"
+    },
+    "org.kde.kwrite.desktop": {"hidden": true},
+    "org.kde.kcalc.desktop": {
+      "name": {"en": "Calculator", "fr": "Calculatrice"},
+      "comment": {"en": "Do quick and scientific calculations", "fr": "Faire des calculs simples ou scientifiques"},
+      "keywords": {"en": "math;calc;numbers;", "fr": "maths;calcul;nombres;"},
+      "icon": "accessories-calculator"
+    },
+    "org.kde.gwenview.desktop": {
+      "name": {"en": "Photos", "fr": "Photos"},
+      "comment": {"en": "View your pictures", "fr": "Regarder vos images"},
+      "keywords": {"en": "image;picture;viewer;gallery;", "fr": "image;photo;visionneuse;galerie;"},
+      "icon": "multimedia-photo-viewer"
+    },
+    "org.kde.haruna.desktop": {
+      "name": {"en": "Media Player", "fr": "Lecteur multimédia"},
+      "comment": {"en": "Play videos and audio files", "fr": "Lire des vidéos et des fichiers audio"},
+      "keywords": {"en": "video;movie;film;player;", "fr": "vidéo;film;lecteur;"},
+      "icon": "multimedia-video-player"
+    },
+    "org.kde.elisa.desktop": {
+      "name": {"en": "Music", "fr": "Musique"},
+      "comment": {"en": "Listen to your music", "fr": "Écouter votre musique"},
+      "keywords": {"en": "audio;song;album;playlist;", "fr": "audio;chanson;album;liste de lecture;"},
+      "icon": "multimedia-audio-player"
+    },
+    "org.kde.okular.desktop": {
+      "name": {"en": "Document Viewer", "fr": "Visionneuse de documents"},
+      "comment": {"en": "Read PDF files and e-books", "fr": "Lire des PDF et des livres numériques"},
+      "icon": "document-viewer",
+      "hidden": true
+    },
+    "org.kde.ark.desktop": {
+      "name": {"en": "Archive Manager", "fr": "Gestionnaire d'archives"},
+      "comment": {"en": "Open and create zip files", "fr": "Ouvrir et créer des fichiers zip"},
+      "icon": "utilities-file-archiver",
+      "hidden": true
+    },
+    "org.kde.spectacle.desktop": {
+      "name": {"en": "Screen Capture", "fr": "Capture d'écran"},
+      "comment": {"en": "Take a picture of your screen", "fr": "Prendre une image de votre écran"},
+      "keywords": {"en": "screenshot;snip;print screen;", "fr": "capture;copie d'écran;impression écran;"},
+      "icon": "accessories-screenshot"
+    },
+    "org.kde.plasma-systemmonitor.desktop": {
+      "name": {"en": "Task Manager", "fr": "Gestionnaire des tâches"},
+      "comment": {"en": "See what is running and how hard your computer works", "fr": "Voir ce qui tourne et l'effort de votre ordinateur"},
+      "keywords": {"en": "process;performance;memory;cpu;", "fr": "processus;performances;mémoire;processeur;"},
+      "icon": "utilities-system-monitor",
+      "replaced_by": "org.raye.taskmanager.desktop"
+    },
+    "org.kde.kclock.desktop": {
+      "name": {"en": "Clock", "fr": "Horloge"},
+      "comment": {"en": "Alarms, timers and world clocks", "fr": "Alarmes, minuteurs et horloges du monde"},
+      "keywords": {"en": "alarm;timer;stopwatch;", "fr": "alarme;minuteur;chronomètre;"},
+      "icon": "raye-clock"
+    },
+    "org.kde.krecorder.desktop": {
+      "name": {"en": "Sound Recorder", "fr": "Enregistreur audio"},
+      "comment": {"en": "Record your voice", "fr": "Enregistrer votre voix"},
+      "keywords": {"en": "audio;microphone;voice;", "fr": "audio;micro;voix;"},
+      "icon": "raye-sound-recorder"
+    },
+    "org.kde.kolourpaint.desktop": {
+      "name": {"en": "Paint", "fr": "Paint"},
+      "comment": {"en": "Draw and touch up pictures", "fr": "Dessiner et retoucher des images"},
+      "keywords": {"en": "draw;image;sketch;", "fr": "dessin;image;croquis;"},
+      "icon": "raye-paint"
+    },
+    "org.kde.kcharselect.desktop": {
+      "name": {"en": "Character Map", "fr": "Table des caractères"},
+      "comment": {"en": "Find and copy special characters", "fr": "Trouver et copier des caractères spéciaux"},
+      "keywords": {"en": "symbol;unicode;letter;", "fr": "symbole;unicode;lettre;"},
+      "icon": "accessories-character-map"
+    },
+    "org.kde.partitionmanager.desktop": {
+      "name": {"en": "Disk Management", "fr": "Gestion des disques"},
+      "comment": {"en": "Format disks and change their partitions", "fr": "Formater les disques et modifier leurs partitions"},
+      "keywords": {"en": "partition;format;drive;", "fr": "partition;formater;lecteur;"},
+      "icon": "partitionmanager"
+    },
+    "org.kde.kinfocenter.desktop": {
+      "name": {"en": "System Information", "fr": "Informations système"},
+      "comment": {"en": "See what is inside your computer", "fr": "Voir ce que contient votre ordinateur"},
+      "keywords": {"en": "hardware;specs;about;", "fr": "matériel;caractéristiques;"},
+      "icon": "raye-system-info"
+    },
+    "org.kde.krdc.desktop": {
+      "name": {"en": "Remote Desktop", "fr": "Bureau à distance"},
+      "comment": {"en": "Use another computer from this one", "fr": "Utiliser un autre ordinateur depuis celui-ci"},
+      "keywords": {"en": "rdp;vnc;remote;", "fr": "rdp;vnc;distance;"},
+      "icon": "raye-remote-desktop"
+    },
+    "org.kde.skanpage.desktop": {
+      "name": {"en": "Scan", "fr": "Numériser"},
+      "comment": {"en": "Scan documents and pictures", "fr": "Numériser des documents et des images"},
+      "keywords": {"en": "scanner;document;pdf;", "fr": "numériseur;scanner;document;pdf;"},
+      "icon": "raye-scan"
+    },
+    "org.kde.kdeconnect.app.desktop": {
+      "name": {"en": "Phone Connection", "fr": "Connexion au téléphone"},
+      "comment": {"en": "Use your phone with this computer", "fr": "Utiliser votre téléphone avec cet ordinateur"},
+      "keywords": {"en": "android;mobile;phone;sms;", "fr": "android;mobile;téléphone;sms;"},
+      "icon": "raye-phone"
+    },
+    "btrfs-assistant.desktop": {
+      "name": {"en": "Restore Points", "fr": "Points de restauration"},
+      "comment": {"en": "Go back to an earlier state of your system", "fr": "Revenir à un état antérieur de votre système"},
+      "keywords": {"en": "snapshot;backup;rollback;", "fr": "instantané;sauvegarde;restauration;"},
+      "icon": "raye-restore"
+    },
+    "org.kde.ksystemlog.desktop": {
+      "name": {"en": "Event Viewer", "fr": "Observateur d'événements"},
+      "comment": {"en": "Read what your system has recorded", "fr": "Lire ce que votre système a enregistré"},
+      "icon": "utilities-log-viewer",
+      "hidden": true
+    },
+    "org.kde.kwalletmanager.desktop": {
+      "name": {"en": "Saved Passwords", "fr": "Mots de passe enregistrés"},
+      "comment": {"en": "See the passwords your apps have saved", "fr": "Voir les mots de passe enregistrés par vos applications"},
+      "icon": "kwalletmanager",
+      "hidden": true
+    },
+    "org.kde.kdeconnect.sms.desktop": {"hidden": true},
+    "org.kde.kdeconnect.nonplasma.desktop": {"hidden": true},
+    "org.kde.plasma.emojier.desktop": {"hidden": true},
+    "org.kde.kmenuedit.desktop": {"hidden": true},
+    "org.kde.yakuake.desktop": {"hidden": true},
+    "synaptic.desktop": {"hidden": true},
+    "btop.desktop": {"hidden": true},
+    "htop.desktop": {"hidden": true},
+    "winetricks.desktop": {"hidden": true},
+    "kde_wacom_tabletfinder.desktop": {"hidden": true}
+  }
+}

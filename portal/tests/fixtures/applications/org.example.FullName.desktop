@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Short
+X-GNOME-FullName=Example Full Name
+Icon=/opt/example/icon.png
+Exec=example

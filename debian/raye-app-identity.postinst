@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+
+# The names and icons of the stock apps are written next to their own
+# .desktop files, again each time a package changes one of those. A
+# failure only leaves the stock names: it must not stop the rest of the
+# install.
+if [ "$1" = "configure" ] || [ "$1" = "triggered" ]; then
+    if ! /usr/libexec/raye-app-identity/raye-app-overrides; then
+        echo "raye-app-identity: could not update the app names; the apps keep their usual names" >&2
+    fi
+fi
+
+#DEBHELPER#
+
+exit 0

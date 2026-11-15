@@ -1,0 +1,22 @@
+[Global]
+IconName=video-display
+Name=Screen sharing
+Name[fr]=Partage d'écran
+Comment=Sharing your screen with apps
+Comment[fr]=Partage de votre écran avec les applications
+
+[Event/screencastfailure]
+Name=Screen sharing failed
+Name[fr]=Échec du partage d'écran
+Comment=Your screen could not be shared
+Comment[fr]=Votre écran n'a pas pu être partagé
+Action=Popup
+Urgency=Normal
+
+[Event/remotedesktopstarted]
+Name=An app controls your PC
+Name[fr]=Une application contrôle votre PC
+Comment=An app can see your screen and use your pointer and keyboard
+Comment[fr]=Une application peut voir votre écran et utiliser votre souris et votre clavier
+Action=Popup
+Urgency=High

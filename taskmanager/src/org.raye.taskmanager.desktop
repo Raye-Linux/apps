@@ -1,0 +1,20 @@
+[Desktop Entry]
+Type=Application
+Name=Task Manager
+Name[fr]=Gestionnaire des tâches
+GenericName=System Monitor
+GenericName[fr]=Moniteur système
+Comment=See what is running and how hard your computer works, and end what has stopped responding
+Comment[fr]=Voir ce qui tourne et l’effort de votre ordinateur, et fermer ce qui ne répond plus
+Exec=raye-taskmanager
+Icon=utilities-system-monitor
+Terminal=false
+Categories=Qt;KDE;System;Monitor;
+# the words the Run box and the Start search answer with this app. The
+# Windows names are deliberate: the shell's Run box maps taskmgr, resmon
+# and perfmon to org.raye.taskmanager (theme: shell/run/src/runparser.cpp).
+Keywords=task;manager;process;processes;cpu;memory;monitor;taskmgr;resmon;perfmon;kill;end task;performance;startup;services;
+Keywords[fr]=tâches;gestionnaire;processus;processeur;mémoire;moniteur;taskmgr;resmon;perfmon;tuer;fin de tâche;performances;démarrage;services;
+StartupNotify=true
+StartupWMClass=raye-taskmanager
+X-DBUS-ServiceName=org.raye.taskmanager

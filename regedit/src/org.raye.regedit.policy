@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+  <vendor>Raye Linux</vendor>
+  <vendor_url>https://rayelinux.com</vendor_url>
+  <action id="org.raye.regedit.write">
+    <description>Change a system setting in the Registry Editor</description>
+    <description xml:lang="fr">Modifier un paramètre du système dans l’Éditeur du Registre</description>
+    <message>Registry Editor wants to change a setting for everyone on this PC</message>
+    <message xml:lang="fr">L’Éditeur du Registre veut modifier un paramètre pour tous les utilisateurs de ce PC</message>
+    <icon_name>org.raye.regedit</icon_name>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/libexec/raye-regedit-helper</annotate>
+  </action>
+</policyconfig>

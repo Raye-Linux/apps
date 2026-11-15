@@ -1,0 +1,19 @@
+[Desktop Entry]
+Type=Application
+Name=Registry Editor
+Name[fr]=Éditeur du Registre
+GenericName=Settings editor
+GenericName[fr]=Éditeur de paramètres
+Comment=See and change the settings files of your apps and of the system
+Comment[fr]=Voir et modifier les fichiers de paramètres de vos applications et du système
+Exec=raye-regedit %f
+MimeType=application/x-raye-registry;
+Icon=org.raye.regedit
+Terminal=false
+Categories=Qt;KDE;System;Settings;
+# the shell's Run box maps regedit and regedt32 to org.raye.regedit
+Keywords=registry;regedit;regedt32;settings;config;dconf;kconfig;
+Keywords[fr]=registre;regedit;regedt32;paramètres;configuration;dconf;
+StartupNotify=true
+StartupWMClass=raye-regedit
+X-DBUS-ServiceName=org.raye.regedit

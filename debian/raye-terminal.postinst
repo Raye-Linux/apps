@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+
+# x-terminal-emulator opens Terminal, above Konsole (40)
+if [ "$1" = "configure" ]; then
+    update-alternatives --install /usr/bin/x-terminal-emulator \
+        x-terminal-emulator /usr/bin/raye-terminal 45
+fi
+
+#DEBHELPER#
+
+exit 0

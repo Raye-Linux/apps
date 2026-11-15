@@ -1,0 +1,10 @@
+# Started by raye-calendar-reminder.timer, which Raye Calendar writes in
+# ~/.config/systemd/user for the next reminder. It shows what is due and
+# ends when the last reminder on screen is answered.
+[Unit]
+Description=Raye Calendar reminders
+
+[Service]
+Type=simple
+ExecStart=@RAYE_CALENDAR_TOOL_PATH@ fire
+Slice=background.slice

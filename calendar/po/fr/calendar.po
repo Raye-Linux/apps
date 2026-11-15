@@ -1,0 +1,559 @@
+# French words of the Calendar.
+msgid ""
+msgstr ""
+"Project-Id-Version: raye-calendar\n"
+"PO-Revision-Date: 2026-11-11 12:00+0000\n"
+"Last-Translator: Raye Linux\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgctxt "@info"
+msgid "Nothing in the next three months"
+msgstr "Rien dans les trois prochains mois"
+
+msgctxt "@title day"
+msgid "Today"
+msgstr "Aujourd’hui"
+
+msgctxt "@title day"
+msgid "Tomorrow"
+msgstr "Demain"
+
+msgctxt "@info"
+msgid "Holiday"
+msgstr "Jour férié"
+
+msgctxt "@info"
+msgid "All day"
+msgstr "Toute la journée"
+
+msgctxt "@info an event with no title"
+msgid "(No title)"
+msgstr "(Sans titre)"
+
+msgctxt "@item reminder"
+msgid "None"
+msgstr "Aucun"
+
+msgctxt "@item reminder"
+msgid "When it starts"
+msgstr "Au début"
+
+msgctxt "@item reminder"
+msgid "5 minutes before"
+msgstr "5 minutes avant"
+
+msgctxt "@item reminder"
+msgid "10 minutes before"
+msgstr "10 minutes avant"
+
+msgctxt "@item reminder"
+msgid "15 minutes before"
+msgstr "15 minutes avant"
+
+msgctxt "@item reminder"
+msgid "30 minutes before"
+msgstr "30 minutes avant"
+
+msgctxt "@item reminder"
+msgid "1 hour before"
+msgstr "1 heure avant"
+
+msgctxt "@item reminder"
+msgid "2 hours before"
+msgstr "2 heures avant"
+
+msgctxt "@item reminder"
+msgid "1 day before"
+msgstr "1 jour avant"
+
+msgctxt "@item reminder"
+msgid "1 week before"
+msgstr "1 semaine avant"
+
+msgctxt "@item reminder"
+msgid "On the day, at 9:00 AM"
+msgstr "Le jour même, à 9 h"
+
+msgctxt "@item reminder"
+msgid "The day before, at 9:00 AM"
+msgstr "La veille, à 9 h"
+
+msgctxt "@item reminder"
+msgid "A week before, at 9:00 AM"
+msgstr "Une semaine avant, à 9 h"
+
+msgctxt "@item repeat"
+msgid "Does not repeat"
+msgstr "Ne se répète pas"
+
+msgctxt "@item repeat"
+msgid "Every day"
+msgstr "Tous les jours"
+
+msgctxt "@item repeat"
+msgid "Every week on %1"
+msgstr "Toutes les semaines le %1"
+
+msgctxt "@item repeat"
+msgid "Every month on day %1"
+msgstr "Tous les mois le %1"
+
+msgctxt "@item repeat"
+msgid "Every year on %1"
+msgstr "Tous les ans le %1"
+
+msgctxt "@title"
+msgid "New event"
+msgstr "Nouvel événement"
+
+msgctxt "@title"
+msgid "Edit event"
+msgstr "Modifier l’événement"
+
+msgctxt "@info:placeholder"
+msgid "Add a title"
+msgstr "Ajouter un titre"
+
+msgctxt "@label"
+msgid "All day"
+msgstr "Toute la journée"
+
+msgctxt "@label"
+msgid "Starts"
+msgstr "Début"
+
+msgctxt "@label"
+msgid "Ends"
+msgstr "Fin"
+
+msgctxt "@label"
+msgid "Repeat"
+msgstr "Répétition"
+
+msgctxt "@label"
+msgid "Reminder"
+msgstr "Rappel"
+
+msgctxt "@label"
+msgid "Color"
+msgstr "Couleur"
+
+msgctxt "@info colour of an event"
+msgid "Accent color"
+msgstr "Couleur d’accentuation"
+
+msgctxt "@info colour of an event"
+msgid "Color %1"
+msgstr "Couleur %1"
+
+msgctxt "@label"
+msgid "Location"
+msgstr "Lieu"
+
+msgctxt "@info:placeholder"
+msgid "Add a place"
+msgstr "Ajouter un lieu"
+
+msgctxt "@info:placeholder"
+msgid "Add a note"
+msgstr "Ajouter une note"
+
+msgctxt "@action:button"
+msgid "Delete"
+msgstr "Supprimer"
+
+msgctxt "@action:inmenu delete"
+msgid "Only this one"
+msgstr "Seulement celui-ci"
+
+msgctxt "@action:inmenu delete"
+msgid "Every time it repeats"
+msgstr "Toute la série"
+
+msgctxt "@action:button"
+msgid "Cancel"
+msgstr "Annuler"
+
+msgctxt "@action:button"
+msgid "Save"
+msgstr "Enregistrer"
+
+msgid "Calendar"
+msgstr "Calendrier"
+
+msgctxt "@title:tab"
+msgid "Day"
+msgstr "Jour"
+
+msgctxt "@title:tab"
+msgid "Week"
+msgstr "Semaine"
+
+msgctxt "@title:tab"
+msgid "Month"
+msgstr "Mois"
+
+msgctxt "@title:tab"
+msgid "Agenda"
+msgstr "Agenda"
+
+msgctxt "@info"
+msgid "One event added"
+msgid_plural "%1 events added"
+msgstr[0] "Un événement ajouté"
+msgstr[1] "%1 événements ajoutés"
+
+msgctxt "@title"
+msgid "From %1"
+msgstr "À partir du %1"
+
+msgctxt "@action:button"
+msgid "New event"
+msgstr "Nouvel événement"
+
+msgctxt "@label"
+msgid "Holidays"
+msgstr "Jours fériés"
+
+msgctxt "@info"
+msgid "Your events stay on this computer."
+msgstr "Vos événements restent sur cet ordinateur."
+
+msgctxt "@info:tooltip"
+msgid "Hide the side pane"
+msgstr "Masquer le volet"
+
+msgctxt "@info:tooltip"
+msgid "Show the side pane"
+msgstr "Afficher le volet"
+
+msgctxt "@action:button"
+msgid "Today"
+msgstr "Aujourd’hui"
+
+msgctxt "@info:tooltip"
+msgid "Previous"
+msgstr "Précédent"
+
+msgctxt "@info:tooltip"
+msgid "Next"
+msgstr "Suivant"
+
+msgctxt "@info:tooltip"
+msgid "More"
+msgstr "Plus"
+
+msgctxt "@action:inmenu"
+msgid "Import a calendar file…"
+msgstr "Importer un fichier de calendrier…"
+
+msgctxt "@action:inmenu"
+msgid "Export my calendar…"
+msgstr "Exporter mon calendrier…"
+
+msgctxt "@info"
+msgid "Saved"
+msgstr "Enregistré"
+
+msgctxt "@title:window"
+msgid "Import a calendar file"
+msgstr "Importer un fichier de calendrier"
+
+msgctxt "@item file type"
+msgid "Calendar files (*.ics)"
+msgstr "Fichiers de calendrier (*.ics)"
+
+msgctxt "@title:window"
+msgid "Export my calendar"
+msgstr "Exporter mon calendrier"
+
+msgctxt "@info file name, no extension"
+msgid "My calendar"
+msgstr "Mon calendrier"
+
+msgctxt "@info"
+msgid "Calendar exported"
+msgstr "Calendrier exporté"
+
+msgctxt "@info:tooltip"
+msgid "Previous month"
+msgstr "Mois précédent"
+
+msgctxt "@info:tooltip"
+msgid "Next month"
+msgstr "Mois suivant"
+
+msgctxt "@action:button events of a day that do not fit"
+msgid "+%1 more"
+msgid_plural "+%1 more"
+msgstr[0] "+%1 autre"
+msgstr[1] "+%1 autres"
+
+msgctxt "@info:tooltip"
+msgid "Pick a time"
+msgstr "Choisir une heure"
+
+msgctxt "@info"
+msgid "Your calendar could not be saved: %1"
+msgstr "Votre calendrier n’a pas pu être enregistré : %1"
+
+msgctxt "@item no holidays"
+msgid "None"
+msgstr "Aucun"
+
+msgctxt "@info"
+msgid "The file could not be read: %1"
+msgstr "Le fichier n’a pas pu être lu : %1"
+
+msgctxt "@info"
+msgid "The file could not be written: %1"
+msgstr "Le fichier n’a pas pu être écrit : %1"
+
+msgctxt "@info holiday"
+msgid "New Year's Day"
+msgstr "Jour de l’An"
+
+msgctxt "@info holiday"
+msgid "Good Friday"
+msgstr "Vendredi saint"
+
+msgctxt "@info holiday"
+msgid "Easter Monday"
+msgstr "Lundi de Pâques"
+
+msgctxt "@info holiday"
+msgid "National Patriots' Day"
+msgstr "Journée nationale des patriotes"
+
+msgctxt "@info holiday"
+msgid "Victoria Day"
+msgstr "Fête de la Reine"
+
+msgctxt "@info holiday"
+msgid "Saint-Jean-Baptiste Day"
+msgstr "Fête nationale du Québec"
+
+msgctxt "@info holiday"
+msgid "Canada Day"
+msgstr "Fête du Canada"
+
+msgctxt "@info holiday"
+msgid "Labour Day"
+msgstr "Fête du Travail"
+
+msgctxt "@info holiday"
+msgid "Truth and Reconciliation Day"
+msgstr "Journée de la vérité et de la réconciliation"
+
+msgctxt "@info holiday"
+msgid "Thanksgiving"
+msgstr "Action de grâces"
+
+msgctxt "@info holiday"
+msgid "Remembrance Day"
+msgstr "Jour du Souvenir"
+
+msgctxt "@info holiday"
+msgid "Christmas Day"
+msgstr "Noël"
+
+msgctxt "@info holiday"
+msgid "Boxing Day"
+msgstr "Lendemain de Noël"
+
+msgctxt "@info holiday"
+msgid "Labour Day (May 1)"
+msgstr "Fête du Travail (1er mai)"
+
+msgctxt "@info holiday"
+msgid "Victory in Europe Day"
+msgstr "Victoire 1945"
+
+msgctxt "@info holiday"
+msgid "Ascension Day"
+msgstr "Ascension"
+
+msgctxt "@info holiday"
+msgid "Whit Monday"
+msgstr "Lundi de Pentecôte"
+
+msgctxt "@info holiday"
+msgid "Bastille Day"
+msgstr "Fête nationale"
+
+msgctxt "@info holiday"
+msgid "Assumption Day"
+msgstr "Assomption"
+
+msgctxt "@info holiday"
+msgid "All Saints' Day"
+msgstr "Toussaint"
+
+msgctxt "@info holiday"
+msgid "Armistice Day"
+msgstr "Armistice"
+
+msgctxt "@info holiday"
+msgid "Belgian National Day"
+msgstr "Fête nationale belge"
+
+msgctxt "@info holiday"
+msgid "Swiss National Day"
+msgstr "Fête nationale suisse"
+
+msgctxt "@info holiday"
+msgid "St. Stephen's Day"
+msgstr "Saint-Étienne"
+
+msgctxt "@info holiday"
+msgid "Martin Luther King Jr. Day"
+msgstr "Jour de Martin Luther King"
+
+msgctxt "@info holiday"
+msgid "Presidents' Day"
+msgstr "Jour des présidents"
+
+msgctxt "@info holiday"
+msgid "Memorial Day"
+msgstr "Memorial Day"
+
+msgctxt "@info holiday"
+msgid "Juneteenth"
+msgstr "Juneteenth"
+
+msgctxt "@info holiday"
+msgid "Independence Day"
+msgstr "Jour de l’Indépendance"
+
+msgctxt "@info holiday"
+msgid "Labor Day"
+msgstr "Fête du Travail"
+
+msgctxt "@info holiday"
+msgid "Columbus Day"
+msgstr "Jour de Christophe Colomb"
+
+msgctxt "@info holiday"
+msgid "Veterans Day"
+msgstr "Jour des anciens combattants"
+
+msgctxt "@info holiday"
+msgid "Thanksgiving Day"
+msgstr "Action de grâces"
+
+msgctxt "@info holiday"
+msgid "Early May bank holiday"
+msgstr "Congé du début mai"
+
+msgctxt "@info holiday"
+msgid "Spring bank holiday"
+msgstr "Congé du printemps"
+
+msgctxt "@info holiday"
+msgid "Summer bank holiday"
+msgstr "Congé d’été"
+
+msgctxt "@item holidays of"
+msgid "Canada (Quebec)"
+msgstr "Canada (Québec)"
+
+msgctxt "@item holidays of"
+msgid "Canada"
+msgstr "Canada"
+
+msgctxt "@item holidays of"
+msgid "France"
+msgstr "France"
+
+msgctxt "@item holidays of"
+msgid "Belgium"
+msgstr "Belgique"
+
+msgctxt "@item holidays of"
+msgid "Switzerland"
+msgstr "Suisse"
+
+msgctxt "@item holidays of"
+msgid "United States"
+msgstr "États-Unis"
+
+msgctxt "@item holidays of"
+msgid "United Kingdom"
+msgstr "Royaume-Uni"
+
+msgctxt "@info"
+msgid "Today"
+msgstr "Aujourd’hui"
+
+msgctxt "@info"
+msgid "Tomorrow"
+msgstr "Demain"
+
+msgctxt "@info"
+msgid "In %1 minute"
+msgid_plural "In %1 minutes"
+msgstr[0] "Dans %1 minute"
+msgstr[1] "Dans %1 minutes"
+
+msgctxt "@info the event has begun"
+msgid "Now"
+msgstr "Maintenant"
+
+msgctxt "@info day, start - end"
+msgid "%1, %2 – %3"
+msgstr "%1, %2 – %3"
+
+msgctxt "@action:button"
+msgid "Open"
+msgstr "Ouvrir"
+
+msgctxt "@action:button remind again in a few minutes"
+msgid "Later"
+msgstr "Plus tard"
+
+msgctxt "@action:button"
+msgid "Dismiss"
+msgstr "Ignorer"
+
+msgctxt "@info"
+msgid "Event"
+msgstr "Événement"
+
+msgctxt "@title"
+msgid "Calendar"
+msgstr "Calendrier"
+
+msgctxt "@info date format, QDate pattern"
+msgid "ddd, MMM d, yyyy"
+msgstr "ddd d MMM yyyy"
+
+msgctxt "@info date format, QDate pattern"
+msgid "dddd, MMMM d, yyyy"
+msgstr "dddd d MMMM yyyy"
+
+msgctxt "@info date format, QDate pattern"
+msgid "MMMM d"
+msgstr "d MMMM"
+
+msgctxt "@info date format, QDate pattern"
+msgid "MMM d"
+msgstr "d MMM"
+
+msgctxt "@info date format, QDate pattern"
+msgid "dddd, MMMM d"
+msgstr "dddd d MMMM"
+
+msgctxt "@info"
+msgid "One change to a single date of a repeating event was left out."
+msgid_plural "%1 changes to single dates of repeating events were left out."
+msgstr[0] "Une modification d’une seule date d’un événement répété a été laissée de côté."
+msgstr[1] "%1 modifications de dates d’événements répétés ont été laissées de côté."
+
+msgctxt "@info"
+msgid "This event repeats in a way Calendar can't show yet, so only its first date appears. Pick another repeat to replace it."
+msgstr "Cet événement se répète d’une façon que le Calendrier ne sait pas encore afficher : seule sa première date apparaît. Choisissez une autre répétition pour la remplacer."

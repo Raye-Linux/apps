@@ -1,0 +1,963 @@
+# French words of the Control Panel.
+msgid ""
+msgstr ""
+"Project-Id-Version: raye-controlpanel\n"
+"PO-Revision-Date: 2026-11-11 12:00+0000\n"
+"Last-Translator: Raye Linux\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgctxt "@title Control Panel category"
+msgid "System and Security"
+msgstr "Système et sécurité"
+
+msgctxt "@action:button"
+msgid "Review your computer's status"
+msgstr "Vérifier l’état de votre ordinateur"
+
+msgctxt "@action:button"
+msgid "Restore your PC to an earlier state"
+msgstr "Ramener votre PC à un état antérieur"
+
+msgctxt "@action:button"
+msgid "Fix common problems"
+msgstr "Résoudre les problèmes courants"
+
+msgctxt "@title Control Panel category"
+msgid "Network and Internet"
+msgstr "Réseau et Internet"
+
+msgctxt "@action:button"
+msgid "Connect to a Wi-Fi network"
+msgstr "Se connecter à un réseau Wi-Fi"
+
+msgctxt "@title Control Panel category"
+msgid "Hardware and Sound"
+msgstr "Matériel et audio"
+
+msgctxt "@action:button"
+msgid "View devices and printers"
+msgstr "Afficher les périphériques et imprimantes"
+
+msgctxt "@action:button"
+msgid "Add a device"
+msgstr "Ajouter un périphérique"
+
+msgctxt "@action:button"
+msgid "Change sound settings"
+msgstr "Modifier les paramètres du son"
+
+msgctxt "@title Control Panel category"
+msgid "Programs"
+msgstr "Programmes"
+
+msgctxt "@action:button"
+msgid "Uninstall a program"
+msgstr "Désinstaller un programme"
+
+msgctxt "@action:button"
+msgid "Choose default apps"
+msgstr "Choisir les applications par défaut"
+
+msgctxt "@title Control Panel category"
+msgid "User Accounts"
+msgstr "Comptes d’utilisateurs"
+
+msgctxt "@action:button"
+msgid "Change account type"
+msgstr "Changer le type de compte"
+
+msgctxt "@action:button"
+msgid "Change your picture or name"
+msgstr "Changer votre photo ou votre nom"
+
+msgctxt "@title Control Panel category"
+msgid "Appearance and Personalization"
+msgstr "Apparence et personnalisation"
+
+msgctxt "@action:button"
+msgid "Change the background"
+msgstr "Changer l’arrière-plan"
+
+msgctxt "@action:button"
+msgid "Choose colors"
+msgstr "Choisir les couleurs"
+
+msgctxt "@title Control Panel category"
+msgid "Clock and Region"
+msgstr "Horloge et région"
+
+msgctxt "@action:button"
+msgid "Set the time and date"
+msgstr "Régler la date et l’heure"
+
+msgctxt "@action:button"
+msgid "Change date, time or number formats"
+msgstr "Changer les formats de date, d’heure ou de nombre"
+
+msgctxt "@title Control Panel category"
+msgid "Ease of Access"
+msgstr "Options d’ergonomie"
+
+msgctxt "@action:button"
+msgid "Make text bigger"
+msgstr "Agrandir le texte"
+
+msgctxt "@action:button"
+msgid "Optimize visual display"
+msgstr "Optimiser l’affichage"
+
+msgctxt "@title Control Panel item"
+msgid "AutoPlay"
+msgstr "Exécution automatique"
+
+msgctxt "@info"
+msgid "What happens when you plug in a drive or a phone"
+msgstr "Ce qui se passe quand vous branchez un disque ou un téléphone"
+
+msgctxt "@title Control Panel item"
+msgid "Bluetooth Devices"
+msgstr "Périphériques Bluetooth"
+
+msgctxt "@info"
+msgid "Pair headphones, mice and phones"
+msgstr "Associer casques, souris et téléphones"
+
+msgctxt "@title Control Panel item"
+msgid "Date and Time"
+msgstr "Date et heure"
+
+msgctxt "@info"
+msgid "Set the date, the time and the time zone"
+msgstr "Régler la date, l’heure et le fuseau horaire"
+
+msgctxt "@title Control Panel item"
+msgid "Default Programs"
+msgstr "Programmes par défaut"
+
+msgctxt "@info"
+msgid "Which app opens your files and links"
+msgstr "L’application qui ouvre vos fichiers et vos liens"
+
+msgctxt "@title Control Panel item"
+msgid "Device Manager"
+msgstr "Gestionnaire de périphériques"
+
+msgctxt "@info"
+msgid "The hardware inside this PC and its drivers"
+msgstr "Le matériel de ce PC et ses pilotes"
+
+msgctxt "@title Control Panel item"
+msgid "Devices and Printers"
+msgstr "Périphériques et imprimantes"
+
+msgctxt "@info"
+msgid "Printers, scanners and other devices"
+msgstr "Imprimantes, scanneurs et autres périphériques"
+
+msgctxt "@title Control Panel item"
+msgid "Ease of Access Center"
+msgstr "Centre Options d’ergonomie"
+
+msgctxt "@info"
+msgid "Make your PC easier to see, hear and use"
+msgstr "Rendre votre PC plus facile à voir, à entendre et à utiliser"
+
+msgctxt "@title Control Panel item"
+msgid "Email Accounts"
+msgstr "Comptes de messagerie"
+
+msgctxt "@info"
+msgid "The accounts your apps use for mail and calendars"
+msgstr "Les comptes que vos applications utilisent pour le courrier et les agendas"
+
+msgctxt "@title Control Panel item"
+msgid "Fonts"
+msgstr "Polices"
+
+msgctxt "@info"
+msgid "See, add and remove fonts"
+msgstr "Voir, ajouter et supprimer des polices"
+
+msgctxt "@title Control Panel item"
+msgid "Indexing Options"
+msgstr "Options d’indexation"
+
+msgctxt "@info"
+msgid "Where search looks for your files"
+msgstr "Où la recherche cherche vos fichiers"
+
+msgctxt "@title Control Panel item"
+msgid "Internet Options"
+msgstr "Options Internet"
+
+msgctxt "@info"
+msgid "Proxy server for your connection"
+msgstr "Serveur proxy de votre connexion"
+
+msgctxt "@title Control Panel item"
+msgid "Keyboard"
+msgstr "Clavier"
+
+msgctxt "@info"
+msgid "Layouts, repeat speed and typing help"
+msgstr "Dispositions, vitesse de répétition et aide à la saisie"
+
+msgctxt "@title Control Panel item"
+msgid "Mouse"
+msgstr "Souris"
+
+msgctxt "@info"
+msgid "Buttons, pointer speed and scrolling"
+msgstr "Boutons, vitesse du pointeur et défilement"
+
+msgctxt "@title Control Panel item"
+msgid "Network and Sharing Center"
+msgstr "Centre Réseau et partage"
+
+msgctxt "@info"
+msgid "Your connections and how they are set up"
+msgstr "Vos connexions et leurs réglages"
+
+msgctxt "@title Control Panel item"
+msgid "Personalization"
+msgstr "Personnalisation"
+
+msgctxt "@info"
+msgid "Background, colors, themes and lock screen"
+msgstr "Arrière-plan, couleurs, thèmes et écran de verrouillage"
+
+msgctxt "@title Control Panel item"
+msgid "Phone"
+msgstr "Téléphone"
+
+msgctxt "@info"
+msgid "Link your phone to this PC"
+msgstr "Relier votre téléphone à ce PC"
+
+msgctxt "@title Control Panel item"
+msgid "Power Options"
+msgstr "Options d’alimentation"
+
+msgctxt "@info"
+msgid "Sleep, screen off and energy saver"
+msgstr "Veille, extinction de l’écran et économiseur d’énergie"
+
+msgctxt "@title Control Panel item"
+msgid "Programs and Features"
+msgstr "Programmes et fonctionnalités"
+
+msgctxt "@info"
+msgid "Uninstall or change a program"
+msgstr "Désinstaller ou modifier un programme"
+
+msgctxt "@title Control Panel item"
+msgid "Recovery"
+msgstr "Récupération"
+
+msgctxt "@title Control Panel item"
+msgid "Region"
+msgstr "Région"
+
+msgctxt "@info"
+msgid "Language, formats and region"
+msgstr "Langue, formats et région"
+
+msgctxt "@title Control Panel item"
+msgid "Remote Desktop"
+msgstr "Bureau à distance"
+
+msgctxt "@info"
+msgid "Let another PC show and use this one"
+msgstr "Permettre à un autre PC d’afficher et d’utiliser celui-ci"
+
+msgctxt "@title Control Panel item"
+msgid "Raye Update"
+msgstr "Raye Update"
+
+msgctxt "@info"
+msgid "Updates for Raye and your apps"
+msgstr "Les mises à jour de Raye et de vos applications"
+
+msgctxt "@title Control Panel item"
+msgid "Security and Maintenance"
+msgstr "Sécurité et maintenance"
+
+msgctxt "@info"
+msgid "Secure Boot, encryption and protection status"
+msgstr "Démarrage sécurisé, chiffrement et état de la protection"
+
+msgctxt "@title Control Panel item"
+msgid "Virus and Threat Protection"
+msgstr "Protection contre les virus et les menaces"
+
+msgctxt "@title Control Panel item"
+msgid "Sound"
+msgstr "Son"
+
+msgctxt "@info"
+msgid "Speakers, microphones and volume"
+msgstr "Haut-parleurs, microphones et volume"
+
+msgctxt "@title Control Panel item"
+msgid "Startup Apps"
+msgstr "Applications de démarrage"
+
+msgctxt "@info"
+msgid "Apps that start when you sign in"
+msgstr "Les applications qui démarrent quand vous vous connectez"
+
+msgctxt "@title Control Panel item"
+msgid "Storage"
+msgstr "Stockage"
+
+msgctxt "@info"
+msgid "Free up space and see what uses it"
+msgstr "Libérer de l’espace et voir ce qui l’occupe"
+
+msgctxt "@title Control Panel item"
+msgid "System"
+msgstr "Système"
+
+msgctxt "@info"
+msgid "The name of this PC, its processor and memory"
+msgstr "Le nom de ce PC, son processeur et sa mémoire"
+
+msgctxt "@title Control Panel item"
+msgid "Taskbar and Navigation"
+msgstr "Barre des tâches et navigation"
+
+msgctxt "@info"
+msgid "Pinned apps, alignment and the system tray"
+msgstr "Applications épinglées, alignement et zone de notification"
+
+msgctxt "@title Control Panel item"
+msgid "Troubleshooting"
+msgstr "Dépannage"
+
+msgctxt "@info"
+msgid "Find and fix common problems"
+msgstr "Trouver et résoudre les problèmes courants"
+
+msgctxt "@title Control Panel item"
+msgid "User Accounts"
+msgstr "Comptes d’utilisateurs"
+
+msgctxt "@info"
+msgid "Add people and change their account type"
+msgstr "Ajouter des personnes et changer leur type de compte"
+
+msgctxt "@title Control Panel item"
+msgid "Sign-in Options"
+msgstr "Options de connexion"
+
+msgctxt "@title Control Panel item"
+msgid "Windows Programs"
+msgstr "Programmes Windows"
+
+msgctxt "@info"
+msgid "The Windows programs you have run on this PC"
+msgstr "Les programmes Windows que vous avez lancés sur ce PC"
+
+msgctxt "@title tool"
+msgid "Task Manager"
+msgstr "Gestionnaire des tâches"
+
+msgctxt "@info"
+msgid "Running apps, performance, startup apps and services"
+msgstr "Applications en cours, performances, démarrage et services"
+
+msgctxt "@title tool"
+msgid "Registry Editor"
+msgstr "Éditeur du Registre"
+
+msgctxt "@info"
+msgid "See and change the settings files of apps and of the system"
+msgstr "Voir et modifier les fichiers de paramètres des applications et du système"
+
+msgctxt "@title tool"
+msgid "System Information"
+msgstr "Informations système"
+
+msgctxt "@info"
+msgid "Processor, memory, graphics and drives of this PC"
+msgstr "Processeur, mémoire, carte graphique et disques de ce PC"
+
+msgctxt "@title tool"
+msgid "Disk Management"
+msgstr "Gestion des disques"
+
+msgctxt "@info"
+msgid "Drives and partitions"
+msgstr "Disques et partitions"
+
+msgctxt "@title tool"
+msgid "Event Viewer"
+msgstr "Observateur d’événements"
+
+msgctxt "@info"
+msgid "What the system has written in its logs"
+msgstr "Ce que le système a écrit dans ses journaux"
+
+msgctxt "@title tool"
+msgid "Terminal"
+msgstr "Terminal"
+
+msgctxt "@info"
+msgid "Type commands"
+msgstr "Taper des commandes"
+
+msgid "Control Panel"
+msgstr "Panneau de configuration"
+
+msgctxt "@action:button"
+msgid "Back"
+msgstr "Précédent"
+
+msgctxt "@title"
+msgid "All Control Panel Items"
+msgstr "Tous les Panneaux de configuration"
+
+msgctxt "@info:placeholder"
+msgid "Search Control Panel"
+msgstr "Rechercher"
+
+msgctxt "@title"
+msgid "Adjust your computer's settings"
+msgstr "Ajuster les paramètres de l’ordinateur"
+
+msgctxt "@title"
+msgid "Search results"
+msgstr "Résultats de la recherche"
+
+msgid "No items match your search."
+msgstr "Aucun élément ne correspond à votre recherche."
+
+msgctxt "@label followed by Category, Large icons, Small icons"
+msgid "View by:"
+msgstr "Afficher par :"
+
+msgctxt "@option:radio view by"
+msgid "Category"
+msgstr "Catégorie"
+
+msgctxt "@option:radio view by"
+msgid "Large icons"
+msgstr "Grandes icônes"
+
+msgctxt "@option:radio view by"
+msgid "Small icons"
+msgstr "Petites icônes"
+
+# items, their tasks and System Tools
+msgctxt "@title"
+msgid "System Tools"
+msgstr "Outils système"
+
+msgid "None of these tools are installed."
+msgstr "Aucun de ces outils n’est installé."
+
+msgctxt "@action:button"
+msgid "Check for updates"
+msgstr "Rechercher des mises à jour"
+
+msgctxt "@action:button"
+msgid "View network status and tasks"
+msgstr "Afficher l’état et la gestion du réseau"
+
+msgctxt "@action:button"
+msgid "Set up a VPN"
+msgstr "Configurer un VPN"
+
+msgctxt "@action:button"
+msgid "Change the theme"
+msgstr "Modifier le thème"
+
+msgctxt "@action:button"
+msgid "Adjust screen resolution"
+msgstr "Ajuster la résolution de l’écran"
+
+msgctxt "@action:button"
+msgid "Turn on the magnifier"
+msgstr "Activer la loupe"
+
+msgctxt "@title Control Panel item"
+msgid "System Tools"
+msgstr "Outils système"
+
+msgctxt "@info"
+msgid "Task Manager, Event Viewer, Disk Management and more"
+msgstr "Gestionnaire des tâches, Observateur d’événements, Gestion des disques et plus"
+
+msgctxt "@info:search words, comma separated"
+msgid "windows tools, system tools, services, resource monitor, character map"
+msgstr "outils windows, outils système, services, moniteur de ressources, table des caractères"
+
+msgctxt "@action:button"
+msgid "Free up disk space"
+msgstr "Libérer de l’espace disque"
+
+msgctxt "@action:button"
+msgid "Create and format hard disk partitions"
+msgstr "Créer et formater des partitions de disque dur"
+
+msgctxt "@action:button"
+msgid "View event logs"
+msgstr "Afficher les journaux d’événements"
+
+msgctxt "@action:button"
+msgid "Change default settings for media or devices"
+msgstr "Modifier les paramètres par défaut des médias ou des périphériques"
+
+msgctxt "@title Control Panel item"
+msgid "Backup and Restore"
+msgstr "Sauvegarde et restauration"
+
+msgctxt "@info"
+msgid "Take the system back to an earlier state. Your files stay."
+msgstr "Ramener le système à un état antérieur. Vos fichiers restent."
+
+msgctxt "@info:search words, comma separated"
+msgid "restore point, system restore, snapshot, undo"
+msgstr "point de restauration, restauration du système, instantané, annuler"
+
+msgctxt "@action:button"
+msgid "Choose what follows you to your other PCs"
+msgstr "Choisir ce qui vous suit sur vos autres PC"
+
+msgctxt "@action:button"
+msgid "Add a Bluetooth device"
+msgstr "Ajouter un appareil Bluetooth"
+
+msgctxt "@title Control Panel item"
+msgid "Game Controllers"
+msgstr "Contrôleurs de jeu"
+
+msgctxt "@info"
+msgid "Gamepads and joysticks plugged into this PC"
+msgstr "Manettes et joysticks branchés sur ce PC"
+
+msgctxt "@action:button"
+msgid "Set up a game controller"
+msgstr "Configurer une manette"
+
+msgctxt "@title Control Panel item"
+msgid "Credential Manager"
+msgstr "Gestionnaire d’identification"
+
+msgctxt "@info"
+msgid "Passwords that apps saved on this PC"
+msgstr "Les mots de passe enregistrés par vos applications sur ce PC"
+
+msgctxt "@info:search words, comma separated"
+msgid "password, wallet, keyring"
+msgstr "mot de passe, portefeuille, trousseau"
+
+msgctxt "@action:button"
+msgid "Manage saved passwords"
+msgstr "Gérer les mots de passe enregistrés"
+
+msgctxt "@action:button"
+msgid "Change the time zone"
+msgstr "Changer de fuseau horaire"
+
+msgctxt "@action:button"
+msgid "Make a file type always open in a specific app"
+msgstr "Toujours ouvrir un type de fichier avec la même application"
+
+msgctxt "@info:search words, comma separated"
+msgid "driver, hardware, graphics card, processor"
+msgstr "pilote, matériel, carte graphique, processeur"
+
+msgctxt "@action:button"
+msgid "View the hardware in this PC"
+msgstr "Afficher le matériel de ce PC"
+
+msgctxt "@action:button"
+msgid "Update drivers"
+msgstr "Mettre à jour les pilotes"
+
+msgctxt "@title Control Panel item"
+msgid "Display"
+msgstr "Affichage"
+
+msgctxt "@info"
+msgid "Resolution, scale, brightness and night light"
+msgstr "Résolution, mise à l’échelle, luminosité et éclairage nocturne"
+
+msgctxt "@info:search words, comma separated"
+msgid "screen, monitor, resolution, refresh rate"
+msgstr "écran, moniteur, résolution, fréquence"
+
+msgctxt "@action:button"
+msgid "Turn on night light"
+msgstr "Activer l’éclairage nocturne"
+
+msgctxt "@action:button"
+msgid "Add a printer or scanner"
+msgstr "Ajouter une imprimante ou un scanner"
+
+msgctxt "@action:button"
+msgid "Mouse settings"
+msgstr "Paramètres de la souris"
+
+msgctxt "@info:search words, comma separated"
+msgid "accessibility, contrast, zoom"
+msgstr "accessibilité, contraste, zoom"
+
+msgctxt "@action:button"
+msgid "Use color filters"
+msgstr "Utiliser les filtres de couleur"
+
+msgctxt "@action:button"
+msgid "Change how the keyboard works"
+msgstr "Modifier le fonctionnement du clavier"
+
+msgctxt "@action:button"
+msgid "Change how the mouse works"
+msgstr "Modifier le fonctionnement de la souris"
+
+msgctxt "@title Control Panel item"
+msgid "Screen Reader"
+msgstr "Lecteur d’écran"
+
+msgctxt "@info"
+msgid "Hear what is on the screen read aloud"
+msgstr "Entendre à voix haute ce qui est à l’écran"
+
+msgctxt "@info:search words, comma separated"
+msgid "narrator, speech, voice, blind"
+msgstr "narrateur, parole, voix, aveugle"
+
+msgctxt "@action:button"
+msgid "Turn on the screen reader"
+msgstr "Activer le lecteur d’écran"
+
+msgctxt "@action:button"
+msgid "Show captions and audio alerts"
+msgstr "Afficher les sous-titres et les alertes sonores"
+
+msgctxt "@action:button"
+msgid "Add an email account"
+msgstr "Ajouter un compte de messagerie"
+
+msgctxt "@title Control Panel item"
+msgid "Disk Encryption"
+msgstr "Chiffrement du disque"
+
+msgctxt "@info"
+msgid "Whether your disk is encrypted, and its recovery key"
+msgstr "Si votre disque est chiffré, et sa clé de récupération"
+
+msgctxt "@info:search words, comma separated"
+msgid "bitlocker, encrypt, recovery key, security chip, tpm"
+msgstr "bitlocker, chiffrer, chiffrement, clé de récupération, puce de sécurité, tpm"
+
+msgctxt "@action:button"
+msgid "Check disk encryption"
+msgstr "Vérifier le chiffrement du disque"
+
+msgctxt "@action:button"
+msgid "Back up your recovery key"
+msgstr "Sauvegarder votre clé de récupération"
+
+msgctxt "@title Control Panel item"
+msgid "File Explorer Options"
+msgstr "Options de l’Explorateur de fichiers"
+
+msgctxt "@info"
+msgid "Hidden files and file name extensions"
+msgstr "Fichiers cachés et extensions de noms de fichiers"
+
+msgctxt "@info:search words, comma separated"
+msgid "folder options, files, extension, hidden"
+msgstr "options des dossiers, fichiers, extension, cachés"
+
+msgctxt "@action:button"
+msgid "Show hidden files and folders"
+msgstr "Afficher les fichiers et dossiers cachés"
+
+msgctxt "@action:button"
+msgid "Show file name extensions"
+msgstr "Afficher les extensions de noms de fichiers"
+
+msgctxt "@title Control Panel item"
+msgid "Firewall"
+msgstr "Pare-feu"
+
+msgctxt "@info"
+msgid "Keep other computers from reaching this one"
+msgstr "Empêcher les autres ordinateurs d’atteindre celui-ci"
+
+msgctxt "@action:button"
+msgid "Check firewall status"
+msgstr "Vérifier l’état du pare-feu"
+
+msgctxt "@action:button"
+msgid "Turn the firewall on or off"
+msgstr "Activer ou désactiver le pare-feu"
+
+msgctxt "@action:button"
+msgid "Preview, delete or show and hide fonts"
+msgstr "Afficher un aperçu, supprimer, afficher ou masquer des polices"
+
+msgctxt "@action:button"
+msgid "Change where search looks"
+msgstr "Choisir où chercher vos fichiers"
+
+msgctxt "@action:button"
+msgid "Change proxy settings"
+msgstr "Modifier les paramètres du proxy"
+
+msgctxt "@action:button"
+msgid "Change keyboards or other input methods"
+msgstr "Modifier les claviers ou les autres méthodes d’entrée"
+
+msgctxt "@action:button"
+msgid "Change mouse settings"
+msgstr "Modifier les paramètres de la souris"
+
+msgctxt "@action:button"
+msgid "Change the mouse pointer"
+msgstr "Modifier le pointeur de la souris"
+
+msgctxt "@title Control Panel item"
+msgid "Touchpad"
+msgstr "Pavé tactile"
+
+msgctxt "@info"
+msgid "Taps, gestures and scrolling"
+msgstr "Appuis, gestes et défilement"
+
+msgctxt "@action:button"
+msgid "Change touchpad settings"
+msgstr "Modifier les paramètres du pavé tactile"
+
+msgctxt "@title Control Panel item"
+msgid "Pen and Touch"
+msgstr "Stylet et fonction tactile"
+
+msgctxt "@info"
+msgid "Pen buttons and the tablet area"
+msgstr "Boutons du stylet et zone de la tablette"
+
+msgctxt "@action:button"
+msgid "Change pen settings"
+msgstr "Modifier les paramètres du stylet"
+
+msgctxt "@info:search words, comma separated"
+msgid "ethernet, wifi, internet, adapter, ip address, dns"
+msgstr "ethernet, wifi, internet, carte réseau, adresse ip, dns"
+
+msgctxt "@action:button"
+msgid "Change adapter settings"
+msgstr "Modifier les paramètres de la carte"
+
+msgctxt "@action:button"
+msgid "Set up a mobile hotspot"
+msgstr "Configurer un point d’accès mobile"
+
+msgctxt "@action:button"
+msgid "Change the lock screen"
+msgstr "Modifier l’écran de verrouillage"
+
+msgctxt "@action:button"
+msgid "Change system sounds"
+msgstr "Modifier les sons système"
+
+msgctxt "@action:button"
+msgid "Link your phone"
+msgstr "Lier votre téléphone"
+
+msgctxt "@info:search words, comma separated"
+msgid "battery, sleep, hibernate, power plan"
+msgstr "batterie, veille, veille prolongée, mode d’alimentation"
+
+msgctxt "@action:button"
+msgid "Change when the PC sleeps"
+msgstr "Modifier la mise en veille du PC"
+
+msgctxt "@action:button"
+msgid "Choose a power mode"
+msgstr "Choisir un mode d’alimentation"
+
+msgctxt "@info:search words, comma separated"
+msgid "remove, uninstall, apps, software"
+msgstr "supprimer, désinstaller, applications, logiciels"
+
+msgctxt "@action:button"
+msgid "Turn Raye features on or off"
+msgstr "Activer ou désactiver des fonctionnalités de Raye"
+
+msgctxt "@action:button"
+msgid "View installed updates"
+msgstr "Afficher les mises à jour installées"
+
+msgctxt "@info"
+msgid "Repair Raye, reset it or make a recovery drive"
+msgstr "Réparer Raye, le réinitialiser ou créer un lecteur de récupération"
+
+msgctxt "@action:button"
+msgid "Repair Raye"
+msgstr "Réparer Raye"
+
+msgctxt "@action:button"
+msgid "Create a recovery drive"
+msgstr "Créer un lecteur de récupération"
+
+msgctxt "@action:button"
+msgid "Change the display language"
+msgstr "Changer la langue d’affichage"
+
+msgctxt "@action:button"
+msgid "Allow remote connections to this PC"
+msgstr "Autoriser les connexions à distance à ce PC"
+
+msgctxt "@action:button"
+msgid "Connect to another PC"
+msgstr "Se connecter à un autre PC"
+
+msgctxt "@action:button"
+msgid "View update history"
+msgstr "Afficher l’historique des mises à jour"
+
+msgctxt "@action:button"
+msgid "Optional updates and drivers"
+msgstr "Mises à jour facultatives et pilotes"
+
+msgctxt "@info:search words, comma separated"
+msgid "secure boot, uefi, security chip, tpm"
+msgstr "démarrage sécurisé, secure boot, uefi, puce de sécurité, tpm"
+
+msgctxt "@action:button"
+msgid "Check Secure Boot"
+msgstr "Vérifier le démarrage sécurisé"
+
+msgctxt "@info"
+msgid "How Raye keeps your PC safe"
+msgstr "Comment Raye protège votre PC"
+
+msgctxt "@info:search words, comma separated"
+msgid "antivirus, malware, defender"
+msgstr "antivirus, logiciel malveillant, defender"
+
+msgctxt "@action:button"
+msgid "See how this PC is protected"
+msgstr "Voir comment ce PC est protégé"
+
+msgctxt "@info:search words, comma separated"
+msgid "audio, volume, speakers, headphones, microphone"
+msgstr "audio, volume, haut-parleurs, casque, micro"
+
+msgctxt "@action:button"
+msgid "Adjust system volume"
+msgstr "Régler le volume du système"
+
+msgctxt "@action:button"
+msgid "Manage audio devices"
+msgstr "Gérer les périphériques audio"
+
+msgctxt "@action:button"
+msgid "Choose which apps start when you sign in"
+msgstr "Choisir les applications qui démarrent à l’ouverture de session"
+
+msgctxt "@info:search words, comma separated"
+msgid "disk cleanup, disk space, drive"
+msgstr "nettoyage de disque, espace disque, lecteur"
+
+msgctxt "@info:search words, comma separated"
+msgid "about, computer name, ram, version"
+msgstr "à propos, nom de l’ordinateur, mémoire, version"
+
+msgctxt "@action:button"
+msgid "View amount of RAM and processor speed"
+msgstr "Afficher la quantité de mémoire vive et la vitesse du processeur"
+
+msgctxt "@action:button"
+msgid "See the name of this computer"
+msgstr "Voir le nom de cet ordinateur"
+
+msgctxt "@action:button"
+msgid "Allow remote access"
+msgstr "Autoriser l’accès à distance"
+
+msgctxt "@action:button"
+msgid "Change taskbar settings"
+msgstr "Modifier les paramètres de la barre des tâches"
+
+msgctxt "@action:button"
+msgid "Change Start settings"
+msgstr "Modifier les paramètres de Démarrer"
+
+msgctxt "@action:button"
+msgid "Find and fix problems"
+msgstr "Trouver et résoudre des problèmes"
+
+msgctxt "@action:button"
+msgid "Add or remove user accounts"
+msgstr "Ajouter ou supprimer des comptes d’utilisateurs"
+
+msgctxt "@info"
+msgid "Password, fingerprint and automatic sign-in"
+msgstr "Mot de passe, empreinte digitale et connexion automatique"
+
+msgctxt "@action:button"
+msgid "Change your password"
+msgstr "Changer votre mot de passe"
+
+msgctxt "@action:button"
+msgid "Set up fingerprint sign-in"
+msgstr "Configurer la connexion par empreinte digitale"
+
+msgctxt "@title Control Panel item"
+msgid "Sync Center"
+msgstr "Centre de synchronisation"
+
+msgctxt "@info"
+msgid "What follows you to your other PCs"
+msgstr "Ce qui vous suit sur vos autres PC"
+
+msgctxt "@info:search words, comma separated"
+msgid "exe, setup, installer"
+msgstr "exe, installation, programme d’installation"
+
+msgctxt "@action:button"
+msgid "See the Windows programs on this PC"
+msgstr "Voir les programmes Windows de ce PC"
+
+msgctxt "@title tool"
+msgid "Disk Cleanup"
+msgstr "Nettoyage de disque"
+
+msgctxt "@info"
+msgid "Free up space on your drives"
+msgstr "Libérer de l’espace sur vos lecteurs"
+
+msgctxt "@title tool"
+msgid "Character Map"
+msgstr "Table des caractères"
+
+msgctxt "@info"
+msgid "Find a symbol or a letter and copy it"
+msgstr "Trouver un symbole ou une lettre et le copier"
+
+msgctxt "@title tool"
+msgid "Remote Desktop Connection"
+msgstr "Connexion Bureau à distance"
+
+msgctxt "@info"
+msgid "Show and use another PC from this one"
+msgstr "Afficher et utiliser un autre PC depuis celui-ci"
+
+msgctxt "@action:button"
+msgid "Up one level"
+msgstr "Niveau supérieur"
+
+msgctxt "@action:button"
+msgid "Control Panel Home"
+msgstr "Page d’accueil du Panneau de configuration"
+

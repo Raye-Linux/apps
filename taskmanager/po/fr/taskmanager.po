@@ -1,0 +1,866 @@
+# French words of the Task Manager.
+msgid ""
+msgstr ""
+"Project-Id-Version: raye-taskmanager\n"
+"PO-Revision-Date: 2026-11-11 12:00+0000\n"
+"Last-Translator: Raye Linux\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgctxt "@action:button refuse what the sheet asks"
+msgid "Cancel"
+msgstr "Annuler"
+
+msgctxt "@title:column"
+msgid "Name"
+msgstr "Nom"
+
+msgctxt "@title:column process number"
+msgid "PID"
+msgstr "PID"
+
+msgctxt "@title:column"
+msgid "Status"
+msgstr "Statut"
+
+msgctxt "@title:column"
+msgid "User name"
+msgstr "Nom d’utilisateur"
+
+msgctxt "@title:column share of the processor"
+msgid "CPU"
+msgstr "Processeur"
+
+msgctxt "@title:column memory in use"
+msgid "Memory"
+msgstr "Mémoire"
+
+msgctxt "@title:column"
+msgid "Threads"
+msgstr "Threads"
+
+msgctxt "@title:column"
+msgid "Priority"
+msgstr "Priorité"
+
+msgctxt "@item process priority"
+msgid "Low"
+msgstr "Faible"
+
+msgctxt "@item process priority"
+msgid "Below normal"
+msgstr "Inférieure à la normale"
+
+msgctxt "@item process priority"
+msgid "Above normal"
+msgstr "Supérieure à la normale"
+
+msgctxt "@item process priority"
+msgid "High"
+msgstr "Haute"
+
+msgctxt "@item process priority"
+msgid "Normal"
+msgstr "Normale"
+
+msgctxt "@info:status a process using the processor"
+msgid "Running"
+msgstr "En cours"
+
+msgctxt "@info:status a process waiting for something"
+msgid "Waiting"
+msgstr "En attente"
+
+msgctxt "@info:status a process waiting on the disk"
+msgid "On the disk"
+msgstr "Sur le disque"
+
+msgctxt "@info:status a process stopped by a signal"
+msgid "Suspended"
+msgstr "Suspendu"
+
+msgctxt "@info:status a process held by a debugger"
+msgid "Held"
+msgstr "Retenu"
+
+msgctxt "@info:status a process that has ended and not been collected"
+msgid "Ended"
+msgstr "Terminé"
+
+msgctxt "@info:status an idle kernel thread"
+msgid "Idle"
+msgstr "Inactif"
+
+msgctxt "@title"
+msgid "Details"
+msgstr "Détails"
+
+msgctxt "@action:button start a program by its command"
+msgid "Run new task"
+msgstr "Exécuter une nouvelle tâche"
+
+msgctxt "@action:button ask a process to close"
+msgid "End task"
+msgstr "Fin de tâche"
+
+msgctxt "@info the command line of the selected process"
+msgid "Command line: %1"
+msgstr "Ligne de commande : %1"
+
+msgctxt "@action:inmenu"
+msgid "End task"
+msgstr "Fin de tâche"
+
+msgctxt "@action:inmenu end a process and every process it started"
+msgid "End process tree"
+msgstr "Terminer l’arborescence du processus"
+
+msgctxt "@action:inmenu"
+msgid "Efficiency mode"
+msgstr "Mode efficacité"
+
+msgctxt "@action:inmenu set the priority to"
+msgid "Priority: High"
+msgstr "Priorité : haute"
+
+msgctxt "@action:inmenu set the priority to"
+msgid "Priority: Above normal"
+msgstr "Priorité : supérieure à la normale"
+
+msgctxt "@action:inmenu set the priority to"
+msgid "Priority: Normal"
+msgstr "Priorité : normale"
+
+msgctxt "@action:inmenu set the priority to"
+msgid "Priority: Below normal"
+msgstr "Priorité : inférieure à la normale"
+
+msgctxt "@action:inmenu set the priority to"
+msgid "Priority: Low"
+msgstr "Priorité : faible"
+
+msgctxt "@info"
+msgid "That process is no longer there."
+msgstr "Ce processus n’est plus là."
+
+msgctxt "@info"
+msgid "Raising a priority needs root privileges."
+msgstr "Augmenter une priorité demande les droits root."
+
+msgctxt "@title"
+msgid "End the process tree of “%1”?"
+msgstr "Terminer l’arborescence de « %1 » ?"
+
+msgctxt "@action:button"
+msgid "End process tree"
+msgstr "Terminer l’arborescence"
+
+msgctxt "@info"
+msgid "%1 process was asked to close."
+msgid_plural "%1 processes were asked to close."
+msgstr[0] "%1 processus a été invité à se fermer."
+msgstr[1] "%1 processus ont été invités à se fermer."
+
+msgctxt "@info"
+msgid "That process has already ended."
+msgstr "Ce processus s’est déjà terminé."
+
+msgctxt "@title"
+msgid "Turn on efficiency mode for “%1”?"
+msgstr "Activer le mode efficacité pour « %1 » ?"
+
+msgctxt "@action:button"
+msgid "Turn on"
+msgstr "Activer"
+
+msgctxt "@title"
+msgid "Force “%1” to close?"
+msgstr "Forcer la fermeture de « %1 » ?"
+
+msgctxt "@action:button"
+msgid "Force to close"
+msgstr "Forcer la fermeture"
+
+msgctxt "@info"
+msgid "“%1” was asked to close."
+msgstr "« %1 » a été invité à se fermer."
+
+msgctxt "@info"
+msgid "“%1” was already asked to close; giving it a moment."
+msgstr "« %1 » a déjà été invité à se fermer ; on lui laisse un instant."
+
+msgctxt "@info memory size in gibibytes"
+msgid "%1 GB"
+msgstr "%1 Go"
+
+msgctxt "@info memory size in mebibytes"
+msgid "%1 MB"
+msgstr "%1 Mo"
+
+msgctxt "@info memory size in kibibytes"
+msgid "%1 KB"
+msgstr "%1 Ko"
+
+msgctxt "@info a size in bytes"
+msgid "%1 B"
+msgstr "%1 o"
+
+msgctxt "@info disk size in terabytes"
+msgid "%1 TB"
+msgstr "%1 To"
+
+msgctxt "@info disk size in gigabytes"
+msgid "%1 GB"
+msgstr "%1 Go"
+
+msgctxt "@info a transfer rate"
+msgid "%1 MB/s"
+msgstr "%1 Mo/s"
+
+msgctxt "@info a transfer rate"
+msgid "%1 KB/s"
+msgstr "%1 Ko/s"
+
+msgctxt "@info a network speed"
+msgid "%1 Gbps"
+msgstr "%1 Gbit/s"
+
+msgctxt "@info a network speed"
+msgid "%1 Mbps"
+msgstr "%1 Mbit/s"
+
+msgctxt "@info a network speed"
+msgid "%1 Kbps"
+msgstr "%1 Kbit/s"
+
+msgctxt "@info a share, as a percentage"
+msgid "%1%"
+msgstr "%1 %"
+
+msgctxt "@info a clock speed"
+msgid "%1 GHz"
+msgstr "%1 GHz"
+
+msgctxt "@title the apps section of the process list, with how many"
+msgid "Apps (%1)"
+msgstr "Applications (%1)"
+
+msgctxt "@title the background section of the process list, with how many"
+msgid "Background processes (%1)"
+msgstr "Processus en arrière-plan (%1)"
+
+msgctxt "@info an app and how many processes it has"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+msgctxt "@info:status marks a process in the efficiency mode"
+msgid "Efficiency mode"
+msgstr "Mode efficacité"
+
+msgid "Task Manager"
+msgstr "Gestionnaire des tâches"
+
+msgctxt "@title:tab"
+msgid "Processes"
+msgstr "Processus"
+
+msgctxt "@title:tab"
+msgid "Performance"
+msgstr "Performances"
+
+msgctxt "@title:tab"
+msgid "Startup apps"
+msgstr "Applications de démarrage"
+
+msgctxt "@title:tab"
+msgid "Users"
+msgstr "Utilisateurs"
+
+msgctxt "@title:tab"
+msgid "Details"
+msgstr "Détails"
+
+msgctxt "@title:tab"
+msgid "Services"
+msgstr "Services"
+
+msgctxt "@info:placeholder"
+msgid "Type a name or a process number to search"
+msgstr "Tapez un nom ou un numéro de processus"
+
+msgctxt "@action:button"
+msgid "Close navigation"
+msgstr "Fermer la navigation"
+
+msgctxt "@action:button"
+msgid "Open navigation"
+msgstr "Ouvrir la navigation"
+
+msgctxt "@title:tab"
+msgid "Settings"
+msgstr "Paramètres"
+
+msgctxt "@title a wireless network adapter"
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+
+msgctxt "@title a wired network adapter"
+msgid "Ethernet"
+msgstr "Ethernet"
+
+msgctxt "@title a disk, its number and its name in the system"
+msgid "Disk %1 (%2)"
+msgstr "Disque %1 (%2)"
+
+msgctxt "@info a removable disk"
+msgid "Removable"
+msgstr "Amovible"
+
+msgctxt "@info a solid-state disk"
+msgid "SSD"
+msgstr "SSD"
+
+msgctxt "@info a spinning disk"
+msgid "HDD"
+msgstr "HDD"
+
+msgctxt "@title the page of graphs"
+msgid "Performance"
+msgstr "Performances"
+
+msgctxt "@title the processor"
+msgid "CPU"
+msgstr "Processeur"
+
+msgctxt "@title"
+msgid "Memory"
+msgstr "Mémoire"
+
+msgctxt "@info used of total, and the share"
+msgid "%1/%2 (%3)"
+msgstr "%1/%2 (%3)"
+
+msgctxt "@info sent and received"
+msgid "S: %1  R: %2"
+msgstr "E : %1  R : %2"
+
+msgctxt "@info:status a network adapter"
+msgid "Not connected"
+msgstr "Non connecté"
+
+msgctxt "@title a graphics card and its number"
+msgid "GPU %1"
+msgstr "GPU %1"
+
+msgctxt "@title a graphics card"
+msgid "GPU"
+msgstr "GPU"
+
+msgctxt "@label above the processor graph"
+msgid "% Utilization"
+msgstr "% d’utilisation"
+
+msgctxt "@label above the memory graph"
+msgid "Memory usage"
+msgstr "Utilisation de la mémoire"
+
+msgctxt "@label above the disk graph"
+msgid "Active time"
+msgstr "Temps d’activité"
+
+msgctxt "@label above the network graph"
+msgid "Throughput"
+msgstr "Débit"
+
+msgctxt "@label above the graphics card graph"
+msgid "Utilization"
+msgstr "Utilisation"
+
+msgctxt "@label the top of a graph"
+msgid "100%"
+msgstr "100 %"
+
+msgctxt "@info"
+msgid "The driver of this graphics card does not say how busy it is."
+msgstr "Le pilote de cette carte graphique n’indique pas sa charge."
+
+msgctxt "@label under a graph: how far back it goes"
+msgid "60 seconds"
+msgstr "60 secondes"
+
+msgctxt "@label"
+msgid "Utilization"
+msgstr "Utilisation"
+
+msgctxt "@label the processor's clock now"
+msgid "Speed"
+msgstr "Vitesse"
+
+msgctxt "@label"
+msgid "Processes"
+msgstr "Processus"
+
+msgctxt "@label"
+msgid "Threads"
+msgstr "Threads"
+
+msgctxt "@label time since the machine started"
+msgid "Up time"
+msgstr "Temps de fonctionnement"
+
+msgctxt "@label memory"
+msgid "In use"
+msgstr "Utilisée"
+
+msgctxt "@label memory"
+msgid "Available"
+msgstr "Disponible"
+
+msgctxt "@label memory promised to programs, and the most that can be"
+msgid "Committed"
+msgstr "Validée"
+
+msgctxt "@info committed of the limit"
+msgid "%1/%2"
+msgstr "%1/%2"
+
+msgctxt "@label memory holding files"
+msgid "Cached"
+msgstr "En cache"
+
+msgctxt "@label"
+msgid "Active time"
+msgstr "Temps d’activité"
+
+msgctxt "@label disk"
+msgid "Read speed"
+msgstr "Vitesse de lecture"
+
+msgctxt "@label disk"
+msgid "Write speed"
+msgstr "Vitesse d’écriture"
+
+msgctxt "@label network"
+msgid "Send"
+msgstr "Envoi"
+
+msgctxt "@label network"
+msgid "Receive"
+msgstr "Réception"
+
+msgctxt "@info"
+msgid "Yes"
+msgstr "Oui"
+
+msgctxt "@info"
+msgid "No"
+msgstr "Non"
+
+msgctxt "@label the processor's highest clock"
+msgid "Base speed:"
+msgstr "Vitesse de base :"
+
+msgctxt "@label"
+msgid "Sockets:"
+msgstr "Sockets :"
+
+msgctxt "@label"
+msgid "Cores:"
+msgstr "Cœurs :"
+
+msgctxt "@label"
+msgid "Logical processors:"
+msgstr "Processeurs logiques :"
+
+msgctxt "@label running inside a virtual machine"
+msgid "Virtual machine:"
+msgstr "Machine virtuelle :"
+
+msgctxt "@label"
+msgid "L1 cache:"
+msgstr "Cache L1 :"
+
+msgctxt "@label"
+msgid "L2 cache:"
+msgstr "Cache L2 :"
+
+msgctxt "@label"
+msgid "L3 cache:"
+msgstr "Cache L3 :"
+
+msgctxt "@label memory"
+msgid "Total:"
+msgstr "Total :"
+
+msgctxt "@label the swap space"
+msgid "Swap:"
+msgstr "Fichier d’échange :"
+
+msgctxt "@info used of total"
+msgid "%1 of %2"
+msgstr "%1 sur %2"
+
+msgctxt "@info no swap"
+msgid "None"
+msgstr "Aucun"
+
+msgctxt "@label"
+msgid "Capacity:"
+msgstr "Capacité :"
+
+msgctxt "@label"
+msgid "Type:"
+msgstr "Type :"
+
+msgctxt "@label the disk's name in the system"
+msgid "Device:"
+msgstr "Périphérique :"
+
+msgctxt "@label"
+msgid "Adapter name:"
+msgstr "Nom de la carte :"
+
+msgctxt "@label"
+msgid "Connection type:"
+msgstr "Type de connexion :"
+
+msgctxt "@label"
+msgid "Link speed:"
+msgstr "Vitesse de liaison :"
+
+msgctxt "@label"
+msgid "IPv4 address:"
+msgstr "Adresse IPv4 :"
+
+msgctxt "@label"
+msgid "IPv6 address:"
+msgstr "Adresse IPv6 :"
+
+msgctxt "@label"
+msgid "Driver:"
+msgstr "Pilote :"
+
+msgctxt "@label"
+msgid "Dedicated memory:"
+msgstr "Mémoire dédiée :"
+
+msgctxt "@title the page of running programs"
+msgid "Processes"
+msgstr "Processus"
+
+msgctxt "@action:button put a process in the efficiency mode"
+msgid "Efficiency mode"
+msgstr "Mode efficacité"
+
+msgctxt "@title:column the process's name"
+msgid "Name"
+msgstr "Nom"
+
+msgctxt "@title:column what the process is doing"
+msgid "Status"
+msgstr "Statut"
+
+msgctxt "@title:column disk reads and writes"
+msgid "Disk"
+msgstr "Disque"
+
+msgctxt "@info a search found nothing"
+msgid "No results"
+msgstr "Aucun résultat"
+
+msgctxt "@action:inmenu ask a process to close"
+msgid "End task"
+msgstr "Fin de tâche"
+
+msgctxt "@action:inmenu open the Details page on this process"
+msgid "Go to details"
+msgstr "Accéder aux détails"
+
+msgctxt "@info"
+msgid "Only its disk priority could be lowered."
+msgstr "Seule sa priorité d’accès au disque a pu être baissée."
+
+msgctxt "@title"
+msgid "Run new task"
+msgstr "Exécuter une nouvelle tâche"
+
+msgctxt "@info"
+msgid "Type the name of a program and Raye will open it for you."
+msgstr "Tapez le nom d’un programme et Raye l’ouvrira pour vous."
+
+
+msgctxt "@info"
+msgid "That program could not be found."
+msgstr "Ce programme est introuvable."
+
+msgctxt "@option:check"
+msgid "Run this task as root"
+msgstr "Exécuter cette tâche en tant que root"
+
+msgctxt "@action:button"
+msgid "Cancel"
+msgstr "Annuler"
+
+msgctxt "@action:button start the program"
+msgid "OK"
+msgstr "OK"
+
+msgctxt "@info"
+msgid "You need root privileges to change “%1”."
+msgstr "Il faut les droits root pour modifier « %1 »."
+
+msgctxt "@info"
+msgid "“%1” could not be changed."
+msgstr "« %1 » n’a pas pu être modifié."
+
+msgctxt "@info:status a service"
+msgid "Running"
+msgstr "En cours d’exécution"
+
+msgctxt "@info:status a service that ran once and is done"
+msgid "Done"
+msgstr "Terminé"
+
+msgctxt "@info:status a service"
+msgid "Failed"
+msgstr "En échec"
+
+msgctxt "@info:status a service"
+msgid "Starting"
+msgstr "Démarrage"
+
+msgctxt "@info:status a service"
+msgid "Stopping"
+msgstr "Arrêt en cours"
+
+msgctxt "@info:status a service"
+msgid "Stopped"
+msgstr "Arrêté"
+
+msgctxt "@info a service that starts with the computer"
+msgid "Automatic"
+msgstr "Automatique"
+
+msgctxt "@info a service started only when asked"
+msgid "Manual"
+msgstr "Manuel"
+
+msgctxt "@info a service that cannot be started"
+msgid "Disabled"
+msgstr "Désactivé"
+
+msgctxt "@info a service started by another one"
+msgid "By another service"
+msgstr "Par un autre service"
+
+msgctxt "@title"
+msgid "Services"
+msgstr "Services"
+
+msgctxt "@action:button a service"
+msgid "Start"
+msgstr "Démarrer"
+
+msgctxt "@action:button a service"
+msgid "Stop"
+msgstr "Arrêter"
+
+msgctxt "@action:button a service"
+msgid "Restart"
+msgstr "Redémarrer"
+
+msgctxt "@title:column"
+msgid "Description"
+msgstr "Description"
+
+msgctxt "@title:column how a service starts"
+msgid "Startup"
+msgstr "Démarrage"
+
+msgctxt "@info:status waiting for an answer"
+msgid "Working…"
+msgstr "En cours…"
+
+msgctxt "@info"
+msgid "The list of services could not be read."
+msgstr "La liste des services n’a pas pu être lue."
+
+msgctxt "@action:inmenu a service"
+msgid "Start"
+msgstr "Démarrer"
+
+msgctxt "@action:inmenu a service"
+msgid "Stop"
+msgstr "Arrêter"
+
+msgctxt "@action:inmenu a service"
+msgid "Restart"
+msgstr "Redémarrer"
+
+msgctxt "@item update speed"
+msgid "High"
+msgstr "Élevée"
+
+msgctxt "@item update speed"
+msgid "Normal"
+msgstr "Normale"
+
+msgctxt "@item update speed"
+msgid "Low"
+msgstr "Faible"
+
+msgctxt "@item update speed"
+msgid "Paused"
+msgstr "En pause"
+
+msgctxt "@title"
+msgid "Settings"
+msgstr "Paramètres"
+
+msgctxt "@label"
+msgid "Default start page"
+msgstr "Page de démarrage par défaut"
+
+msgctxt "@info"
+msgid "The page the Task Manager opens on."
+msgstr "La page sur laquelle s’ouvre le Gestionnaire des tâches."
+
+msgctxt "@label"
+msgid "Real time update speed"
+msgstr "Vitesse d’actualisation en temps réel"
+
+msgctxt "@info"
+msgid "How often the figures are read. Slower uses less of the processor."
+msgstr "La fréquence de lecture des chiffres. Plus lent sollicite moins le processeur."
+
+msgctxt "@info startup impact"
+msgid "None"
+msgstr "Aucun"
+
+msgctxt "@info startup impact"
+msgid "Low"
+msgstr "Faible"
+
+msgctxt "@info startup impact"
+msgid "Medium"
+msgstr "Moyen"
+
+msgctxt "@info startup impact"
+msgid "High"
+msgstr "Élevé"
+
+msgctxt "@info startup impact of an entry that is not running"
+msgid "Not measured"
+msgstr "Non mesuré"
+
+msgctxt "@info"
+msgid "The change could not be saved."
+msgstr "La modification n’a pas pu être enregistrée."
+
+msgctxt "@title"
+msgid "Startup apps"
+msgstr "Applications de démarrage"
+
+msgctxt "@action:button stop an app starting at sign-in"
+msgid "Disable"
+msgstr "Désactiver"
+
+msgctxt "@action:button let an app start at sign-in"
+msgid "Enable"
+msgstr "Activer"
+
+msgctxt "@title:column"
+msgid "Startup impact"
+msgstr "Impact du démarrage"
+
+msgctxt "@info:status starts at sign-in"
+msgid "Enabled"
+msgstr "Activé"
+
+msgctxt "@info:status does not start at sign-in"
+msgid "Disabled"
+msgstr "Désactivé"
+
+msgctxt "@info"
+msgid "Nothing starts at sign-in."
+msgstr "Rien ne démarre à l’ouverture de session."
+
+msgctxt "@action:inmenu"
+msgid "Disable"
+msgstr "Désactiver"
+
+msgctxt "@action:inmenu"
+msgid "Enable"
+msgstr "Activer"
+
+msgctxt "@title"
+msgid "Users"
+msgstr "Utilisateurs"
+
+msgctxt "@title:column"
+msgid "User"
+msgstr "Utilisateur"
+
+msgctxt "@title:column"
+msgid "Processes"
+msgstr "Processus"
+
+msgctxt "@info the account in use, and its login"
+msgid "%1 (you)"
+msgstr "%1 (vous)"
+
+msgctxt "@info"
+msgid "Every program it started is asked to close too. Anything they have not saved may be lost."
+msgstr "Tous les programmes qu’il a lancés seront aussi fermés. Ce qu’ils n’ont pas enregistré peut être perdu."
+
+msgctxt "@info"
+msgid "It will only run when nothing else needs the processor. You can turn it off later."
+msgstr "Il ne s’exécutera que lorsque rien d’autre n’a besoin du processeur. Vous pourrez le désactiver ensuite."
+
+msgctxt "@info"
+msgid "It will only run when nothing else needs the processor. You can't turn this off until it restarts."
+msgstr "Il ne s’exécutera que lorsque rien d’autre n’a besoin du processeur. Vous ne pourrez pas le désactiver avant son redémarrage."
+
+msgctxt "@info"
+msgid "It was asked to close and has not. Forcing it loses anything it has not saved."
+msgstr "Il n’a pas répondu à la demande de fermeture. Le forcer à se fermer perdra ce qui n’est pas enregistré."
+
+msgctxt "@info"
+msgid "Programs with a window can't run as root. Open it the usual way: it asks for the password when it needs it."
+msgstr "Les programmes avec une fenêtre ne peuvent pas s’exécuter en tant que root. Ouvrez-le normalement : il demandera le mot de passe quand il en aura besoin."
+
+msgctxt "@info"
+msgid "The password wasn't given, so nothing ran."
+msgstr "Le mot de passe n’a pas été saisi, donc rien n’a été lancé."
+
+msgctxt "@info"
+msgid "Running it as root wasn't allowed."
+msgstr "L’exécution en tant que root n’a pas été autorisée."
+
+msgctxt "@info"
+msgid "It stopped with error code %1."
+msgstr "Il s’est arrêté avec le code d’erreur %1."
+
+msgctxt "@info:placeholder"
+msgid "For example: notepad"
+msgstr "Par exemple : notepad"
+
+msgctxt "@info"
+msgid "Waiting for the root password…"
+msgstr "En attente du mot de passe root…"
+
+msgctxt "@info"
+msgid "Done. It wrote:"
+msgstr "Terminé. Il a affiché :"
+
+msgctxt "@info"
+msgid "For commands without a window. What they write shows up here when they finish."
+msgstr "Pour les commandes sans fenêtre. Ce qu’elles affichent apparaît ici à la fin."
+
+msgctxt "@action:button"
+msgid "Close"
+msgstr "Fermer"

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+  <mime-type type="application/x-raye-registry">
+    <comment>Registry file</comment>
+    <comment xml:lang="fr">Fichier du Registre</comment>
+    <sub-class-of type="text/plain"/>
+    <glob pattern="*.rayereg"/>
+    <icon name="org.raye.regedit"/>
+  </mime-type>
+</mime-info>

@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+
+# the generated files belong to no package: take them away with it
+if [ "$1" = "remove" ] || [ "$1" = "purge" ]; then
+    rm -rf /usr/share/raye/app-overrides
+    rmdir --ignore-fail-on-non-empty /usr/share/raye 2>/dev/null || true
+fi
+
+#DEBHELPER#
+
+exit 0

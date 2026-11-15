@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Name=Calendar
+Name[fr]=Calendrier
+GenericName=Calendar
+GenericName[fr]=Calendrier
+Comment=Keep your important dates and get a reminder on time
+Comment[fr]=Notez vos dates importantes et recevez un rappel au bon moment
+Exec=raye-calendar %U
+Icon=org.raye.calendar
+Categories=Office;Calendar;Qt;
+Keywords=calendar;agenda;event;reminder;date;birthday;
+Keywords[fr]=calendrier;agenda;événement;rappel;date;anniversaire;
+MimeType=text/calendar;x-scheme-handler/raye-calendar;
+StartupNotify=true

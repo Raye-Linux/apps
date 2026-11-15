@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="bg" x1="6" y1="4" x2="42" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2a1a44"/>
+      <stop offset="1" stop-color="#140d22"/>
+    </linearGradient>
+    <linearGradient id="tone" x1="10" y1="10" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7b3cff"/>
+      <stop offset="1" stop-color="#c040ff"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="40" height="40" rx="9" fill="url(#bg)"/>
+  <rect x="4.5" y="4.5" width="39" height="39" rx="8.5" fill="none" stroke="#ffffff" stroke-opacity="0.12"/>
+  <!-- a key and its subkeys, the shape of the tree -->
+  <path d="M15 17 V31 H23 M15 24 H23" fill="none" stroke="#b9a8d6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="10" y="10" width="10" height="8" rx="2" fill="url(#tone)"/>
+  <rect x="23" y="20" width="15" height="8" rx="2" fill="#f3eaff" fill-opacity="0.9"/>
+  <rect x="23" y="27" width="15" height="8" rx="2" fill="url(#tone)" opacity="0.95"/>
+  <path d="M26 24 H34" stroke="#7b3cff" stroke-width="1.8" stroke-linecap="round"/>
+</svg>

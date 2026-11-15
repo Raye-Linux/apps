@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+
+# KWin starts this helper when you close a window that stopped
+# responding. Raye's own takes its place; KWin's stays, renamed, and
+# Raye's falls back to it.
+helper=/usr/lib/#DEB_HOST_MULTIARCH#/libexec/kwin_killer_helper
+
+if [ "$1" = "install" ] || [ "$1" = "upgrade" ]; then
+    dpkg-divert --package raye-killer-helper --add --rename \
+        --divert "$helper.kwin" "$helper"
+fi
+
+#DEBHELPER#
+
+exit 0

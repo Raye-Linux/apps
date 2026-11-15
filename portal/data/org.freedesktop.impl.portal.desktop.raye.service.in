@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.freedesktop.impl.portal.desktop.raye
+Exec=@KDE_INSTALL_FULL_LIBEXECDIR@/xdg-desktop-portal-raye
+SystemdService=xdg-desktop-portal-raye.service

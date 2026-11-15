@@ -1,0 +1,11 @@
+[Unit]
+Description=Screen sharing for apps
+PartOf=graphical-session.target
+After=plasma-core.target
+
+[Service]
+ExecStart=@KDE_INSTALL_FULL_LIBEXECDIR@/xdg-desktop-portal-raye
+BusName=org.freedesktop.impl.portal.desktop.raye
+Slice=session.slice
+# started on demand over D-Bus, so no restart
+Restart=no

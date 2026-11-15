@@ -1,0 +1,123 @@
+#!/usr/bin/env python3
+# Writes the stock apps' .desktop files again under Raye's names, in a
+# folder that comes first in XDG_DATA_DIRS, so a package update cannot
+# undo the names. The stock files themselves are never changed.
+#
+# identity.json says what each app is called. Run by the package on
+# install and each time a package changes /usr/share/applications.
+
+import argparse
+import json
+import os
+import pathlib
+import re
+import sys
+import tempfile
+
+SOURCE = "/usr/share/applications"
+TABLE = "/usr/share/raye/app-identity/identity.json"
+OUTPUT = "/usr/share/raye/app-overrides/applications"
+
+# The words of the stock entry that a renamed app must not keep, in any
+# language: only the table speaks for it.
+WORDS = re.compile(r"(Name|GenericName|Comment|Keywords|X-GNOME-FullName|Icon)(\[[^]]*\])?\s*=")
+HIDE = re.compile(r"NoDisplay\s*=")
+
+
+class NotADesktopFile(Exception):
+    pass
+
+
+def localized(key, texts):
+    return [f"{key}={texts['en']}", f"{key}[fr]={texts['fr']}"]
+
+
+def old_name(head):
+    """The stock name, lower case: kept as a search word, never shown, so
+    typing it still finds the app under its new name."""
+    for line in head:
+        key, _, value = line.partition("=")
+        if key.strip() == "Name":
+            return value.strip().lower().replace(";", " ")
+    return ""
+
+
+def rewrite(text, app, hide):
+    """The .desktop file with the table's words in its main group."""
+    lines = text.splitlines()
+    try:
+        start = lines.index("[Desktop Entry]")
+    except ValueError:
+        raise NotADesktopFile("no [Desktop Entry] group") from None
+    end = next((i for i in range(start + 1, len(lines)) if lines[i].startswith("[")), len(lines))
+    head = lines[start + 1:end]
+
+    head = [line for line in head if not HIDE.match(line)]
+    added = []
+    if "name" in app:
+        old = old_name(head)
+        head = [line for line in head if not WORDS.match(line)]
+        added += localized("Name", app["name"]) + localized("Comment", app["comment"])
+        words = dict(app.get("keywords", {"en": "", "fr": ""}))
+        if old and old != app["name"]["en"].lower():
+            words = {lang: f"{text}{old};" for lang, text in words.items()}
+        if any(words.values()):
+            added += localized("Keywords", words)
+        added.append(f"Icon={app['icon']}")
+    if hide:
+        added.append("NoDisplay=true")
+
+    # a blank line stays between the groups, wherever the words went
+    tail = []
+    while head and not head[-1].strip():
+        tail.append(head.pop())
+    out = lines[:start + 1] + head + added + tail + lines[end:]
+    return "\n".join(out) + "\n"
+
+
+def write(path, text):
+    """Readers see the old file or the new one, never half of one."""
+    fd, tmp = tempfile.mkstemp(dir=path.parent, prefix=".raye-")
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as f:
+            f.write(text)
+        os.chmod(tmp, 0o644)
+        os.replace(tmp, path)
+    except BaseException:
+        os.unlink(tmp)
+        raise
+
+
+def run(source, table, output):
+    apps = json.loads(table.read_text(encoding="utf-8"))["apps"]
+    output.mkdir(parents=True, exist_ok=True)
+    os.chmod(output, 0o755)
+    failed = 0
+    for desktop_id, app in apps.items():
+        stock = source / desktop_id
+        mine = output / desktop_id
+        if not stock.is_file():
+            mine.unlink(missing_ok=True)
+            continue
+        replaced = app.get("replaced_by")
+        hide = app.get("hidden", False) or bool(replaced and (source / replaced).is_file())
+        try:
+            write(mine, rewrite(stock.read_text(encoding="utf-8"), app, hide))
+        except (OSError, UnicodeError, NotADesktopFile) as err:
+            print(f"raye-app-overrides: {desktop_id}: {err}", file=sys.stderr)
+            mine.unlink(missing_ok=True)
+            failed += 1
+    return 1 if failed else 0
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Write the stock apps under Raye's names.")
+    parser.add_argument("--source", type=pathlib.Path, default=pathlib.Path(SOURCE))
+    parser.add_argument("--table", type=pathlib.Path, default=pathlib.Path(TABLE))
+    parser.add_argument("--output", type=pathlib.Path, default=pathlib.Path(OUTPUT))
+    args = parser.parse_args()
+    return run(args.source, args.table, args.output)
+
+
+if __name__ == "__main__":
+    sys.exit(main())

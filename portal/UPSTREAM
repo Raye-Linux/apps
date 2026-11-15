@@ -1,0 +1,56 @@
+# Files of xdg-desktop-portal-kde carried by xdg-desktop-portal-raye.
+# sync-upstream.sh reads this. as-is: byte for byte the release below;
+# edited: changed here (look for "Raye:"), merge upstream changes by hand.
+upstream xdg-desktop-portal-kde
+version 6.6.6
+url https://download.kde.org/stable/plasma/@VERSION@/xdg-desktop-portal-kde-@VERSION@.tar.xz
+sha256 5015d0346985e0b5d259d656a099a1bb3af8409e6b6241030c2fdfeedacd9e78
+
+file src/CMakeLists.txt src/CMakeLists.txt db56077a93bff4330edd7ba33fd9a02c37ba053607d13c20ac3f618e0d8b9ebc edited
+file src/PipeWireDelegate.qml src/PipeWireDelegate.qml 885e8677eacdf4599a44a4cef5ec7817c7b47bbdd0a24d6251739ed871707929 as-is
+file src/PipeWireLayout.qml src/PipeWireLayout.qml d69bc546a3257fb6cc8b82270df3fceb0552d8c8f628d659e0bd37219f512e25 as-is
+file src/PortalDialog.qml src/PortalDialog.qml 51cb75893418f57193dc79cce5246f1de94556718e3fb31abdd9d73cc665428d as-is
+file src/RemoteDesktopDialog.qml src/RemoteDesktopDialog.qml baa8f865bf173b802ec6172960ba05f5a0cc4b609bd23cfd747ed2be795c98b6 as-is
+file src/ScreenChooserDialog.qml src/ScreenChooserDialog.qml 1fa26692ca06ad1512819f0a304ba6732e21bf5a2b07b82a9d9813dc06c1c882 as-is
+file src/ScreenChooserDialogTemplate.qml src/ScreenChooserDialogTemplate.qml 0a6c3dd8c69495497cca1fdc31dca60802379189697e2612e7ecbb3a6781bdb8 as-is
+file src/clipboard.cpp src/clipboard.cpp 5ff1c7af54aaaeebf5b2fc954bd66a244099e4903f6e7ccf8442c4d092b58be1 as-is
+file src/clipboard.h src/clipboard.h 9225ed66417080783f8923d914b6cea08beefbcff165bc021035666ac6198857 as-is
+file src/dbushelpers.cpp src/dbushelpers.cpp cfa6614eec51d4e25826b01d9d51c64290fe1dce59899402b4af963358d405b6 as-is
+file src/dbushelpers.h src/dbushelpers.h 025dd7615edbb9bca16a77d5c83b9605d646585ea4aa16646d3079e24a2b84ae as-is
+file src/desktopportal.cpp src/desktopportal.cpp 03ddb2b4324d30982eca7a226d04f1371fcd83e4e783831b5ae327a7ad4114d3 edited
+file src/desktopportal.h src/desktopportal.h cb7b2ac66757c2e136de443f97815962cd7025fd9ad034c36a266b08f1e3f1ab edited
+file src/xdg-desktop-portal-kde.cpp src/main.cpp 4048fb035c34e2ed953326a0cf7402feea7e75c82ce44e52ad6ad95be3ce1dab edited
+file src/notificationinhibition.cpp src/notificationinhibition.cpp 45d7287f379a6a5ea8a5217e00fdc6c7a38fed1ea0b303a87de3d458a5b0484a as-is
+file src/notificationinhibition.h src/notificationinhibition.h f934818920f72473a9c8e167d33eb5b056b66132f505c3e16b1fea427af89d33 as-is
+file src/org.freedesktop.impl.portal.Session.xml src/org.freedesktop.impl.portal.Session.xml c3f0c4a739f9cc7d0124ac137ce5af8dd49478fd84a75dab5cb805ad238694d0 as-is
+file src/outputsmodel.cpp src/outputsmodel.cpp 64e09cecdafddaf782e3bf618405cd1e96a720dc4643195319505024f8416c45 as-is
+file src/outputsmodel.h src/outputsmodel.h f00971aec25bf7e0bdcaf87145e7491a399c8e839ed342cc0f9672231a25de96 as-is
+file src/quickdialog.cpp src/quickdialog.cpp a0098998ada860f7567e45653a508663c4200d11620e0e625fe92b5bee65ba28 edited
+file src/quickdialog.h src/quickdialog.h b5c0ab0ede13e8aecc4bfa268b2ac4c1222ce0ec9ff123e40e92077a27c252c3 edited
+file src/remotedesktop.cpp src/remotedesktop.cpp a47cf07ea8d8447559dc80b634dcb1c7ce567a635ff7b6f107421097cdc49c50 as-is
+file src/remotedesktop.h src/remotedesktop.h 48ff72be2500e6bc2ab5bc538e1e26f821892f2cf225ccc09b74a348a77db5fd as-is
+file src/remotedesktopdialog.cpp src/remotedesktopdialog.cpp 3faf86fe2388f9d86be931064099cce2bdfbc2343a5ac58e843e2b572fea2bc9 as-is
+file src/remotedesktopdialog.h src/remotedesktopdialog.h 9ec0a9b4fca85ebacbadf54d31528c29629f20137d4aa849bd7a6dc29f2aa7da as-is
+file src/request.cpp src/request.cpp 0ffb13c0d7e1ab847288ba9a5d27fc3686441af6972753a04084efa0e96d2b98 as-is
+file src/request.h src/request.h 0c8756250adcbc0fda3426743a4e67e316118e3a168a38b48bef9263f196e10f as-is
+file src/restoredata.cpp src/restoredata.cpp 8521c9b0ad8ae20296ebd587f9f63cd6efe1d7c404ec5d18b790620f78adc81b as-is
+file src/restoredata.h src/restoredata.h a0a6fd5b290a796afa2263fc50fa467ab8c0639078c83ff03eb35e2cd3a3ae58 as-is
+file src/screencast.cpp src/screencast.cpp 10cfcf05b88f052e33f8d4242d675c824fd708f76bdad124396c06406632fa2c edited
+file src/screencast.h src/screencast.h 2c7e955bd6b52e2ca208f55371e06df68b871877ca6b27c81906e81fa13710f3 edited
+file src/screencasting.cpp src/screencasting.cpp 3e10f57c84f45b41837fa3f9ef1d103b55991fc085a8c1928c2a5a1c5ca671bc as-is
+file src/screencasting.h src/screencasting.h a8a0c3aa0dc41607232941195c76279e2c77be62d26fee8db4ad4bdab8fdde46 as-is
+file src/screenchooserdialog.cpp src/screenchooserdialog.cpp dad7cd43ed010af2a5a706f8db18ddc03e6e1f4012973cad3f4e86a68a8a8bb5 edited
+file src/screenchooserdialog.h src/screenchooserdialog.h 1f0b74cafab7cec5c18c60e993d6183fd19724fa199735793372886f9b051f03 edited
+file src/session.cpp src/session.cpp 53013d1a50b8d0b8c5d67e78e313ace83d72846f2a410864bcbd61c6541fef25 edited
+file src/session.h src/session.h 6a7a28af8c62240642cdc4a33a7ffd506ddc0de4a95921b1459b64754bc3d038 as-is
+file src/utils.cpp src/utils.cpp 2e9c8833a27cfb2fc3efe559a2df77c71c43c8d1e77c0ba5caf112b3304e4623 as-is
+file src/utils.h src/utils.h ba405c41a8f2fdf8356fbf842104e9913f404438280c94007e623cfe326766c6 as-is
+file src/waylandintegration.cpp src/waylandintegration.cpp 016d3814f69c4b402d6b6700a9620d17fd005f25dde72b1f2e2fdcff2480aaac as-is
+file src/waylandintegration.h src/waylandintegration.h 34b1c48ce2578ae7022f32730355ce6531c2af761ad4c6ce6b79eac3ab92af49 as-is
+file src/waylandintegration_p.h src/waylandintegration_p.h 1b9168f1d79c6c7315fbd713115c95eed3bdbcf432896cc346f9c6d1e616822e as-is
+file src/region-select/FloatingBackground.qml src/region-select/FloatingBackground.qml c4e2bc427c4a695411c8dfb69ad5fba735b6487c96ba0b32f60c72a178f65bf3 as-is
+file src/region-select/FloatingTextBox.qml src/region-select/FloatingTextBox.qml ce3223418668a7fb3622c74e190fdfe91a68c0c4910bd5ca5ad0abed02ae3168 as-is
+file src/region-select/RegionSelectOverlay.qml src/region-select/RegionSelectOverlay.qml 6371e3e7d1edf0eff26c1e061a5b6e9fcaf34be686d1ed99a59a117d6ea5cdab as-is
+file src/region-select/SelectionEditor.cpp src/region-select/SelectionEditor.cpp c49d7f6f508b09e8cc34dbfdf46ccad71eadf34826411bca6ff53e099331ca34 as-is
+file src/region-select/SelectionEditor.h src/region-select/SelectionEditor.h f15ce5bcd6bd7e04ed9735abca723b62c989e6d74400e1dfc4bd661075a18b9b as-is
+file data/org.freedesktop.impl.portal.PermissionStore.xml data/org.freedesktop.impl.portal.PermissionStore.xml 8434d3e420d68cce4842b6c9b6a8daa339f7532f8762446b7fd02de2297cd141 as-is

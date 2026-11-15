@@ -1,0 +1,14 @@
+out/
+*.deb
+*.ddeb
+*.buildinfo
+*.changes
+build/
+obj-*/
+debian/build/
+debian/.debhelper/
+debian/files
+debian/*.substvars
+debian/*/
+!debian/source/
+__pycache__/

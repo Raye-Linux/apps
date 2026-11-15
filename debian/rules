@@ -1,0 +1,50 @@
+#!/usr/bin/make -f
+#
+# One CMake tree, one Debian package per app. Each app folder installs
+# into the CMake component named after its package, and
+# cmake/RayeDebianInstall.cmake puts every component into its package
+# folder (no .install lists). An app folder that is not written yet has
+# no stanza in debian/control, so no .deb is built for it at all --
+# RayeDebianInstall.cmake refuses the pairing, because a stanza alone
+# ships a package holding nothing but /usr/share/doc with its full
+# Depends. Its maintainer scripts may stay in debian/ (the terminal
+# alternative, the diversion of KWin's helper): dh only looks at the
+# packages debian/control declares, so they wait, inert, for the stanza.
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+# the QtTest programs run without a display
+export QT_QPA_PLATFORM = offscreen
+# ctest prints "No tests were found!!!" and exits 0. A package whose
+# tests stop being registered -- a renamed tests/ folder, a find_package
+# that quietly goes missing, BUILD_TESTING flipped -- then BUILDS GREEN
+# with nothing run, and the only trace is one line in an 8 MB log.
+# Measured in the resolute chroot: bare ctest on an empty tree exits 0,
+# with this set it exits 8. iso/tools/tests/test_ctest_no_tests_guard.py
+# fails if any debian/rules that runs dh_auto_test loses this line.
+export CTEST_NO_TESTS_ACTION = error
+
+B = debian/build
+
+%:
+	dh $@ --buildsystem=cmake --builddirectory=$(B)
+
+override_dh_auto_configure:
+	dh_auto_configure -- -DBUILD_TESTING=$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),OFF,ON)
+
+override_dh_auto_install:
+	cmake -DBUILD_DIR=$(B) -DDEBIAN_DIR=debian -DCONTROL=debian/control \
+		-P cmake/RayeDebianInstall.cmake
+
+# There is no -N filtering here, and there must not be. Passing
+# -N<package> for a package debian/control does not declare is a HARD
+# ERROR -- "Requested unknown package <p> via -N/--no-package" -- so the
+# filtering this rule used to carry became fatal the moment the eleven
+# empty stanzas were taken out. Measured 2026-11-06 on Raye Linux:
+# eleven of those errors in one build, after every ctest had passed.
+# Nothing needs skipping now: a package whose folder is unwritten has no
+# stanza, so dh_installdeb never sees it.
+# The list must still exist -- it is what RayeDebianInstall.cmake reads,
+# and a missing one would mean the configure never ran.
+override_dh_installdeb:
+	test -f $(B)/raye-packages.list
+	dh_installdeb

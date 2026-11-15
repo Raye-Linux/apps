@@ -1,0 +1,2 @@
+{"version": 2, "categories": [{"id": "system", "pages": [{"id": "system/display"}]},
+ {"id": "network", "pages": [{"id": "network/wifi", "requires": "wifi"}, {"id": "network/ethernet"}]}]}

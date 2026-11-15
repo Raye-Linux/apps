@@ -1,0 +1,22 @@
+# French words of the screen-sharing backend (AP-15).
+msgid ""
+msgstr ""
+"Project-Id-Version: xdg-desktop-portal-raye\n"
+"PO-Revision-Date: 2026-10-31 12:00+0000\n"
+"Last-Translator: Raye Linux\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: src/raye/appidentity.cpp
+msgctxt "@label an app whose name is not known"
+msgid "An app"
+msgstr "Une application"
+
+#: src/main.cpp
+msgctxt "@title the part of the system that shares the screen"
+msgid "Screen sharing"
+msgstr "Partage d'écran"

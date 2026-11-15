@@ -1,0 +1,82 @@
+raye-apps (0.5.1~beta1) resolute; urgency=medium
+
+  * Control Panel answers clicks at once and shows the busy pointer while the page opens.
+
+ -- techoraye <190692880+techoraye@users.noreply.github.com>  Fri, 13 Nov 2026 17:33:00 +0000
+
+raye-apps (0.5~beta1) resolute; urgency=medium
+
+  * Task Manager: the Performance page no longer blinks at each refresh,
+    and the Run new task and confirm sheets are opaque and dim the
+    window behind.
+  * Run new task opens Raye's own apps for regedit, taskmgr, control and
+    cmd, refuses windowed programs as root and says why, and shows what
+    a root command printed.
+  * Task Manager checks a process again after the password before
+    changing its priority, and shows the PID of services with a dash in
+    their name.
+  * Registry Editor asks for the root password for every system change,
+    Undo included, and won't touch files a package ships, keys that make
+    root load code, /etc/environment or the login screen's
+    GreeterEnvironment.
+  * Registry Editor opens .rayereg files and asks before importing them.
+  * Calendar writes dates month first in English, keeps a repeating
+    event when importing its moved dates, keeps the editor open when
+    saving fails, and no longer loses reminders more than a year away.
+    Repeat rules it cannot follow show their first date only, and it
+    says so.
+  * Control Panel's Administrative Tools is now System Tools, and the
+    apps speak of root instead of administrator.
+  * Screen share pickers start with "remember this choice" switched off.
+  * American spelling and plainer wording in Calendar, Control Panel,
+    Registry Editor and Task Manager, and the missing French strings.
+  * raye-calendar, raye-taskmanager and xdg-desktop-portal-raye depend
+    on raye-style; raye-taskmanager recommends kde-cli-tools.
+  * Control Panel: the classic items, each with its tasks; category pages
+    with the list of categories on the side; breadcrumb; search through
+    tasks.
+  * Control Panel: disk encryption, firewall, backup and restore, display,
+    File Explorer options, credential manager and more; Disk Cleanup,
+    Character Map and Remote Desktop Connection in System Tools.
+  * Control Panel hides what this PC cannot use, like Wi-Fi without a
+    card.
+
+ -- techoraye <190692880+techoraye@users.noreply.github.com>  Thu, 12 Nov 2026 20:42:05 +0000
+
+raye-apps (0.3~beta1) resolute; urgency=medium
+
+  * Task Manager gets Performance, Startup apps, Users, Details and
+    Services pages, apps grouped with their processes, search and
+    sorting. System Monitor is no longer needed.
+  * New Raye Calendar: dates with reminders, day, week, month and agenda
+    views, simple repeats, colours, optional public holidays and .ics
+    import and export. Events live in one file on this computer, a
+    reminder is a notification with Later and Dismiss, and nothing runs
+    between two reminders.
+  * New Control Panel, with categories, large and small icons,
+    Administrative Tools and search, opening the matching Settings page.
+  * New Registry Editor for Raye: settings files, desktop settings and
+    system defaults as keys, with backups, undo, export and import, and
+    an administrator prompt for system files.
+
+ -- techoraye <190692880+techoraye@users.noreply.github.com>  Wed, 11 Nov 2026 13:00:18 +0000
+
+raye-apps (0.2~beta1) resolute; urgency=medium
+
+  * Raye Task Manager: a Processes tab with End task and Efficiency mode,
+    and readable Status, CPU and Memory columns.
+  * A Raye picker for what to share when an app shares the screen.
+  * Stock apps get plain names in English and French, and their old name
+    still finds them in search.
+  * The emoji panel replaces the stock selector, in search too.
+  * Packages that installed nothing are gone, and raye-taskmanager no longer
+    pulls in ksysguard.
+
+ -- techoraye <190692880+techoraye@users.noreply.github.com>  Sun, 08 Nov 2026 11:07:43 +0000
+
+raye-apps (0.1~dev1) resolute; urgency=medium
+
+  * New repo for Raye's own apps: one source package, one package per
+    app, built as each app lands.
+
+ -- techoraye <190692880+techoraye@users.noreply.github.com>  Fri, 30 Oct 2026 12:00:00 +0000

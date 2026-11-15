@@ -1,0 +1,137 @@
+# French words of the share picker (AP-16).
+msgid ""
+msgstr ""
+"Project-Id-Version: xdg-desktop-portal-raye\n"
+"PO-Revision-Date: 2026-10-31 12:00+0000\n"
+"Last-Translator: Raye Linux\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: qml/SharePicker.qml
+msgctxt "@title:window"
+msgid "Share your screen"
+msgstr "Partager votre écran"
+
+#: qml/SharePicker.qml
+msgctxt "@title %1 is the name of an app"
+msgid "%1 wants to share your screen"
+msgstr "%1 veut partager votre écran"
+
+#: qml/SharePicker.qml
+msgctxt "@title %1 is the name of an app"
+msgid "%1 wants to share a window"
+msgstr "%1 veut partager une fenêtre"
+
+#: qml/SharePicker.qml
+msgctxt "@title %1 is the name of an app"
+msgid "%1 wants to share a new virtual screen"
+msgstr "%1 veut partager un nouvel écran virtuel"
+
+#: qml/SharePicker.qml
+msgctxt "@info"
+msgid "Choose what you want to share."
+msgstr "Choisissez ce que vous voulez partager."
+
+#: qml/SharePicker.qml
+msgctxt "@info"
+msgid "You can choose more than one."
+msgstr "Vous pouvez en choisir plusieurs."
+
+#: qml/SharePicker.qml
+msgctxt "@title:tab share a whole screen"
+msgid "Entire screen"
+msgstr "Écran entier"
+
+#: qml/SharePicker.qml
+msgctxt "@title:tab share one window"
+msgid "Window"
+msgstr "Fenêtre"
+
+#: qml/SharePicker.qml
+msgctxt "@title:tab share a part of the screen"
+msgid "Area"
+msgstr "Zone"
+
+#: qml/SharePicker.qml
+msgctxt "@label %1 is the screen number, %2 × %3 its size in pixels"
+msgid "Screen %1 · %2 × %3"
+msgstr "Écran %1 · %2 × %3"
+
+#: qml/SharePicker.qml
+msgctxt "@label %1 is the screen number"
+msgid "Screen %1"
+msgstr "Écran %1"
+
+#: qml/SharePicker.qml
+msgctxt "@label a window without a title"
+msgid "Untitled window"
+msgstr "Fenêtre sans titre"
+
+#: qml/SharePicker.qml
+msgctxt "@label share every screen at once"
+msgid "All screens"
+msgstr "Tous les écrans"
+
+#: qml/SharePicker.qml
+msgctxt "@label"
+msgid "New virtual screen"
+msgstr "Nouvel écran virtuel"
+
+#: qml/SharePicker.qml
+msgctxt "@label share a part of the screen"
+msgid "Select an area"
+msgstr "Sélectionner une zone"
+
+#: qml/SharePicker.qml
+msgctxt "@info"
+msgid "Everything on all your screens"
+msgstr "Tout ce qui est sur vos écrans"
+
+#: qml/SharePicker.qml
+msgctxt "@info"
+msgid "An extra screen, just for sharing"
+msgstr "Un écran en plus, rien que pour le partage"
+
+#: qml/SharePicker.qml
+msgctxt "@info"
+msgid "After Share, drag over the part of your screens to share."
+msgstr "Après Partager, faites glisser sur la partie de l'écran à partager."
+
+#: qml/SharePicker.qml
+msgctxt "@info"
+msgid "No windows to share"
+msgstr "Aucune fenêtre à partager"
+
+#: qml/SharePicker.qml
+msgctxt "@info"
+msgid "Nothing to share here"
+msgstr "Rien à partager ici"
+
+#: qml/SharePicker.qml
+msgctxt "@info"
+msgid "Open the window you want to share and it shows up here."
+msgstr "Ouvrez la fenêtre à partager : elle apparaîtra ici."
+
+#: qml/SharePicker.qml
+msgctxt "@option:check"
+msgid "Share the pointer"
+msgstr "Partager le pointeur"
+
+#: qml/SharePicker.qml
+msgctxt "@option:check %1 is the name of an app"
+msgid "Remember this choice for %1"
+msgstr "Mémoriser ce choix pour %1"
+
+#: qml/SharePicker.qml
+msgctxt "@action:button"
+msgid "Share"
+msgstr "Partager"
+
+#: qml/SharePicker.qml
+msgctxt "@action:button"
+msgid "Cancel"
+msgstr "Annuler"

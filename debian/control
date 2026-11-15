@@ -1,0 +1,106 @@
+Source: raye-apps
+Section: kde
+Priority: optional
+Maintainer: techoraye <190692880+techoraye@users.noreply.github.com>
+Build-Depends: debhelper-compat (= 13), cmake, extra-cmake-modules, pkgconf,
+               gettext,
+               qt6-base-dev, qt6-base-private-dev, qt6-declarative-dev,
+               qt6-multimedia-dev, qt6-wayland-dev,
+               libkf6coreaddons-dev, libkf6i18n-dev, libkf6config-dev,
+               libkf6configwidgets-dev, libkf6windowsystem-dev,
+               libkf6xmlgui-dev, libkf6parts-dev, libkf6texteditor-dev,
+               libkf6sonnet-dev, libkf6kio-dev, libkf6notifications-dev,
+               libkf6purpose-dev, libkf6solid-dev,
+               libkf6statusnotifieritem-dev, libkf6globalaccel-dev,
+               libkf6crash-dev, libkf6dbusaddons-dev, libkf6filemetadata-dev,
+               kwayland-dev, liblayershellqtinterface-dev,
+               plasma-wayland-protocols, libwayland-dev,
+               libkpipewire-dev, libpipewire-0.3-dev, libksysguard-dev,
+               libqalculate-dev, libtesseract-dev, libudev-dev, libsystemd-dev,
+               libdconf-dev, dconf-service, dbus-daemon,
+               python3
+Standards-Version: 4.7.0
+Rules-Requires-Root: no
+Vcs-Git: https://github.com/Raye-Linux/apps.git
+
+Package: raye-taskmanager
+Architecture: any
+Depends: raye-style, qml6-module-qtquick, qml6-module-qtquick-controls,
+         qml6-module-qtquick-layouts, qml6-module-qtquick-window,
+         qml6-module-qtcore, qml6-module-org-kde-kirigami,
+         ${shlibs:Depends}, ${misc:Depends}
+Recommends: pkexec, pci.ids, kde-cli-tools
+Description: Raye Linux Task Manager
+ See what the machine is doing and take a hand in it: the apps and
+ background processes with their processor, memory and disk use, live
+ graphs of the processor, memory, disks, network and graphics card, the
+ apps that start at sign-in, the people signed in, every process with its
+ priority, and the system's services. End a program that has stopped
+ answering, or hold one back so the rest of the machine keeps up.
+
+Package: raye-calendar
+Architecture: any
+Depends: raye-style, qml6-module-qtquick, qml6-module-qtquick-controls,
+         qml6-module-qtquick-layouts, qml6-module-qtquick-window,
+         qml6-module-qtquick-templates, qml6-module-qtquick-dialogs,
+         qml6-module-qtcore, systemd, ${shlibs:Depends}, ${misc:Depends}
+Description: Raye Linux Calendar
+ Note the dates that matter, birthdays, appointments and trips, and get a
+ reminder on time, with Later and Dismiss. Day, week, month and agenda
+ views, simple repeats, colours, public holidays if wanted, and .ics
+ import and export. The events stay in one file on this computer, and
+ nothing runs in the background between two reminders.
+
+Package: xdg-desktop-portal-raye
+Architecture: any
+Depends: raye-style, xdg-desktop-portal, xdg-desktop-portal-kde,
+         qml6-module-qtquick, qml6-module-qtquick-controls,
+         qml6-module-qtquick-layouts, qml6-module-qtquick-window,
+         ${shlibs:Depends}, ${misc:Depends}
+Recommends: pipewire
+Description: Raye Linux screen sharing
+ Lets apps share your screen or a window, after you choose what to
+ share, and shows while something is shared so you can stop it. Other
+ requests of apps keep the desktop's usual handling.
+
+Package: raye-app-identity
+Architecture: all
+Depends: python3, ${misc:Depends}
+Description: Raye Linux names and icons for the stock apps
+ Gives the apps that come with Raye plain names and matching icons in
+ Start, search and Open with: Terminal, Calculator, Photos, Music. It
+ also keeps technical tools out of Start. Package updates cannot undo
+ this, and removing the package brings the usual names back.
+
+Package: raye-controlpanel
+Architecture: any
+Depends: raye-settings, raye-style,
+         qml6-module-qtquick, qml6-module-qtquick-controls,
+         qml6-module-qtquick-layouts, qml6-module-qtquick-window,
+         qml6-module-qtcore, qml6-module-org-kde-kirigami,
+         ${shlibs:Depends}, ${misc:Depends}
+Recommends: raye-taskmanager, raye-regedit
+Description: Raye Linux Control Panel
+ Every setting of the PC by category, or as one list of large or small
+ icons, the way the classic Control Panel shows them: Programs and
+ Features, User Accounts, Network and Sharing Centre, Sound, Power
+ Options, Devices and Printers, Fonts and the rest. Each one opens its
+ page in Raye Settings. System Tools gathers the Task Manager, the
+ Registry Editor and the other tools for people who look after the PC.
+
+Package: raye-regedit
+Architecture: any
+Depends: raye-style, dconf-service, pkexec,
+         qml6-module-qtquick, qml6-module-qtquick-controls,
+         qml6-module-qtquick-layouts, qml6-module-qtquick-window,
+         qml6-module-qtquick-dialogs, qml6-module-qtqml-models,
+         qml6-module-qtcore,
+         ${shlibs:Depends}, ${misc:Depends}
+Description: Raye Linux Registry Editor
+ Shows the settings files of the apps and of the system as one tree of
+ keys and values, as the Registry Editor does: the user's files in
+ ~/.config, the desktop database (dconf), the defaults in /etc/xdg and
+ a chosen list of system files. Values can be changed, added, deleted,
+ searched, exported and imported. Each change touches only the line of
+ its value, keeps a copy of the file first and can be undone; system
+ files need root access.

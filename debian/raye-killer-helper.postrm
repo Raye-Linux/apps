@@ -1,0 +1,15 @@
+#!/bin/sh
+set -e
+
+helper=/usr/lib/#DEB_HOST_MULTIARCH#/libexec/kwin_killer_helper
+
+case "$1" in
+    remove|abort-install|disappear)
+        dpkg-divert --package raye-killer-helper --remove --rename \
+            --divert "$helper.kwin" "$helper"
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0

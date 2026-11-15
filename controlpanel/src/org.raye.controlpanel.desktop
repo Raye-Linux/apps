@@ -1,0 +1,18 @@
+[Desktop Entry]
+Type=Application
+Name=Control Panel
+Name[fr]=Panneau de configuration
+GenericName=System settings
+GenericName[fr]=Paramètres du système
+Comment=Every setting of your PC by category, as in the classic Control Panel
+Comment[fr]=Tous les paramètres de votre PC par catégorie, comme dans le Panneau de configuration classique
+Exec=raye-controlpanel
+Icon=org.raye.controlpanel
+Terminal=false
+Categories=Qt;KDE;System;Settings;
+# the shell's Run box maps control to org.raye.controlpanel
+Keywords=control;control panel;settings;programs;features;devices;printers;fonts;system tools;administrative tools;
+Keywords[fr]=panneau;configuration;paramètres;programmes;fonctionnalités;périphériques;imprimantes;polices;outils système;outils d'administration;
+StartupNotify=true
+StartupWMClass=raye-controlpanel
+X-DBUS-ServiceName=org.raye.controlpanel
