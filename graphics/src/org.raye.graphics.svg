@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- Raye Graphics Card: a violet board with a light fan and gold contacts -->
+  <defs>
+    <linearGradient id="board" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a52ff"/>
+      <stop offset="1" stop-color="#6a2fe6"/>
+    </linearGradient>
+    <radialGradient id="hub" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ede6fb"/>
+    </radialGradient>
+  </defs>
+  <rect x="6" y="15" width="52" height="32" rx="5" fill="url(#board)"/>
+  <rect x="11" y="47" width="30" height="5" rx="1.5" fill="#e8c46a"/>
+  <g fill="#6a2fe6">
+    <rect x="15" y="47" width="1.5" height="5"/>
+    <rect x="20" y="47" width="1.5" height="5"/>
+    <rect x="25" y="47" width="1.5" height="5"/>
+    <rect x="30" y="47" width="1.5" height="5"/>
+    <rect x="35" y="47" width="1.5" height="5"/>
+  </g>
+  <circle cx="25" cy="31" r="12" fill="url(#hub)"/>
+  <g fill="#c9b8f2">
+    <path d="M25 31 C 22 25, 24 21, 29 20.5 C 27 24, 27 27.5, 25 31 Z"/>
+    <path d="M25 31 C 31 28.5, 35 31, 35 36 C 31.5 33.5, 28.5 33, 25 31 Z"/>
+    <path d="M25 31 C 25 37.5, 21 39.5, 16.5 37 C 20.5 35.5, 22.5 33.5, 25 31 Z"/>
+  </g>
+  <circle cx="25" cy="31" r="3" fill="#7b3cff"/>
+  <circle cx="25" cy="31" r="1.2" fill="#ffffff"/>
+  <g fill="#f3eaff" opacity="0.85">
+    <rect x="42" y="22" width="11" height="2.5" rx="1.25"/>
+    <rect x="42" y="29.75" width="11" height="2.5" rx="1.25"/>
+    <rect x="42" y="37.5" width="11" height="2.5" rx="1.25"/>
+  </g>
+</svg>

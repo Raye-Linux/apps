@@ -65,6 +65,23 @@ Description: Raye Linux Clock
  the cities that matter to you. Nothing runs in the background between
  two alarms.
 
+Package: raye-graphics
+Architecture: any
+Depends: raye-style, pkexec, polkitd, systemd,
+         qml6-module-qtquick, qml6-module-qtquick-controls,
+         qml6-module-qtquick-layouts, qml6-module-qtquick-window,
+         qml6-module-qtquick-templates, qml6-module-qtcore,
+         qml6-module-org-kde-kirigami,
+         ${shlibs:Depends}, ${misc:Depends}
+Recommends: pci.ids
+Description: Raye Linux graphics card panel
+ Watch the graphics card live: how busy it is, its clock speed, video
+ memory, temperature, power and fan. On an AMD Radeon card, choose its
+ performance mode and workload profile, its power limit and a fan
+ curve, within the limits the card itself gives; the settings come back
+ at each start, and Restore defaults hands the card back its own. An
+ NVIDIA card shows its readings and opens the NVIDIA Control Panel.
+
 Package: xdg-desktop-portal-raye
 Architecture: any
 Depends: raye-style, xdg-desktop-portal, xdg-desktop-portal-kde,

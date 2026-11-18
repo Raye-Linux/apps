@@ -1,0 +1,12 @@
+[Unit]
+Description=Apply the graphics card settings chosen in Raye
+ConditionDirectoryNotEmpty=/etc/raye/graphics
+After=systemd-udevd.service systemd-modules-load.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/libexec/raye-graphics-helper boot
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

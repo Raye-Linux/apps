@@ -1,0 +1,391 @@
+# French words of the graphics panel.
+msgid ""
+msgstr ""
+"Project-Id-Version: raye-graphics\n"
+"PO-Revision-Date: 2026-11-18 12:00+0000\n"
+"Last-Translator: Raye Linux\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgctxt "@action:button while it works"
+msgid "Applying…"
+msgstr "Application…"
+
+msgctxt "@action:button"
+msgid "Apply"
+msgstr "Appliquer"
+
+msgctxt "@action:button"
+msgid "Discard changes"
+msgstr "Annuler les modifications"
+
+msgctxt "@action:button"
+msgid "Restore defaults"
+msgstr "Rétablir les valeurs par défaut"
+
+msgctxt "@info:tooltip a point of the fan curve"
+msgid "%1 °C, fan at %2%"
+msgstr "%1 °C, ventilateur à %2 %"
+
+msgctxt "@title"
+msgid "Fan"
+msgstr "Ventilateur"
+
+msgctxt "@info"
+msgid "This card drives its fan itself and doesn't let it be changed."
+msgstr "Cette carte gère elle-même son ventilateur et ne permet pas de le modifier."
+
+msgctxt "@info"
+msgid "This graphics card has no fan of its own: it is cooled with the rest of the PC."
+msgstr "Cette carte graphique n’a pas de ventilateur à elle : elle est refroidie avec le reste du PC."
+
+msgctxt "@label"
+msgid "Fan control"
+msgstr "Contrôle du ventilateur"
+
+msgctxt "@info"
+msgid "The fan follows the curve below."
+msgstr "Le ventilateur suit la courbe ci-dessous."
+
+msgctxt "@info"
+msgid "The card speeds its fan up and down by itself."
+msgstr "La carte accélère et ralentit son ventilateur d’elle-même."
+
+msgctxt "@item fan control"
+msgid "Automatic"
+msgstr "Automatique"
+
+msgctxt "@item fan control"
+msgid "Custom curve"
+msgstr "Courbe personnalisée"
+
+msgctxt "@label"
+msgid "Fan speed by hotspot temperature"
+msgstr "Vitesse du ventilateur selon le point chaud"
+
+msgctxt "@label"
+msgid "Fan speed by temperature"
+msgstr "Vitesse du ventilateur selon la température"
+
+msgctxt "@info temperature and fan speed now"
+msgid "Now %1, fan at %2"
+msgstr "Maintenant %1, ventilateur à %2"
+
+msgctxt "@info temperature now"
+msgid "Now %1"
+msgstr "Maintenant %1"
+
+msgctxt "@info"
+msgid "The card follows this curve itself. Drag a point, or click it and use the arrow keys."
+msgstr "La carte suit elle-même cette courbe. Faites glisser un point, ou cliquez dessus et utilisez les flèches."
+
+msgctxt "@info"
+msgid "Above %1 the fan always runs at full speed. Drag a point, or click it and use the arrow keys."
+msgstr "Au-dessus de %1, le ventilateur tourne toujours à fond. Faites glisser un point, ou cliquez dessus et utilisez les flèches."
+
+msgctxt "@action:button"
+msgid "Reset curve"
+msgstr "Réinitialiser la courbe"
+
+msgctxt "@info memory size in gibibytes"
+msgid "%1 GB"
+msgstr "%1 Go"
+
+msgctxt "@info memory size in mebibytes"
+msgid "%1 MB"
+msgstr "%1 Mo"
+
+msgctxt "@info a share, as a percentage"
+msgid "%1%"
+msgstr "%1 %"
+
+msgctxt "@info a clock speed"
+msgid "%1 MHz"
+msgstr "%1 MHz"
+
+msgctxt "@info a temperature"
+msgid "%1 °C"
+msgstr "%1 °C"
+
+msgctxt "@info a power"
+msgid "%1 W"
+msgstr "%1 W"
+
+msgctxt "@info a fan speed in turns a minute"
+msgid "%1 RPM"
+msgstr "%1 tr/min"
+
+msgctxt "@item workload profile"
+msgid "Default"
+msgstr "Par défaut"
+
+msgctxt "@item workload profile"
+msgid "Games in full screen"
+msgstr "Jeux en plein écran"
+
+msgctxt "@item workload profile"
+msgid "Games in a window"
+msgstr "Jeux dans une fenêtre"
+
+msgctxt "@item workload profile"
+msgid "Power saving"
+msgstr "Économie d’énergie"
+
+msgctxt "@item workload profile"
+msgid "Video"
+msgstr "Vidéo"
+
+msgctxt "@item workload profile"
+msgid "Virtual reality"
+msgstr "Réalité virtuelle"
+
+msgctxt "@item workload profile"
+msgid "Compute"
+msgstr "Calcul"
+
+msgctxt "@item workload profile"
+msgid "Capped"
+msgstr "Plafonné"
+
+msgctxt "@item workload profile"
+msgid "Uncapped"
+msgstr "Sans plafond"
+
+msgid "Graphics Card"
+msgstr "Carte graphique"
+
+msgctxt "@title:tab"
+msgid "Overview"
+msgstr "Vue d’ensemble"
+
+msgctxt "@title:tab"
+msgid "Performance"
+msgstr "Performances"
+
+msgctxt "@title:tab"
+msgid "Fan"
+msgstr "Ventilateur"
+
+msgctxt "@info:tooltip"
+msgid "Close navigation"
+msgstr "Fermer la navigation"
+
+msgctxt "@info:tooltip"
+msgid "Open navigation"
+msgstr "Ouvrir la navigation"
+
+msgctxt "@label"
+msgid "Graphics card"
+msgstr "Carte graphique"
+
+msgctxt "@title"
+msgid "Graphics card"
+msgstr "Carte graphique"
+
+msgctxt "@info"
+msgid "NVIDIA graphics"
+msgstr "Carte graphique NVIDIA"
+
+msgctxt "@info"
+msgid "AMD Radeon graphics"
+msgstr "Carte graphique AMD Radeon"
+
+msgctxt "@label"
+msgid "NVIDIA Control Panel"
+msgstr "Panneau de configuration NVIDIA"
+
+msgctxt "@info"
+msgid "Change this card's settings: performance, displays, color and more."
+msgstr "Modifier les paramètres de cette carte : performances, écrans, couleurs et plus."
+
+msgctxt "@info"
+msgid "It comes with the NVIDIA driver, which Raye installs when the PC is online. Check Settings > Raye Update > Drivers."
+msgstr "Il est fourni avec le pilote NVIDIA, que Raye installe dès que le PC est en ligne. Voir Paramètres > Raye Update > Pilotes."
+
+msgctxt "@action:button"
+msgid "Open"
+msgstr "Ouvrir"
+
+msgctxt "@info"
+msgid "The readings of this card show up here once the NVIDIA driver is installed."
+msgstr "Les mesures de cette carte s’affichent ici une fois le pilote NVIDIA installé."
+
+msgctxt "@info"
+msgid "No graphics card was found."
+msgstr "Aucune carte graphique n’a été trouvée."
+
+msgctxt "@info"
+msgid "This PC has Intel graphics."
+msgstr "Ce PC a une carte graphique Intel."
+
+msgctxt "@info"
+msgid "This graphics card isn't one this panel knows."
+msgstr "Ce panneau ne connaît pas cette carte graphique."
+
+msgctxt "@info"
+msgid "This panel shows and changes the settings of AMD Radeon cards, and shows NVIDIA cards. Your card sets itself up: there is nothing to change here. Display settings are in Settings > Display."
+msgstr "Ce panneau affiche et modifie les paramètres des cartes AMD Radeon, et affiche les cartes NVIDIA. Votre carte se règle d’elle-même : il n’y a rien à modifier ici. Les réglages d’affichage sont dans Paramètres > Affichage."
+
+msgctxt "@info"
+msgid "This card runs on an older driver, so its settings can't be changed here."
+msgstr "Cette carte utilise un pilote plus ancien : ses paramètres ne peuvent pas être modifiés ici."
+
+msgctxt "@label graphics card use"
+msgid "GPU"
+msgstr "GPU"
+
+msgctxt "@info"
+msgid "Memory controller %1"
+msgstr "Contrôleur mémoire %1"
+
+msgctxt "@label"
+msgid "Clock speed"
+msgstr "Fréquence"
+
+msgctxt "@info"
+msgid "Memory %1"
+msgstr "Mémoire %1"
+
+msgctxt "@label"
+msgid "Video memory"
+msgstr "Mémoire vidéo"
+
+msgctxt "@label"
+msgid "Reserved video memory"
+msgstr "Mémoire vidéo réservée"
+
+msgctxt "@info used of total"
+msgid "of %1"
+msgstr "sur %1"
+
+msgctxt "@label"
+msgid "Shared memory"
+msgstr "Mémoire partagée"
+
+msgctxt "@label"
+msgid "Temperature"
+msgstr "Température"
+
+msgctxt "@info hottest point of the chip"
+msgid "Hotspot %1"
+msgstr "Point chaud %1"
+
+msgctxt "@label"
+msgid "Power"
+msgstr "Puissance"
+
+msgctxt "@info"
+msgid "Limit %1"
+msgstr "Limite %1"
+
+msgctxt "@label"
+msgid "Fan"
+msgstr "Ventilateur"
+
+msgctxt "@info"
+msgid "Stopped while cool"
+msgstr "À l’arrêt tant que la carte est froide"
+
+msgctxt "@label"
+msgid "Driver"
+msgstr "Pilote"
+
+msgctxt "@label"
+msgid "Location"
+msgstr "Emplacement"
+
+msgctxt "@info PCI address"
+msgid "PCI %1"
+msgstr "PCI %1"
+
+msgctxt "@label card firmware"
+msgid "Firmware"
+msgstr "Micrologiciel"
+
+msgctxt "@item performance mode"
+msgid "Automatic (recommended)"
+msgstr "Automatique (recommandé)"
+
+msgctxt "@item performance mode"
+msgid "Power saving"
+msgstr "Économie d’énergie"
+
+msgctxt "@item performance mode"
+msgid "Maximum performance"
+msgstr "Performances maximales"
+
+msgctxt "@title"
+msgid "Performance"
+msgstr "Performances"
+
+msgctxt "@label"
+msgid "Performance mode"
+msgstr "Mode de performances"
+
+msgctxt "@info"
+msgid "The workload profile below sets the card's speed. Set it back to Default to choose a mode here."
+msgstr "Le profil de charge ci-dessous règle la vitesse de la carte. Remettez-le sur Par défaut pour choisir un mode ici."
+
+msgctxt "@info"
+msgid "Automatic speeds the card up when there is work and lets it rest when there is none."
+msgstr "Automatique accélère la carte quand il y a du travail et la laisse se reposer quand il n’y en a pas."
+
+msgctxt "@label"
+msgid "Workload profile"
+msgstr "Profil de charge"
+
+msgctxt "@info"
+msgid "Tunes how fast the card reacts for one kind of work. Default suits most people."
+msgstr "Règle la réactivité de la carte pour un type de travail. Par défaut convient à la plupart des gens."
+
+msgctxt "@label"
+msgid "Power limit"
+msgstr "Limite de puissance"
+
+msgctxt "@info"
+msgid "The most power the card may draw. Lower runs cooler and quieter, higher can be a little faster."
+msgstr "La puissance maximale que la carte peut consommer. Plus bas, elle chauffe moins et fait moins de bruit ; plus haut, elle peut être un peu plus rapide."
+
+msgctxt "@action:button the card's own power limit"
+msgid "Default"
+msgstr "Par défaut"
+
+msgctxt "@info"
+msgid "The card's own limit is %1."
+msgstr "La limite d’origine de la carte est %1."
+
+msgctxt "@info"
+msgid "This card doesn't let its performance settings be changed."
+msgstr "Cette carte ne permet pas de modifier ses réglages de performances."
+
+msgctxt "@info"
+msgid "The change was stopped before the end. Check the settings and try again."
+msgstr "La modification s’est arrêtée avant la fin. Vérifiez les réglages et réessayez."
+
+msgctxt "@info"
+msgid "The card is back on its own settings."
+msgstr "La carte a retrouvé ses réglages d’origine."
+
+msgctxt "@info"
+msgid "Your settings are on. They come back each time the PC starts."
+msgstr "Vos réglages sont appliqués. Ils reviennent à chaque démarrage du PC."
+
+msgctxt "@info"
+msgid "This card can't be found anymore. Close the panel and open it again."
+msgstr "Cette carte est introuvable. Fermez le panneau et rouvrez-le."
+
+msgctxt "@info"
+msgid "The card doesn't accept these settings. Nothing was changed."
+msgstr "La carte n’accepte pas ces réglages. Rien n’a été modifié."
+
+msgctxt "@info"
+msgid "The card refused part of the change. Use Restore defaults if it misbehaves."
+msgstr "La carte a refusé une partie de la modification. Utilisez Rétablir les valeurs par défaut si elle se comporte mal."
+
+msgctxt "@info"
+msgid "Root access is needed to change the card, and it can't be asked for here."
+msgstr "Un accès root est nécessaire pour modifier la carte, et il ne peut pas être demandé ici."

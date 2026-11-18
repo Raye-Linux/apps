@@ -1,0 +1,25 @@
+[Desktop Entry]
+Type=Application
+Name=Graphics Card
+Name[fr]=Carte graphique
+GenericName=Graphics card settings
+GenericName[fr]=Paramètres de la carte graphique
+Comment=Watch your graphics card and set its performance, power limit and fan
+Comment[fr]=Surveiller la carte graphique et régler ses performances, sa puissance et son ventilateur
+Exec=raye-graphics
+Icon=org.raye.graphics
+Categories=Settings;HardwareSettings;Qt;
+Keywords=gpu;graphics;video card;amd;radeon;adrenalin;nvidia;fan;fan curve;overclock;power limit;temperature;
+Keywords[fr]=gpu;carte graphique;carte vidéo;amd;radeon;adrenalin;nvidia;ventilateur;courbe;puissance;température;
+StartupNotify=true
+Actions=performance;fan;
+
+[Desktop Action performance]
+Name=Performance
+Name[fr]=Performances
+Exec=raye-graphics --performance
+
+[Desktop Action fan]
+Name=Fan
+Name[fr]=Ventilateur
+Exec=raye-graphics --fan

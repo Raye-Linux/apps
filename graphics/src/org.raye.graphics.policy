@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+  <vendor>Raye Linux</vendor>
+  <vendor_url>https://rayelinux.com</vendor_url>
+  <!-- kept a few minutes: tuning a card is a few tries in a row, and the
+       helper refuses anything outside the card's own limits -->
+  <action id="org.raye.graphics.apply">
+    <description>Change the settings of the graphics card</description>
+    <description xml:lang="fr">Modifier les paramètres de la carte graphique</description>
+    <message>Graphics Card wants to change the settings of your graphics card</message>
+    <message xml:lang="fr">Carte graphique veut modifier les paramètres de votre carte graphique</message>
+    <icon_name>org.raye.graphics</icon_name>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/libexec/raye-graphics-helper</annotate>
+  </action>
+</policyconfig>

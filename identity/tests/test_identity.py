@@ -77,6 +77,7 @@ class Table(unittest.TestCase):
             ("org.kde.elisa.desktop", "Music", "Musique"),
             ("org.kde.okular.desktop", "Document Viewer", "Visionneuse de documents"),
             ("org.kde.ark.desktop", "Archive Manager", "Gestionnaire d'archives"),
+            ("nvidia-settings.desktop", "NVIDIA Control Panel", "Panneau de configuration NVIDIA"),
         ):
             self.assertEqual(self.table[desktop_id]["name"], {"en": en, "fr": fr})
 

@@ -1,0 +1,18 @@
+[Unit]
+Description=Follow the graphics card fan curve chosen in Raye
+ConditionDirectoryNotEmpty=/etc/raye/graphics
+After=raye-graphics.service
+
+[Service]
+ExecStart=/usr/libexec/raye-graphics-helper fan
+# the card takes its fan back whatever way the loop ends
+ExecStopPost=/usr/libexec/raye-graphics-helper fan-auto
+Restart=on-failure
+RestartSec=5
+Nice=-5
+ProtectHome=yes
+PrivateTmp=yes
+NoNewPrivileges=yes
+
+[Install]
+WantedBy=multi-user.target
