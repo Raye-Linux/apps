@@ -1,0 +1,9 @@
+# Started by raye-clock-ring.timer, which Raye Clock writes in
+# ~/.config/systemd/user for the next alarm or timer. It rings what is
+# due and ends when the last ring on screen is answered.
+[Unit]
+Description=Raye Clock alarms and timers
+
+[Service]
+Type=simple
+ExecStart=@RAYE_CLOCK_TOOL_PATH@ ring

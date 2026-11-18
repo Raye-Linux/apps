@@ -1,0 +1,25 @@
+[Desktop Entry]
+Type=Application
+Name=Clock
+Name[fr]=Horloge
+GenericName=Alarms and clock
+GenericName[fr]=Alarmes et horloge
+Comment=Alarms, timers, a stopwatch and the time around the world
+Comment[fr]=Alarmes, minuteurs, chronomètre et l'heure dans le monde
+Exec=raye-clock
+Icon=org.raye.clock
+Categories=Utility;Clock;Qt;
+Keywords=clock;alarm;timer;stopwatch;world clock;time zone;snooze;wake up;
+Keywords[fr]=horloge;alarme;réveil;minuteur;chronomètre;fuseau horaire;heure;
+StartupNotify=true
+Actions=alarms;timers;
+
+[Desktop Action alarms]
+Name=Alarms
+Name[fr]=Alarmes
+Exec=raye-clock --alarms
+
+[Desktop Action timers]
+Name=Timers
+Name[fr]=Minuteurs
+Exec=raye-clock --timers

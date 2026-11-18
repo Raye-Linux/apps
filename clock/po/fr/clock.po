@@ -1,0 +1,909 @@
+# French words of the Clock.
+msgid ""
+msgstr ""
+"Project-Id-Version: raye-clock\n"
+"PO-Revision-Date: 2026-11-18 12:00+0000\n"
+"Last-Translator: Raye Linux\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgctxt "@action:button"
+msgid "Delete alarm"
+msgstr "Supprimer l’alarme"
+
+msgctxt "@info:tooltip"
+msgid "Alarm on"
+msgstr "Alarme activée"
+
+msgctxt "@info alarm with no name"
+msgid "Alarm"
+msgstr "Alarme"
+
+msgctxt "@info alarm that rings once"
+msgid "Only once"
+msgstr "Une seule fois"
+
+msgctxt "@item snooze"
+msgid "Off"
+msgstr "Désactivé"
+
+msgctxt "@item snooze"
+msgid "%1 minute"
+msgid_plural "%1 minutes"
+msgstr[0] "%1 minute"
+msgstr[1] "%1 minutes"
+
+msgctxt "@item snooze"
+msgid "1 hour"
+msgstr "1 heure"
+
+msgctxt "@title:window"
+msgid "Add new alarm"
+msgstr "Ajouter une alarme"
+
+msgctxt "@title:window"
+msgid "Edit alarm"
+msgstr "Modifier l’alarme"
+
+msgctxt "@label"
+msgid "Hour"
+msgstr "Heure"
+
+msgctxt "@label"
+msgid "Minute"
+msgstr "Minute"
+
+msgctxt "@label"
+msgid "AM or PM"
+msgstr "Matin ou après-midi"
+
+msgctxt "@info:placeholder"
+msgid "Alarm name"
+msgstr "Nom de l’alarme"
+
+msgctxt "@option:check"
+msgid "Repeat alarm"
+msgstr "Répéter l’alarme"
+
+msgctxt "@label"
+msgid "Alarm sound"
+msgstr "Son de l’alarme"
+
+msgctxt "@action:button"
+msgid "Stop"
+msgstr "Arrêter"
+
+msgctxt "@action:button"
+msgid "Play the sound"
+msgstr "Écouter le son"
+
+msgctxt "@label"
+msgid "Snooze time"
+msgstr "Durée de répétition"
+
+msgctxt "@action:button"
+msgid "Save"
+msgstr "Enregistrer"
+
+msgctxt "@action:button"
+msgid "Cancel"
+msgstr "Annuler"
+
+msgctxt "@info"
+msgid "Alarms only ring while your PC is on."
+msgstr "Les alarmes ne sonnent que si votre PC est allumé."
+
+msgctxt "@info"
+msgid "They do not wake it from sleep. An alarm missed while it slept shows as a notification when it wakes."
+msgstr "Elles ne le sortent pas de la veille. Une alarme manquée pendant la veille s’affiche en notification au réveil du PC."
+
+msgctxt "@info"
+msgid "No alarms yet"
+msgstr "Aucune alarme pour l’instant"
+
+msgctxt "@info"
+msgid "Select + to set one."
+msgstr "Sélectionnez + pour en créer une."
+
+msgctxt "@action:button"
+msgid "Done"
+msgstr "Terminé"
+
+msgctxt "@action:button"
+msgid "Edit alarms"
+msgstr "Modifier les alarmes"
+
+msgctxt "@action:button"
+msgid "Add an alarm"
+msgstr "Ajouter une alarme"
+
+msgctxt "@action:button"
+msgid "Remove city"
+msgstr "Retirer la ville"
+
+msgctxt "@title:window"
+msgid "Add a new city"
+msgstr "Ajouter une ville"
+
+msgctxt "@info:placeholder"
+msgid "Enter a city or a country"
+msgstr "Entrez une ville ou un pays"
+
+msgctxt "@info"
+msgid "No city found"
+msgstr "Aucune ville trouvée"
+
+msgid "Clock"
+msgstr "Horloge"
+
+msgctxt "@title:tab"
+msgid "Timer"
+msgstr "Minuteur"
+
+msgctxt "@title:tab"
+msgid "Alarm"
+msgstr "Alarme"
+
+msgctxt "@title:tab"
+msgid "Stopwatch"
+msgstr "Chronomètre"
+
+msgctxt "@title:tab"
+msgid "World clock"
+msgstr "Horloge mondiale"
+
+msgctxt "@info:tooltip"
+msgid "Close navigation"
+msgstr "Fermer la navigation"
+
+msgctxt "@info:tooltip"
+msgid "Open navigation"
+msgstr "Ouvrir la navigation"
+
+msgctxt "@label short for hours"
+msgid "hr"
+msgstr "h"
+
+msgctxt "@label short for minutes"
+msgid "min"
+msgstr "min"
+
+msgctxt "@label short for seconds"
+msgid "sec"
+msgstr "s"
+
+msgctxt "@action:button"
+msgid "Pause"
+msgstr "Pause"
+
+msgctxt "@action:button"
+msgid "Start"
+msgstr "Démarrer"
+
+msgctxt "@action:button stopwatch"
+msgid "Lap"
+msgstr "Tour"
+
+msgctxt "@action:button"
+msgid "Reset"
+msgstr "Réinitialiser"
+
+msgctxt "@title:column"
+msgid "Laps"
+msgstr "Tours"
+
+msgctxt "@title:column"
+msgid "Time"
+msgstr "Temps"
+
+msgctxt "@title:column"
+msgid "Total"
+msgstr "Total"
+
+msgctxt "@info lap"
+msgid "Fastest"
+msgstr "Le plus rapide"
+
+msgctxt "@info lap"
+msgid "Slowest"
+msgstr "Le plus lent"
+
+msgctxt "@action:button"
+msgid "Delete timer"
+msgstr "Supprimer le minuteur"
+
+msgctxt "@info"
+msgid "Time's up"
+msgstr "Temps écoulé"
+
+msgctxt "@info time a timer ends"
+msgid "Ends at %1"
+msgstr "Se termine à %1"
+
+msgctxt "@info"
+msgid "Paused"
+msgstr "En pause"
+
+msgctxt "@title:window"
+msgid "Add new timer"
+msgstr "Ajouter un minuteur"
+
+msgctxt "@title:window"
+msgid "Edit timer"
+msgstr "Modifier le minuteur"
+
+msgctxt "@info:placeholder"
+msgid "Timer name"
+msgstr "Nom du minuteur"
+
+msgctxt "@info timer length"
+msgid "%1 hr"
+msgid_plural "%1 hr"
+msgstr[0] "%1 h"
+msgstr[1] "%1 h"
+
+msgctxt "@info timer length"
+msgid "%1 min"
+msgid_plural "%1 min"
+msgstr[0] "%1 min"
+msgstr[1] "%1 min"
+
+msgctxt "@info timer length"
+msgid "%1 sec"
+msgid_plural "%1 sec"
+msgstr[0] "%1 s"
+msgstr[1] "%1 s"
+
+msgctxt "@info"
+msgid "No timers yet"
+msgstr "Aucun minuteur pour l’instant"
+
+msgctxt "@info"
+msgid "Select + to add one."
+msgstr "Sélectionnez + pour en ajouter un."
+
+msgctxt "@action:button"
+msgid "Edit timers"
+msgstr "Modifier les minuteurs"
+
+msgctxt "@action:button"
+msgid "Add new timer"
+msgstr "Ajouter un minuteur"
+
+msgctxt "@title"
+msgid "Local time"
+msgstr "Heure locale"
+
+msgctxt "@info date format, QDate pattern"
+msgid "dddd, MMMM d, yyyy"
+msgstr "dddd d MMMM yyyy"
+
+msgctxt "@info day, then how far: Today, 6 hours ahead"
+msgid "%1, %2"
+msgstr "%1, %2"
+
+msgctxt "@info"
+msgid "Select + to see the time in another city."
+msgstr "Sélectionnez + pour voir l’heure d’une autre ville."
+
+msgctxt "@action:button"
+msgid "Edit cities"
+msgstr "Modifier les villes"
+
+msgctxt "@action:button"
+msgid "Add a city"
+msgstr "Ajouter une ville"
+
+msgctxt "@item city"
+msgid "Honolulu"
+msgstr "Honolulu"
+
+msgctxt "@item city"
+msgid "Anchorage"
+msgstr "Anchorage"
+
+msgctxt "@item city"
+msgid "Vancouver"
+msgstr "Vancouver"
+
+msgctxt "@item city"
+msgid "Los Angeles"
+msgstr "Los Angeles"
+
+msgctxt "@item city"
+msgid "San Francisco"
+msgstr "San Francisco"
+
+msgctxt "@item city"
+msgid "Seattle"
+msgstr "Seattle"
+
+msgctxt "@item city"
+msgid "Phoenix"
+msgstr "Phoenix"
+
+msgctxt "@item city"
+msgid "Denver"
+msgstr "Denver"
+
+msgctxt "@item city"
+msgid "Edmonton"
+msgstr "Edmonton"
+
+msgctxt "@item city"
+msgid "Calgary"
+msgstr "Calgary"
+
+msgctxt "@item city"
+msgid "Regina"
+msgstr "Regina"
+
+msgctxt "@item city"
+msgid "Winnipeg"
+msgstr "Winnipeg"
+
+msgctxt "@item city"
+msgid "Chicago"
+msgstr "Chicago"
+
+msgctxt "@item city"
+msgid "Dallas"
+msgstr "Dallas"
+
+msgctxt "@item city"
+msgid "Houston"
+msgstr "Houston"
+
+msgctxt "@item city"
+msgid "Mexico City"
+msgstr "Mexico"
+
+msgctxt "@item city"
+msgid "Toronto"
+msgstr "Toronto"
+
+msgctxt "@item city"
+msgid "Ottawa"
+msgstr "Ottawa"
+
+msgctxt "@item city"
+msgid "Montreal"
+msgstr "Montréal"
+
+msgctxt "@item city"
+msgid "Quebec City"
+msgstr "Québec"
+
+msgctxt "@item city"
+msgid "New York"
+msgstr "New York"
+
+msgctxt "@item city"
+msgid "Washington"
+msgstr "Washington"
+
+msgctxt "@item city"
+msgid "Boston"
+msgstr "Boston"
+
+msgctxt "@item city"
+msgid "Miami"
+msgstr "Miami"
+
+msgctxt "@item city"
+msgid "Atlanta"
+msgstr "Atlanta"
+
+msgctxt "@item city"
+msgid "Halifax"
+msgstr "Halifax"
+
+msgctxt "@item city"
+msgid "Moncton"
+msgstr "Moncton"
+
+msgctxt "@item city"
+msgid "St. John's"
+msgstr "St. John's"
+
+msgctxt "@item city"
+msgid "Havana"
+msgstr "La Havane"
+
+msgctxt "@item city"
+msgid "Port-au-Prince"
+msgstr "Port-au-Prince"
+
+msgctxt "@item city"
+msgid "San Juan"
+msgstr "San Juan"
+
+msgctxt "@item city"
+msgid "Fort-de-France"
+msgstr "Fort-de-France"
+
+msgctxt "@item city"
+msgid "Pointe-à-Pitre"
+msgstr "Pointe-à-Pitre"
+
+msgctxt "@item city"
+msgid "Bogotá"
+msgstr "Bogota"
+
+msgctxt "@item city"
+msgid "Lima"
+msgstr "Lima"
+
+msgctxt "@item city"
+msgid "Caracas"
+msgstr "Caracas"
+
+msgctxt "@item city"
+msgid "Cayenne"
+msgstr "Cayenne"
+
+msgctxt "@item city"
+msgid "Santiago"
+msgstr "Santiago du Chili"
+
+msgctxt "@item city"
+msgid "Buenos Aires"
+msgstr "Buenos Aires"
+
+msgctxt "@item city"
+msgid "São Paulo"
+msgstr "São Paulo"
+
+msgctxt "@item city"
+msgid "Rio de Janeiro"
+msgstr "Rio de Janeiro"
+
+msgctxt "@item city"
+msgid "Reykjavik"
+msgstr "Reykjavik"
+
+msgctxt "@item city"
+msgid "Dublin"
+msgstr "Dublin"
+
+msgctxt "@item city"
+msgid "London"
+msgstr "Londres"
+
+msgctxt "@item city"
+msgid "Lisbon"
+msgstr "Lisbonne"
+
+msgctxt "@item city"
+msgid "Paris"
+msgstr "Paris"
+
+msgctxt "@item city"
+msgid "Lyon"
+msgstr "Lyon"
+
+msgctxt "@item city"
+msgid "Marseille"
+msgstr "Marseille"
+
+msgctxt "@item city"
+msgid "Brussels"
+msgstr "Bruxelles"
+
+msgctxt "@item city"
+msgid "Luxembourg"
+msgstr "Luxembourg"
+
+msgctxt "@item city"
+msgid "Amsterdam"
+msgstr "Amsterdam"
+
+msgctxt "@item city"
+msgid "Zurich"
+msgstr "Zurich"
+
+msgctxt "@item city"
+msgid "Geneva"
+msgstr "Genève"
+
+msgctxt "@item city"
+msgid "Berlin"
+msgstr "Berlin"
+
+msgctxt "@item city"
+msgid "Madrid"
+msgstr "Madrid"
+
+msgctxt "@item city"
+msgid "Barcelona"
+msgstr "Barcelone"
+
+msgctxt "@item city"
+msgid "Rome"
+msgstr "Rome"
+
+msgctxt "@item city"
+msgid "Vienna"
+msgstr "Vienne"
+
+msgctxt "@item city"
+msgid "Prague"
+msgstr "Prague"
+
+msgctxt "@item city"
+msgid "Warsaw"
+msgstr "Varsovie"
+
+msgctxt "@item city"
+msgid "Copenhagen"
+msgstr "Copenhague"
+
+msgctxt "@item city"
+msgid "Oslo"
+msgstr "Oslo"
+
+msgctxt "@item city"
+msgid "Stockholm"
+msgstr "Stockholm"
+
+msgctxt "@item city"
+msgid "Helsinki"
+msgstr "Helsinki"
+
+msgctxt "@item city"
+msgid "Athens"
+msgstr "Athènes"
+
+msgctxt "@item city"
+msgid "Bucharest"
+msgstr "Bucarest"
+
+msgctxt "@item city"
+msgid "Kyiv"
+msgstr "Kyiv"
+
+msgctxt "@item city"
+msgid "Istanbul"
+msgstr "Istanbul"
+
+msgctxt "@item city"
+msgid "Moscow"
+msgstr "Moscou"
+
+msgctxt "@item city"
+msgid "Casablanca"
+msgstr "Casablanca"
+
+msgctxt "@item city"
+msgid "Algiers"
+msgstr "Alger"
+
+msgctxt "@item city"
+msgid "Tunis"
+msgstr "Tunis"
+
+msgctxt "@item city"
+msgid "Dakar"
+msgstr "Dakar"
+
+msgctxt "@item city"
+msgid "Abidjan"
+msgstr "Abidjan"
+
+msgctxt "@item city"
+msgid "Lagos"
+msgstr "Lagos"
+
+msgctxt "@item city"
+msgid "Kinshasa"
+msgstr "Kinshasa"
+
+msgctxt "@item city"
+msgid "Cairo"
+msgstr "Le Caire"
+
+msgctxt "@item city"
+msgid "Nairobi"
+msgstr "Nairobi"
+
+msgctxt "@item city"
+msgid "Johannesburg"
+msgstr "Johannesburg"
+
+msgctxt "@item city"
+msgid "Saint-Denis"
+msgstr "Saint-Denis"
+
+msgctxt "@item city"
+msgid "Antananarivo"
+msgstr "Antananarivo"
+
+msgctxt "@item city"
+msgid "Jerusalem"
+msgstr "Jérusalem"
+
+msgctxt "@item city"
+msgid "Beirut"
+msgstr "Beyrouth"
+
+msgctxt "@item city"
+msgid "Riyadh"
+msgstr "Riyad"
+
+msgctxt "@item city"
+msgid "Tehran"
+msgstr "Téhéran"
+
+msgctxt "@item city"
+msgid "Dubai"
+msgstr "Dubaï"
+
+msgctxt "@item city"
+msgid "Karachi"
+msgstr "Karachi"
+
+msgctxt "@item city"
+msgid "New Delhi"
+msgstr "New Delhi"
+
+msgctxt "@item city"
+msgid "Mumbai"
+msgstr "Mumbai"
+
+msgctxt "@item city"
+msgid "Kathmandu"
+msgstr "Katmandou"
+
+msgctxt "@item city"
+msgid "Dhaka"
+msgstr "Dhaka"
+
+msgctxt "@item city"
+msgid "Bangkok"
+msgstr "Bangkok"
+
+msgctxt "@item city"
+msgid "Hanoi"
+msgstr "Hanoï"
+
+msgctxt "@item city"
+msgid "Ho Chi Minh City"
+msgstr "Hô Chi Minh-Ville"
+
+msgctxt "@item city"
+msgid "Jakarta"
+msgstr "Jakarta"
+
+msgctxt "@item city"
+msgid "Singapore"
+msgstr "Singapour"
+
+msgctxt "@item city"
+msgid "Kuala Lumpur"
+msgstr "Kuala Lumpur"
+
+msgctxt "@item city"
+msgid "Manila"
+msgstr "Manila"
+
+msgctxt "@item city"
+msgid "Hong Kong"
+msgstr "Hong Kong"
+
+msgctxt "@item city"
+msgid "Beijing"
+msgstr "Pékin"
+
+msgctxt "@item city"
+msgid "Shanghai"
+msgstr "Shanghai"
+
+msgctxt "@item city"
+msgid "Taipei"
+msgstr "Taipei"
+
+msgctxt "@item city"
+msgid "Seoul"
+msgstr "Séoul"
+
+msgctxt "@item city"
+msgid "Tokyo"
+msgstr "Tokyo"
+
+msgctxt "@item city"
+msgid "Perth"
+msgstr "Perth"
+
+msgctxt "@item city"
+msgid "Darwin"
+msgstr "Darwin"
+
+msgctxt "@item city"
+msgid "Adelaide"
+msgstr "Adélaïde"
+
+msgctxt "@item city"
+msgid "Brisbane"
+msgstr "Brisbane"
+
+msgctxt "@item city"
+msgid "Sydney"
+msgstr "Sydney"
+
+msgctxt "@item city"
+msgid "Melbourne"
+msgstr "Melbourne"
+
+msgctxt "@item city"
+msgid "Nouméa"
+msgstr "Nouméa"
+
+msgctxt "@item city"
+msgid "Papeete"
+msgstr "Papeete"
+
+msgctxt "@item city"
+msgid "Auckland"
+msgstr "Auckland"
+
+msgctxt "@item city"
+msgid "Suva"
+msgstr "Suva"
+
+msgctxt "@item alarm sound"
+msgid "Chimes"
+msgstr "Carillon"
+
+msgctxt "@item alarm sound"
+msgid "Marimba"
+msgstr "Marimba"
+
+msgctxt "@item alarm sound"
+msgid "Pulse"
+msgstr "Bips"
+
+msgctxt "@item alarm sound"
+msgid "Dawn"
+msgstr "Aube"
+
+msgctxt "@item alarm sound"
+msgid "Glow"
+msgstr "Lueur"
+
+msgctxt "@info city, country"
+msgid "%1, %2"
+msgstr "%1, %2"
+
+msgctxt "@info part of: Rings in…"
+msgid "%1 day"
+msgid_plural "%1 days"
+msgstr[0] "%1 jour"
+msgstr[1] "%1 jours"
+
+msgctxt "@info part of: Rings in…"
+msgid "%1 hour"
+msgid_plural "%1 hours"
+msgstr[0] "%1 heure"
+msgstr[1] "%1 heures"
+
+msgctxt "@info part of: Rings in…"
+msgid "%1 minute"
+msgid_plural "%1 minutes"
+msgstr[0] "%1 minute"
+msgstr[1] "%1 minutes"
+
+msgctxt "@info"
+msgid "Rings in less than a minute"
+msgstr "Sonne dans moins d’une minute"
+
+msgctxt "@info %1 is a length of time"
+msgid "Rings in %1"
+msgstr "Sonne dans %1"
+
+msgctxt "@info %1 and %2 are lengths of time"
+msgid "Rings in %1, %2"
+msgstr "Sonne dans %1 et %2"
+
+msgctxt "@info"
+msgid "Snoozed until %1"
+msgstr "Répétée jusqu’à %1"
+
+msgctxt "@info"
+msgid "Tomorrow"
+msgstr "Demain"
+
+msgctxt "@info"
+msgid "Yesterday"
+msgstr "Hier"
+
+msgctxt "@info"
+msgid "Today"
+msgstr "Aujourd’hui"
+
+msgctxt "@info"
+msgid "Same time"
+msgstr "Même heure"
+
+msgctxt "@info"
+msgid "%1 hour ahead"
+msgid_plural "%1 hours ahead"
+msgstr[0] "%1 heure d’avance"
+msgstr[1] "%1 heures d’avance"
+
+msgctxt "@info"
+msgid "%1 hour behind"
+msgid_plural "%1 hours behind"
+msgstr[0] "%1 heure de retard"
+msgstr[1] "%1 heures de retard"
+
+msgctxt "@info hours and minutes"
+msgid "%1 h %2 min ahead"
+msgstr "%1 h %2 min d’avance"
+
+msgctxt "@info hours and minutes"
+msgid "%1 h %2 min behind"
+msgstr "%1 h %2 min de retard"
+
+msgctxt "@info"
+msgid "Could not save the alarms: %1"
+msgstr "Impossible d’enregistrer les alarmes : %1"
+
+msgctxt "@info"
+msgid "Could not save the timers: %1"
+msgstr "Impossible d’enregistrer les minuteurs : %1"
+
+msgctxt "@info timer length"
+msgid "%1 hour"
+msgid_plural "%1 hours"
+msgstr[0] "%1 heure"
+msgstr[1] "%1 heures"
+
+msgctxt "@title"
+msgid "Timer"
+msgstr "Minuteur"
+
+msgctxt "@info"
+msgid "Timer ended at %1"
+msgstr "Minuteur terminé à %1"
+
+msgctxt "@info timer length"
+msgid "Time's up: %1"
+msgstr "Temps écoulé : %1"
+
+msgctxt "@action:button"
+msgid "Restart"
+msgstr "Relancer"
+
+msgctxt "@action:button"
+msgid "Dismiss"
+msgstr "Ignorer"
+
+msgctxt "@title"
+msgid "Alarm"
+msgstr "Alarme"
+
+msgctxt "@title"
+msgid "Missed alarm"
+msgstr "Alarme manquée"
+
+msgctxt "@info alarm name, time"
+msgid "%1, %2"
+msgstr "%1, %2"
+
+msgctxt "@action:button"
+msgid "Snooze %1 min"
+msgid_plural "Snooze %1 min"
+msgstr[0] "Répéter dans %1 min"
+msgstr[1] "Répéter dans %1 min"
+
+msgctxt "@action:button"
+msgid "Open"
+msgstr "Ouvrir"
+
+msgctxt "@title"
+msgid "Clock"
+msgstr "Horloge"

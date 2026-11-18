@@ -51,6 +51,20 @@ Description: Raye Linux Calendar
  import and export. The events stay in one file on this computer, and
  nothing runs in the background between two reminders.
 
+Package: raye-clock
+Architecture: any
+Depends: raye-style, qml6-module-qtquick, qml6-module-qtquick-controls,
+         qml6-module-qtquick-layouts, qml6-module-qtquick-window,
+         qml6-module-qtquick-templates, qml6-module-qtquick-shapes,
+         qml6-module-qtmultimedia, qml6-module-qtcore, systemd,
+         ${shlibs:Depends}, ${misc:Depends}
+Description: Raye Linux Clock
+ Alarms that ring at the time you set, once or on chosen days, with a
+ name, a sound and Snooze, even when the window is closed. Timers, as
+ many as you like, side by side; a stopwatch with laps; and the time in
+ the cities that matter to you. Nothing runs in the background between
+ two alarms.
+
 Package: xdg-desktop-portal-raye
 Architecture: any
 Depends: raye-style, xdg-desktop-portal, xdg-desktop-portal-kde,

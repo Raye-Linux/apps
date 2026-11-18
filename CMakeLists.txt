@@ -79,6 +79,7 @@ raye_add_app(terminal       PACKAGE raye-terminal       REQUIRES bin/raye-termin
 raye_add_app(notepad        PACKAGE raye-notepad NOT_WRITTEN_YET)
 raye_add_app(taskmanager    PACKAGE raye-taskmanager)
 raye_add_app(calendar       PACKAGE raye-calendar)
+raye_add_app(clock          PACKAGE raye-clock)
 raye_add_app(snip           PACKAGE raye-snip NOT_WRITTEN_YET)
 raye_add_app(calculator     PACKAGE raye-calculator NOT_WRITTEN_YET)
 raye_add_app(camera         PACKAGE raye-camera NOT_WRITTEN_YET)

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- Raye Clock: a light face in a violet ring, ten past ten, the second hand in accent -->
+  <defs>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a52ff"/>
+      <stop offset="1" stop-color="#6a2fe6"/>
+    </linearGradient>
+    <radialGradient id="face" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ede6fb"/>
+    </radialGradient>
+  </defs>
+  <circle cx="32" cy="33" r="27" fill="url(#rim)"/>
+  <circle cx="32" cy="33" r="22" fill="url(#face)"/>
+  <g fill="#c9b8f2">
+    <rect x="30.75" y="13.5" width="2.5" height="5" rx="1.25"/>
+    <rect x="30.75" y="47.5" width="2.5" height="5" rx="1.25"/>
+    <rect x="12.5" y="31.75" width="5" height="2.5" rx="1.25"/>
+    <rect x="46.5" y="31.75" width="5" height="2.5" rx="1.25"/>
+  </g>
+  <g stroke="#3a2a5e" stroke-linecap="round">
+    <line x1="32" y1="33" x2="22.5" y2="26.5" stroke-width="3.5"/>
+    <line x1="32" y1="33" x2="43" y2="21.5" stroke-width="3"/>
+  </g>
+  <line x1="27" y1="39" x2="38.5" y2="24" stroke="#7b3cff" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="32" cy="33" r="3" fill="#7b3cff"/>
+  <circle cx="32" cy="33" r="1.2" fill="#ffffff"/>
+</svg>
