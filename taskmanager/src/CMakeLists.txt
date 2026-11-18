@@ -44,6 +44,7 @@ qt_add_qml_module(raye-taskmanager
         ConfirmSheet.qml
         ChoiceButton.qml
         CheckRow.qml
+        WheelScroll.qml
         RunTaskSheet.qml
         ProcessesPage.qml
         GroupRow.qml

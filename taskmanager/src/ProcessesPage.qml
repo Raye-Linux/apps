@@ -153,6 +153,7 @@ Item {
 
                 ListView {
                     id: list
+                    WheelScroll { target: list }
                     Layout.fillWidth: true
                     Layout.fillHeight: true
                     clip: true

@@ -115,6 +115,8 @@ Item {
                 Rectangle { Layout.fillWidth: true; implicitHeight: 1; color: Tokens.strokeDivider }
 
                 ListView {
+                    id: serviceList
+                    WheelScroll { target: serviceList }
                     Layout.fillWidth: true
                     Layout.fillHeight: true
                     clip: true
