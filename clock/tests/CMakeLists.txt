@@ -18,3 +18,5 @@ add_test(NAME raye-clock/french
 add_test(NAME raye-clock/sounds
          COMMAND ${Python3_EXECUTABLE} -B ${CMAKE_CURRENT_SOURCE_DIR}/test_sounds.py
                  ${PROJECT_SOURCE_DIR}/clock/sounds/make-sounds.py)
+add_test(NAME raye-clock/startup
+         COMMAND ${Python3_EXECUTABLE} -B ${CMAKE_CURRENT_SOURCE_DIR}/test_startup.py)

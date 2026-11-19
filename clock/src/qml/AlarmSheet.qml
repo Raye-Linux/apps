@@ -7,7 +7,6 @@
 import QtQuick
 import QtQuick.Controls as QQC2
 import QtQuick.Layouts
-import QtMultimedia
 import org.raye.ui
 
 Sheet {
@@ -72,9 +71,31 @@ Sheet {
     onAccepted: save()
     onClosed: preview.stop()
 
-    SoundEffect {
+    // The media libraries come with the sheet, not with the window: loading
+    // them takes about 150 ms, done once the sheet is up so Play is instant.
+    onOpened: makePreview.start()
+    Timer {
+        id: makePreview
+        interval: 400
+        onTriggered: preview.make()
+    }
+    QtObject {
         id: preview
-        source: sheet.clock ? sheet.clock.soundUrl(sheet.sound) : ""
+        property var effect: null
+        readonly property bool playing: effect !== null && effect.playing
+        function make() {
+            if (!effect)
+                effect = Qt.createComponent("SoundPreview.qml").createObject(preview)
+        }
+        function play() {
+            make()
+            effect.source = sheet.clock ? sheet.clock.soundUrl(sheet.sound) : ""
+            effect.play()
+        }
+        function stop() {
+            if (effect)
+                effect.stop()
+        }
     }
 
     RowLayout {

@@ -29,3 +29,5 @@ add_test(NAME raye-taskmanager/popups
          COMMAND ${Python3_EXECUTABLE} -B ${CMAKE_CURRENT_SOURCE_DIR}/test_popups.py)
 add_test(NAME raye-taskmanager/french
          COMMAND ${Python3_EXECUTABLE} -B ${CMAKE_CURRENT_SOURCE_DIR}/test_french.py)
+add_test(NAME raye-taskmanager/pages
+         COMMAND ${Python3_EXECUTABLE} -B ${CMAKE_CURRENT_SOURCE_DIR}/test_pages.py)

@@ -60,7 +60,7 @@ MicaWindow {
     }
 
     PerformanceModel {
-        id: performance
+        id: performanceModel
         active: root.shown && prefs.speed !== "paused"
     }
 
@@ -150,6 +150,9 @@ MicaWindow {
                 border.width: 1
                 border.color: Tokens.strokeCard
 
+                // Processes is kept: it is the start page and holds the
+                // groups opened and the sort. The others are made when shown
+                // and let go when left; what they show lives in the models.
                 StackLayout {
                     anchors.fill: parent
                     anchors.margins: Tokens.s6
@@ -158,39 +161,57 @@ MicaWindow {
 
                     ProcessesPage {
                         model: processes
-                        performance: performance
+                        performance: performanceModel
                         search: root.page === 0 ? searchBox.text : ""
                         onRunTaskRequested: runSheet.open()
-                        onDetailsRequested: (pid) => { details.reveal(pid); root.page = 4 }
+                        onDetailsRequested: (pid) => { root.page = 4; detailsPage.item.reveal(pid) }
                     }
-                    PerformancePage {
-                        performance: performance
-                        processCount: processes.totalCount
-                        onRunTaskRequested: runSheet.open()
+                    Loader {
+                        active: root.page === 1
+                        sourceComponent: PerformancePage {
+                            performance: performanceModel
+                            processCount: processes.totalCount
+                            onRunTaskRequested: runSheet.open()
+                        }
                     }
-                    StartupPage {
-                        active: root.page === 2 && root.shown
-                        search: root.page === 2 ? searchBox.text : ""
+                    Loader {
+                        active: root.page === 2
+                        sourceComponent: StartupPage {
+                            active: root.shown
+                            search: searchBox.text
+                        }
                     }
-                    UsersPage {
-                        model: processes
+                    Loader {
+                        active: root.page === 3
+                        sourceComponent: UsersPage {
+                            model: processes
+                        }
                     }
-                    DetailsPage {
-                        id: details
-                        model: processes
-                        search: root.page === 4 ? searchBox.text : ""
-                        onRunTaskRequested: runSheet.open()
+                    Loader {
+                        id: detailsPage
+                        active: root.page === 4
+                        sourceComponent: DetailsPage {
+                            model: processes
+                            search: searchBox.text
+                            onRunTaskRequested: runSheet.open()
+                        }
                     }
-                    ServicesPage {
-                        active: root.page === 5 && root.shown
-                        search: root.page === 5 ? searchBox.text : ""
+                    Loader {
+                        active: root.page === 5
+                        sourceComponent: ServicesPage {
+                            active: root.shown
+                            search: searchBox.text
+                        }
                     }
-                    SettingsPage {
-                        pages: root.pages
-                        startPage: prefs.startPage
-                        speed: prefs.speed
-                        onStartPageChosen: (index) => prefs.startPage = index
-                        onSpeedChosen: (value) => prefs.speed = value
+                    Loader {
+                        active: root.page === 6
+                        sourceComponent: SettingsPage {
+                            pages: root.pages
+                            startPage: prefs.startPage
+                            speed: prefs.speed
+                            onStartPageChosen: (index) => prefs.startPage = index
+                            onSpeedChosen: (value) => prefs.speed = value
+                        }
                     }
                 }
             }

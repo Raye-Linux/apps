@@ -46,6 +46,7 @@ qt_add_qml_module(raye-clock
         qml/AlarmsPage.qml
         qml/AlarmCard.qml
         qml/AlarmSheet.qml
+        qml/SoundPreview.qml
         qml/DayChips.qml
         qml/DigitWheel.qml
         qml/Sheet.qml
