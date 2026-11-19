@@ -147,7 +147,9 @@ private Q_SLOTS:
         QElapsedTimer t;
         t.start();
         l.openPage("system/sound");
-        QVERIFY2(t.elapsed() < 150, qPrintable(QString::number(t.elapsed())));
+        // the program runs 3 s: well under that means openPage did not wait
+        // for it. Not 150 ms: a busy build machine took 474 ms on 2026-11-19
+        QVERIFY2(t.elapsed() < 1500, qPrintable(QString::number(t.elapsed())));
         QVERIFY(l.property("busy").toBool());
         auto heard = [&said] {
             QFile f(said);
