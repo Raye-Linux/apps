@@ -1,3 +1,15 @@
+raye-apps (1.0~beta1) resolute; urgency=medium
+
+  * New Clock app: alarms that ring with the window closed, with days, sound
+    and Snooze, timers, a stopwatch with laps and world clocks.
+  * New Graphics Card panel: live readings of the graphics card, and on AMD
+    Radeon cards the performance mode, workload profile, power limit and a
+    fan curve, kept across restarts. NVIDIA cards open the NVIDIA Control
+    Panel, now named so in Start.
+  * Task Manager: the mouse wheel scrolls the lists by a Windows-sized step.
+
+ -- techoraye <190692880+techoraye@users.noreply.github.com>  Thu, 19 Nov 2026 06:00:00 +0000
+
 raye-apps (0.5.1~beta1) resolute; urgency=medium
 
   * Control Panel answers clicks at once and shows the busy pointer while the page opens.
