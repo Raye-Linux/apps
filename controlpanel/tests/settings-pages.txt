@@ -16,6 +16,7 @@ accounts/other-users
 accounts/raye-account
 accounts/raye-backup
 accounts/sign-in
+accounts/windows-files
 accounts/your-devices
 accounts/your-info
 apps
@@ -80,6 +81,7 @@ system/hardware-details
 system/multitasking
 system/night-light
 system/notifications
+system/performance
 system/power
 system/recovery
 system/remote-desktop
