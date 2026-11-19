@@ -8,6 +8,7 @@
 //   ~/.local/share/raye-clock/timers.json      the timers
 //   ~/.local/share/raye-clock/stopwatch.json   the stopwatch and its laps
 //   ~/.local/state/raye-clock/rings.json       what rang, and the snoozes
+//   ~/.local/state/raye-clock/wake             when the PC was last set to wake
 //   ~/.config/raye/raye-clock.conf             the world clocks, window choices
 //   ~/.config/systemd/user/raye-clock-ring.timer   the next ring
 
@@ -23,6 +24,7 @@ QString alarmsPath();
 QString timersPath();
 QString stopwatchPath();
 QString statePath();
+QString wakePath();
 QString settingsPath();
 QString timerPath();
 

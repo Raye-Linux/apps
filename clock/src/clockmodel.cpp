@@ -4,6 +4,7 @@
 #include "clockmodel.h"
 #include "cities.h"
 #include "clockstore.h"
+#include "wake.h"
 #include "worldtime.h"
 
 #include <KLocalizedString>
@@ -116,6 +117,11 @@ void ClockModel::loadStopwatch()
 {
     m_stopwatch = Stopwatch::fromJson(ClockStore::read(ClockStore::stopwatchPath()));
     Q_EMIT stopwatchChanged();
+}
+
+bool ClockModel::canWake() const
+{
+    return Wake::rtcCanWake() && Wake::helperInstalled();
 }
 
 bool ClockModel::use12Hour() const

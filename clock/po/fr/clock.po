@@ -94,12 +94,20 @@ msgid "Cancel"
 msgstr "Annuler"
 
 msgctxt "@info"
-msgid "Alarms only ring while your PC is on."
-msgstr "Les alarmes ne sonnent que si votre PC est allumé."
+msgid "Alarms wake your PC from sleep."
+msgstr "Les alarmes sortent votre PC de la veille."
 
 msgctxt "@info"
-msgid "They do not wake it from sleep. An alarm missed while it slept shows as a notification when it wakes."
-msgstr "Elles ne le sortent pas de la veille. Une alarme manquée pendant la veille s’affiche en notification au réveil du PC."
+msgid "They do not ring when it is shut down. An alarm missed then shows as a notification when you sign in."
+msgstr "Elles ne sonnent pas quand il est éteint. Une alarme manquée s’affiche alors en notification à la connexion."
+
+msgctxt "@info"
+msgid "This PC can't wake from sleep for alarms."
+msgstr "Ce PC ne peut pas sortir de la veille pour une alarme."
+
+msgctxt "@info"
+msgid "Alarms only ring while it is on. An alarm missed while it slept shows as a notification when it wakes."
+msgstr "Les alarmes ne sonnent que s’il est allumé. Une alarme manquée pendant la veille s’affiche en notification au réveil."
 
 msgctxt "@info"
 msgid "No alarms yet"

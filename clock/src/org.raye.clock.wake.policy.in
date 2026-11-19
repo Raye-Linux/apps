@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+  <vendor>Raye Linux</vendor>
+  <vendor_url>https://rayelinux.com</vendor_url>
+  <!-- no password: setting when the PC wakes for an alarm is harmless, the
+       helper only takes a time, and it is asked from the clock's own
+       timer, outside any open session -->
+  <action id="org.raye.clock.wake">
+    <description>Wake the computer for an alarm</description>
+    <description xml:lang="fr">Réveiller l'ordinateur pour une alarme</description>
+    <message>Clock wants to wake your PC from sleep for an alarm</message>
+    <message xml:lang="fr">Horloge veut sortir votre PC de la veille pour une alarme</message>
+    <icon_name>org.raye.clock</icon_name>
+    <defaults>
+      <allow_any>yes</allow_any>
+      <allow_inactive>yes</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">@RAYE_CLOCK_WAKE_HELPER_PATH@</annotate>
+  </action>
+</policyconfig>

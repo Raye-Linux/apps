@@ -1,0 +1,9 @@
+# Started by raye-clock-wake-<uid>.timer, which wakes the PC from sleep a
+# little before a Raye Clock alarm. There is nothing to do once awake: the
+# user's own timer rings the alarm.
+[Unit]
+Description=Wake up for a Raye Clock alarm
+
+[Service]
+Type=oneshot
+ExecStart=/bin/true

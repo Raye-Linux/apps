@@ -8,6 +8,7 @@ remove_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FR
 
 raye_add_qtest(alarms SOURCES test_alarms.cpp LIBRARIES raye-clock-logic)
 raye_add_qtest(rings SOURCES test_rings.cpp LIBRARIES raye-clock-logic)
+raye_add_qtest(wake SOURCES test_wake.cpp LIBRARIES raye-clock-logic)
 raye_add_qtest(countdown SOURCES test_countdown.cpp LIBRARIES raye-clock-logic)
 raye_add_qtest(worldtime SOURCES test_worldtime.cpp LIBRARIES raye-clock-logic)
 raye_add_qtest(rowmodel SOURCES test_rowmodel.cpp LIBRARIES raye-clock-logic)

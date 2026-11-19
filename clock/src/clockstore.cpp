@@ -41,6 +41,11 @@ QString ClockStore::statePath()
     return under(QStandardPaths::GenericStateLocation, QStringLiteral("raye-clock/rings.json"));
 }
 
+QString ClockStore::wakePath()
+{
+    return under(QStandardPaths::GenericStateLocation, QStringLiteral("raye-clock/wake"));
+}
+
 QString ClockStore::settingsPath()
 {
     return under(QStandardPaths::GenericConfigLocation, QStringLiteral("raye/raye-clock.conf"));

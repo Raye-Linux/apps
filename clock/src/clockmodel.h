@@ -39,6 +39,8 @@ class ClockModel : public QObject
     // "Toronto, Canada": the place of the computer's zone
     Q_PROPERTY(QString localPlace READ localPlace NOTIFY minuteChanged)
     Q_PROPERTY(bool use12Hour READ use12Hour CONSTANT)
+    // the PC can be woken from sleep for an alarm
+    Q_PROPERTY(bool canWake READ canWake CONSTANT)
     Q_PROPERTY(QString lastError READ lastError NOTIFY lastErrorChanged)
 
 public:
@@ -59,6 +61,7 @@ public:
     QString localPlace() const;
     bool use12Hour() const;
     QString lastError() const { return m_error; }
+    bool canWake() const;
 
     // alarms. fields: name, hour, minute, days, sound, snooze; an empty key makes a new one
     Q_INVOKABLE QString saveAlarm(const QString &key, const QVariantMap &fields);

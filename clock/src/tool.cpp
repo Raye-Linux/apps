@@ -10,6 +10,7 @@
 //              It ends when the last ring on screen is answered.
 
 #include "clockstore.h"
+#include "wake.h"
 
 #include <KLocalizedString>
 
@@ -54,6 +55,17 @@ QList<Countdown> loadTimers()
 RingState loadState()
 {
     return RingState::fromJson(ClockStore::read(ClockStore::statePath()));
+}
+
+// the user timer for the next ring, and the PC's wake from sleep for the
+// next alarm
+Schedule::Action arm(const QList<Alarm> &alarms, const QList<Countdown> &timers, const RingState &state,
+                     const QDateTime &now, const QTimeZone &zone)
+{
+    const auto action = Schedule::apply(alarms, timers, state, now, zone, ClockStore::timerPath(), Schedule::realSystemctl());
+    Wake::apply(Wake::nextAlarm(alarms, state, now, zone), now, ClockStore::wakePath(),
+                Wake::rtcCanWake() && Wake::helperInstalled(), Wake::realHelper());
+    return action;
 }
 
 QString soundFile(const QString &name)
@@ -338,7 +350,7 @@ private:
         const QList<Alarm> alarms = loadAlarms();
         const QList<Countdown> timers = loadTimers();
         const RingState state = loadState();
-        Schedule::apply(alarms, timers, state, now, zone, ClockStore::timerPath(), Schedule::realSystemctl());
+        arm(alarms, timers, state, now, zone);
         const QDateTime next = Rings::next(alarms, timers, state, now, zone);
         if (next.isValid() && !m_shown.isEmpty())
             m_next.start(int(qBound(qint64(500), now.msecsTo(next), qint64(6) * 3600 * 1000)));
@@ -367,7 +379,7 @@ private:
         }
         m_next.stop();
         m_sound.stop();
-        Schedule::apply(alarms, timers, state, now, zone, ClockStore::timerPath(), Schedule::realSystemctl());
+        arm(alarms, timers, state, now, zone);
         // let the sound end cleanly
         QTimer::singleShot(200, qApp, &QCoreApplication::quit);
     }
@@ -387,8 +399,7 @@ int schedule()
     const QList<Alarm> alarms = loadAlarms();
     const QList<Countdown> timers = loadTimers();
     RingState state = loadState();
-    const auto action = Schedule::apply(alarms, timers, state, QDateTime::currentDateTime(), QTimeZone::systemTimeZone(),
-                                        ClockStore::timerPath(), Schedule::realSystemctl());
+    const auto action = arm(alarms, timers, state, QDateTime::currentDateTime(), QTimeZone::systemTimeZone());
     std::printf("%s\n", action == Schedule::Action::StartNow ? "due now" : action == Schedule::Action::Timer ? "timer" : "none");
     return 0;
 }

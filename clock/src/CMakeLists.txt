@@ -5,10 +5,22 @@ add_library(raye-clock-logic STATIC
     countdown.cpp countdown.h
     rings.cpp rings.h
     clockstore.cpp clockstore.h
+    wake.cpp wake.h
     worldtime.cpp worldtime.h
     rowmodel.cpp rowmodel.h)
 target_include_directories(raye-clock-logic PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(raye-clock-logic PUBLIC Qt6::Core)
+
+# Waking from sleep: a root helper, through pkexec, keeps a system timer
+# with WakeSystem=true for the next alarm (wake.h).
+set(RAYE_CLOCK_WAKE_HELPER_PATH "${KDE_INSTALL_FULL_LIBEXECDIR}/raye-clock-wake")
+target_compile_definitions(raye-clock-logic PUBLIC RAYE_CLOCK_WAKE_HELPER="${RAYE_CLOCK_WAKE_HELPER_PATH}")
+add_executable(raye-clock-wake wake-helper.cpp)
+target_link_libraries(raye-clock-wake PRIVATE raye-clock-logic)
+install(TARGETS raye-clock-wake DESTINATION ${KDE_INSTALL_LIBEXECDIR})
+configure_file(org.raye.clock.wake.policy.in ${CMAKE_CURRENT_BINARY_DIR}/org.raye.clock.wake.policy @ONLY)
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/org.raye.clock.wake.policy DESTINATION ${KDE_INSTALL_DATADIR}/polkit-1/actions)
+install(FILES raye-clock-wake.service DESTINATION ${KDE_INSTALL_SYSTEMDUNITDIR}/system)
 
 set(RAYE_CLOCK_TOOL_PATH "${KDE_INSTALL_FULL_LIBEXECDIR}/raye-clock-tool")
 

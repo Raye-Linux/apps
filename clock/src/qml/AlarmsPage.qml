@@ -22,13 +22,19 @@ Item {
         anchors.topMargin: Tokens.s8
         spacing: Tokens.s5
 
-        // what Windows says too: an alarm cannot wake a sleeping PC
+        // a sleeping PC wakes for an alarm when its clock can do it; one
+        // that is shut down never does
         InfoBar {
+            objectName: "wakeNotice"
             Layout.fillWidth: true
             Layout.rightMargin: Tokens.s8
             visible: !page.noticeClosed
-            title: i18nc("@info", "Alarms only ring while your PC is on.")
-            message: i18nc("@info", "They do not wake it from sleep. An alarm missed while it slept shows as a notification when it wakes.")
+            title: page.clock && page.clock.canWake
+                   ? i18nc("@info", "Alarms wake your PC from sleep.")
+                   : i18nc("@info", "This PC can't wake from sleep for alarms.")
+            message: page.clock && page.clock.canWake
+                     ? i18nc("@info", "They do not ring when it is shut down. An alarm missed then shows as a notification when you sign in.")
+                     : i18nc("@info", "Alarms only ring while it is on. An alarm missed while it slept shows as a notification when it wakes.")
             onCloseClicked: page.noticeClosed = true
         }
 
