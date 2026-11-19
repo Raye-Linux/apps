@@ -109,6 +109,11 @@ class Table(unittest.TestCase):
                 self.assertNotIn(name, seen, f"{desktop_id} and {seen.get(name)}")
                 seen[name] = desktop_id
 
+    def test_kde_clock_gives_way_to_raye_clock(self):
+        # both are called Clock: without this, Start lists two Clocks
+        self.assertEqual(self.table["org.kde.kclock.desktop"].get("replaced_by"),
+                         "org.raye.clock.desktop")
+
 
 class Generator(unittest.TestCase):
     def setUp(self):

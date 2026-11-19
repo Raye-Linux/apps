@@ -66,7 +66,8 @@
       "name": {"en": "Clock", "fr": "Horloge"},
       "comment": {"en": "Alarms, timers and world clocks", "fr": "Alarmes, minuteurs et horloges du monde"},
       "keywords": {"en": "alarm;timer;stopwatch;", "fr": "alarme;minuteur;chronomètre;"},
-      "icon": "raye-clock"
+      "icon": "raye-clock",
+      "replaced_by": "org.raye.clock.desktop"
     },
     "org.kde.krecorder.desktop": {
       "name": {"en": "Sound Recorder", "fr": "Enregistreur audio"},
