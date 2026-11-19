@@ -5,6 +5,9 @@
 #include "efficiency.h"
 #include "endtask.h"
 #include "runtask.h"
+#include "windowsprocess.h"
+
+#include <KLocalizedString>
 
 #include <QDateTime>
 #include <QFileInfo>
@@ -350,8 +353,44 @@ QList<ProcEntry> ProcessModel::entries() const
     return out;
 }
 
+ProcessModel::AppLabel ProcessModel::windowsLabel(const QString &file)
+{
+    const QString key = file.toLower();
+    auto found = m_windowsEntries.constFind(key);
+    const qint64 now = QDateTime::currentMSecsSinceEpoch();
+    // a program installed a moment ago gets its Start entry a little later
+    if (found == m_windowsEntries.constEnd() && now - m_windowsEntriesAt > 30000) {
+        m_windowsEntriesAt = now;
+        m_windowsEntries.clear();
+        const QString lang = QLocale().name();
+        const QStringList dirs = QStandardPaths::standardLocations(QStandardPaths::ApplicationsLocation);
+        for (auto dir = dirs.crbegin(); dir != dirs.crend(); ++dir) {
+            const QStringList files = QDir(*dir).entryList({QStringLiteral("*.desktop")}, QDir::Files);
+            for (const QString &f : files) {
+                const DesktopEntry e = parseDesktopEntry(readWhole(*dir + QLatin1Char('/') + f), lang);
+                if (e.valid && !e.hidden && !e.startupWMClass.isEmpty() && !e.name.isEmpty()) {
+                    m_windowsEntries.insert(e.startupWMClass.toLower(), AppLabel{e.name, e.icon});
+                }
+            }
+        }
+        found = m_windowsEntries.constFind(key);
+    }
+    if (found != m_windowsEntries.constEnd()) {
+        return *found;
+    }
+    return AppLabel{windowsProgramName(file), QStringLiteral("application-x-ms-dos-executable")};
+}
+
 ProcessModel::AppLabel ProcessModel::labelFor(const QString &id)
 {
+    if (id == QStringView(WindowsSupportAppId)) {
+        return AppLabel{i18nc("@item what runs Windows programs, shown in place of its own processes", "Windows programs support"),
+                        QStringLiteral("application-x-ms-dos-executable")};
+    }
+    const QString windowsFile = windowsProgramFile(id);
+    if (!windowsFile.isEmpty()) {
+        return windowsLabel(windowsFile);
+    }
     const auto known = m_labels.constFind(id);
     if (known != m_labels.constEnd()) {
         return *known;
@@ -441,7 +480,22 @@ void ProcessModel::refresh()
             k.startTime = stat.startTime;
             k.uid = QFileInfo(dir).ownerId();
             k.app = appUnitFromCgroup(readWhole(dir + QStringLiteral("/cgroup")));
-            k.name = stat.comm.size() < 15 ? stat.comm : displayName(stat.comm, readWhole(dir + QStringLiteral("/cmdline")));
+            const QByteArray cmdline = readWhole(dir + QStringLiteral("/cmdline"));
+            k.name = stat.comm.size() < 15 ? stat.comm : displayName(stat.comm, cmdline);
+            // a Windows program by its own name, and the layer's helpers as one
+            // thing: never the loader's or the helpers' names
+            const WindowsProcess windows = windowsProcess(QFile::symLinkTarget(dir + QStringLiteral("/exe")), cmdline);
+            if (windows.role == WindowsRole::Support) {
+                k.name = labelFor(QString::fromUtf16(WindowsSupportAppId)).name;
+                if (!k.app.isValid() || isGenericWindowsLauncher(k.app.id)) {
+                    k.app = AppUnit{QString::fromUtf16(WindowsSupportAppId), true};
+                }
+            } else if (windows.role == WindowsRole::Program) {
+                k.name = windows.file;
+                if (!k.app.isValid() || isGenericWindowsLauncher(k.app.id)) {
+                    k.app = AppUnit{windowsProgramAppId(windows.file), false};
+                }
+            }
         }
         known.insert(pid, k);
         row.uid = k.uid;

@@ -35,6 +35,14 @@ class French(unittest.TestCase):
                             "--keyword=i18nc:1c,2", "--keyword=i18np:1,2", "--keyword=i18ncp:1c,2,3",
                             "--no-location", "--no-wrap", "-o", str(pot)] + sources, check=True)
             wanted = entries(pot.read_text())
+            # the C++ that names rows itself
+            cpp = Path(tmp) / "c.pot"
+            subprocess.run([xgettext, "--from-code=UTF-8", "-L", "C++", "--keyword=i18n:1",
+                            "--keyword=i18nc:1c,2", "--no-location", "--no-wrap", "-o", str(cpp),
+                            str(SRC / "processmodel.cpp")], check=True)
+            wanted.update(entries(cpp.read_text()))
+            self.assertIn(("@item what runs Windows programs, shown in place of its own processes",
+                           "Windows programs support"), wanted)
         # a template with almost nothing in it means xgettext read nothing
         self.assertGreater(len(wanted), 150)
         have = entries(PO.read_text())

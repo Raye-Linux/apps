@@ -38,6 +38,9 @@ starts lands in it, so a terminal and its shells, a browser and its
 tabs, are one row. Apps started at sign-in run as
 `app-<id>@autostart.service` and are listed with the background processes.
 The kernel's own threads (`PF_KTHREAD`, field 9) are only in Details.
+Windows programs (`windowsprocess.h`) are named by their .exe and grouped
+under their Start entry (`StartupWMClass`); the processes of the layer
+that runs them are one row, "Windows programs support".
 
 **Cost.** One reading a second (two at "High", one every four at "Low"),
 one every five seconds while the window is minimised. Lists are not bound

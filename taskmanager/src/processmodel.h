@@ -185,6 +185,9 @@ private:
     QHash<int, Known> m_known;
     QHash<int, qulonglong> m_previousIo;
     QHash<QString, AppLabel> m_labels;
+    // Start entries of Windows programs, by StartupWMClass (the .exe name)
+    QHash<QString, AppLabel> m_windowsEntries;
+    qint64 m_windowsEntriesAt = 0;
     qint64 m_previousAt = 0;
     QString m_filter;
     QString m_sortColumn = QStringLiteral("name");
@@ -205,6 +208,7 @@ private:
     const Row *rowOfPid(int pid) const;
     void applyView();
     AppLabel labelFor(const QString &id);
+    AppLabel windowsLabel(const QString &file);
 };
 
 } // namespace Raye::TaskManager

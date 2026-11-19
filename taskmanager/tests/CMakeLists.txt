@@ -19,6 +19,7 @@ raye_add_qtest(services SOURCES test_services.cpp LIBRARIES raye-taskmanager-log
 raye_add_qtest(rowdiff SOURCES test_rowdiff.cpp LIBRARIES raye-taskmanager-logic)
 raye_add_qtest(devicelist SOURCES test_devicelist.cpp LIBRARIES raye-taskmanager-logic)
 raye_add_qtest(runtask SOURCES test_runtask.cpp LIBRARIES raye-taskmanager-logic)
+raye_add_qtest(windowsprocess SOURCES test_windowsprocess.cpp LIBRARIES raye-taskmanager-logic)
 
 find_package(Python3 REQUIRED COMPONENTS Interpreter)
 add_test(NAME raye-taskmanager/columns

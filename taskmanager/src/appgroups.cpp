@@ -201,6 +201,8 @@ DesktopEntry parseDesktopEntry(const QByteArray &text, const QString &lang)
             e.exec = value;
         } else if (key == QLatin1String("Comment")) {
             e.comment = value;
+        } else if (key == QLatin1String("StartupWMClass")) {
+            e.startupWMClass = value;
         } else if (key == QLatin1String("Hidden")) {
             e.hidden = value == QLatin1String("true");
         } else if (key == QLatin1String("NoDisplay")) {

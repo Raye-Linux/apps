@@ -12,6 +12,7 @@ add_library(raye-taskmanager-logic STATIC
     services.cpp services.h
     devicelist.cpp devicelist.h
     runtask.cpp runtask.h
+    windowsprocess.cpp windowsprocess.h
     rowdiff.h)
 target_include_directories(raye-taskmanager-logic PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(raye-taskmanager-logic PUBLIC Qt6::Core)

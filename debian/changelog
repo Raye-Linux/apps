@@ -5,6 +5,8 @@ raye-apps (1.0~beta2) resolute; urgency=medium
     alarm sheet.
   * Clock alarms wake the PC from sleep when it can, and say so plainly
     when it can't.
+  * Task Manager shows each Windows program under its own name and icon,
+    and the pieces that run them as one line, Windows programs support.
 
  -- techoraye <190692880+techoraye@users.noreply.github.com>  Thu, 19 Nov 2026 16:00:00 +0000
 

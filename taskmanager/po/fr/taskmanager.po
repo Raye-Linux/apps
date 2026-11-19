@@ -864,3 +864,7 @@ msgstr "Pour les commandes sans fenêtre. Ce qu’elles affichent apparaît ici 
 msgctxt "@action:button"
 msgid "Close"
 msgstr "Fermer"
+
+msgctxt "@item what runs Windows programs, shown in place of its own processes"
+msgid "Windows programs support"
+msgstr "Prise en charge des programmes Windows"

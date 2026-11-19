@@ -49,6 +49,7 @@ struct DesktopEntry {
     QString icon;
     QString exec;
     QString comment;
+    QString startupWMClass;
     bool hidden = false;
     bool noDisplay = false;
     bool autostartEnabled = true; // X-GNOME-Autostart-enabled
