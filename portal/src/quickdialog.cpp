@@ -6,21 +6,41 @@
 
 #include "quickdialog.h"
 #include <KLocalizedString>
+#include <QCoreApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QQuickWindow>
 #include <QTimer>
 
+#ifdef __GLIBC__
+#include <malloc.h>
+#endif
+
 using namespace Qt::StringLiterals;
+
+// Raye: the backend lives as long as the session; the heap would keep the
+// size of the last dialog's QML engine otherwise
+static int s_dialogs = 0;
 
 QuickDialog::QuickDialog(QObject *parent)
     : QObject(parent)
 {
+    ++s_dialogs;
 }
 
 QuickDialog::~QuickDialog() noexcept
 {
     delete m_theDialog;
+    if (--s_dialogs == 0) {
+#ifdef __GLIBC__
+        // the engine is a child: gone by the time this runs
+        QTimer::singleShot(1000, qApp, [] {
+            if (s_dialogs == 0) {
+                malloc_trim(0);
+            }
+        });
+#endif
+    }
 }
 
 void QuickDialog::create(const QString &componentName, const QVariantMap &props)
