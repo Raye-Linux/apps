@@ -75,6 +75,8 @@ private:
     void refresh();
     void readLimits();
     void readNvidia();
+    void stopNvidia();
+    void showNvidia(const Raye::Graphics::NvidiaReading &r);
     void push(const char *key, double value);
     void runHelper(const QStringList &args, const QByteArray &input, bool reset);
     const Raye::Graphics::Card *currentCard() const;

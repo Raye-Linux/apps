@@ -29,7 +29,11 @@ struct NvidiaReading {
     double powerW = NAN, powerLimitW = NAN;
 };
 
-// the arguments nvidia-smi is run with; parseNvidiaSmi reads its output
+// the arguments nvidia-smi is run with; parseNvidiaSmi reads its output.
+// One nvidia-smi that prints a line every second (-lms), started when the
+// window shows and stopped when it hides: starting a new nvidia-smi each
+// second opened the driver each time (a tenth of a second of processor,
+// and a hitch in a game running beside the window).
 QStringList nvidiaSmiArguments();
 QList<NvidiaReading> parseNvidiaSmi(const QByteArray &csv);
 

@@ -89,6 +89,7 @@ void GraphicsModel::setActive(bool active)
         m_timer.start();
     } else {
         m_timer.stop();
+        stopNvidia();
     }
     Q_EMIT activeChanged();
 }
@@ -112,6 +113,7 @@ void GraphicsModel::setCurrent(int index)
     if (index == m_current || index < 0 || index >= m_cards.size())
         return;
     m_current = index;
+    stopNvidia();
     m_history.clear();
     m_nvidiaSeen = false;
     readLimits();
@@ -186,52 +188,86 @@ void GraphicsModel::refresh()
 
 void GraphicsModel::readNvidia()
 {
+    // one nvidia-smi for as long as the window shows this card; it prints
+    // a line a second (nvidiaSmiArguments)
     if (m_smi)
         return;
     const QString program = QStandardPaths::findExecutable(m_nvidiaSmi);
     if (program.isEmpty())
         return;
     m_smi = new QProcess(this);
+    m_smi->setProcessChannelMode(QProcess::SeparateChannels);
     const QString slot = currentCard()->slot;
-    connect(m_smi, &QProcess::finished, this, [this, slot](int code) {
-        const QByteArray out = m_smi->readAllStandardOutput();
-        m_smi->deleteLater();
-        const Card *c = currentCard();
-        if (code != 0 || !c || c->slot != slot)
-            return;
-        const QList<NvidiaReading> all = parseNvidiaSmi(out);
-        for (const NvidiaReading &r : all) {
-            if (r.slot != slot && all.size() > 1)
-                continue;
-            m_nvidiaSeen = true;
-            m_now = {{QStringLiteral("name"), r.name},
-                     {QStringLiteral("driver"), r.driver},
-                     {QStringLiteral("busy"), r.busy},
-                     {QStringLiteral("memBusy"), r.memBusy},
-                     {QStringLiteral("vramUsed"), double(r.vramUsed)},
-                     {QStringLiteral("vramTotal"), double(r.vramTotal)},
-                     {QStringLiteral("gttUsed"), -1},
-                     {QStringLiteral("gttTotal"), -1},
-                     {QStringLiteral("sclk"), r.sclk},
-                     {QStringLiteral("mclk"), r.mclk},
-                     {QStringLiteral("temp"), real(r.temp)},
-                     {QStringLiteral("junction"), -1},
-                     {QStringLiteral("memTemp"), -1},
-                     {QStringLiteral("fanRpm"), -1},
-                     {QStringLiteral("fanPercent"), r.fanPercent},
-                     {QStringLiteral("powerW"), real(r.powerW)},
-                     {QStringLiteral("powerLimitW"), real(r.powerLimitW)}};
-            push("busy", r.busy);
-            push("sclk", r.sclk);
-            push("temp", r.temp);
-            push("power", r.powerW);
-            push("fan", r.fanPercent);
-            push("vram", r.vramTotal > 0 ? 100.0 * double(r.vramUsed) / double(r.vramTotal) : -1);
-            Q_EMIT readingChanged();
-            break;
+    int nvidiaCards = 0;
+    for (const Card &c : std::as_const(m_cards))
+        nvidiaCards += c.vendor == Vendor::Nvidia;
+    connect(m_smi, &QProcess::readyReadStandardOutput, this, [this, slot, nvidiaCards] {
+        while (m_smi && m_smi->canReadLine()) {
+            const QByteArray line = m_smi->readLine();
+            const Card *c = currentCard();
+            if (!c || c->slot != slot)
+                return;
+            for (const NvidiaReading &r : parseNvidiaSmi(line)) {
+                if (r.slot != slot && nvidiaCards > 1)
+                    continue;
+                showNvidia(r);
+            }
         }
     });
+    QProcess *smi = m_smi;
+    auto gone = [this, smi] {
+        if (m_smi == smi)
+            m_smi = nullptr;
+        smi->deleteLater();
+    };
+    connect(m_smi, &QProcess::finished, this, gone);
+    connect(m_smi, &QProcess::errorOccurred, this, [gone](QProcess::ProcessError e) {
+        if (e == QProcess::FailedToStart)
+            gone();
+    });
     m_smi->start(program, nvidiaSmiArguments());
+}
+
+void GraphicsModel::stopNvidia()
+{
+    if (!m_smi)
+        return;
+    QProcess *smi = m_smi;
+    m_smi = nullptr;
+    smi->disconnect(this);
+    smi->terminate();
+    if (!smi->waitForFinished(500))
+        smi->kill();
+    smi->deleteLater();
+}
+
+void GraphicsModel::showNvidia(const NvidiaReading &r)
+{
+    m_nvidiaSeen = true;
+    m_now = {{QStringLiteral("name"), r.name},
+             {QStringLiteral("driver"), r.driver},
+             {QStringLiteral("busy"), r.busy},
+             {QStringLiteral("memBusy"), r.memBusy},
+             {QStringLiteral("vramUsed"), double(r.vramUsed)},
+             {QStringLiteral("vramTotal"), double(r.vramTotal)},
+             {QStringLiteral("gttUsed"), -1},
+             {QStringLiteral("gttTotal"), -1},
+             {QStringLiteral("sclk"), r.sclk},
+             {QStringLiteral("mclk"), r.mclk},
+             {QStringLiteral("temp"), real(r.temp)},
+             {QStringLiteral("junction"), -1},
+             {QStringLiteral("memTemp"), -1},
+             {QStringLiteral("fanRpm"), -1},
+             {QStringLiteral("fanPercent"), r.fanPercent},
+             {QStringLiteral("powerW"), real(r.powerW)},
+             {QStringLiteral("powerLimitW"), real(r.powerLimitW)}};
+    push("busy", r.busy);
+    push("sclk", r.sclk);
+    push("temp", r.temp);
+    push("power", r.powerW);
+    push("fan", r.fanPercent);
+    push("vram", r.vramTotal > 0 ? 100.0 * double(r.vramUsed) / double(r.vramTotal) : -1);
+    Q_EMIT readingChanged();
 }
 
 void GraphicsModel::readLimits()

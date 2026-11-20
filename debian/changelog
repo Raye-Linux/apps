@@ -9,6 +9,9 @@ raye-apps (1.0~beta2) resolute; urgency=medium
     and the pieces that run them as one line, Windows programs support.
   * Screen sharing gives back the memory of its dialog once you have
     chosen.
+  * Graphics Card: NVIDIA readings come from one nvidia-smi for as long as
+    the window shows, no longer a new one every second (a hitch in a game
+    running beside it).
 
  -- techoraye <190692880+techoraye@users.noreply.github.com>  Thu, 19 Nov 2026 16:00:00 +0000
 
