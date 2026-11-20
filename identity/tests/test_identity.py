@@ -67,6 +67,17 @@ class Table(unittest.TestCase):
     def setUp(self):
         self.table = json.loads(TABLE.read_text(encoding="utf-8"))["apps"]
 
+    def test_kdes_settings_leave_start_for_raye_settings(self):
+        for desktop_id in ("systemsettings.desktop", "kdesystemsettings.desktop"):
+            with self.subTest(desktop_id):
+                # Raye Settings does their work; the program stays for the
+                # pages of its own Settings opens
+                self.assertTrue(self.table[desktop_id].get("hidden"))
+
+    def test_synaptic_is_not_hidden_from_who_installs_it(self):
+        # the image no longer has it; a person who installs it wants to see it
+        self.assertNotIn("synaptic.desktop", self.table)
+
     def test_the_apps_the_owner_named_get_a_plain_name(self):
         for desktop_id, en, fr in (
             ("org.kde.konsole.desktop", "Terminal", "Terminal"),
@@ -212,6 +223,19 @@ class Generator(unittest.TestCase):
         self.assertEqual(main["NoDisplay"], "true")
         self.assertEqual(main["MimeType"], "application/vnd.debian.binary-package;")
         self.assertEqual(main["Name"], "Synaptic Package Manager")
+
+    def test_an_app_taken_out_of_the_table_gets_its_stock_file_back(self):
+        # Beta 2 stopped hiding Synaptic: a copy a person installs shows
+        self.write("synaptic.desktop", SYNAPTIC)
+        self.run_tool()
+        self.assertTrue((self.output / "synaptic.desktop").is_file())
+        table = json.loads(self.table.read_text(encoding="utf-8"))
+        del table["apps"]["synaptic.desktop"]
+        self.table.write_text(json.dumps(table), encoding="utf-8")
+        (self.output / "notes.txt").write_text("not ours to judge\n", encoding="utf-8")
+        self.run_tool()
+        self.assertFalse((self.output / "synaptic.desktop").exists())
+        self.assertTrue((self.output / "notes.txt").exists())
 
     def test_a_hidden_line_is_not_written_twice(self):
         self.write("synaptic.desktop", SYNAPTIC.replace("Type=Application\n", "Type=Application\nNoDisplay=false\n"))

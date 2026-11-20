@@ -107,6 +107,10 @@ def run(source, table, output):
             print(f"raye-app-overrides: {desktop_id}: {err}", file=sys.stderr)
             mine.unlink(missing_ok=True)
             failed += 1
+    # an app the table no longer names gets its stock file back
+    for left in output.glob("*.desktop"):
+        if left.name not in apps:
+            left.unlink(missing_ok=True)
     return 1 if failed else 0
 
 
