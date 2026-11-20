@@ -74,6 +74,11 @@ class Table(unittest.TestCase):
                 # pages of its own Settings opens
                 self.assertTrue(self.table[desktop_id].get("hidden"))
 
+    def test_restore_points_stay_in_settings(self):
+        # Settings > Recovery does what Btrfs Assistant does; raye-desktop
+        # hides it, and this table must not show it again
+        self.assertTrue(self.table["btrfs-assistant.desktop"].get("hidden"))
+
     def test_synaptic_is_not_hidden_from_who_installs_it(self):
         # the image no longer has it; a person who installs it wants to see it
         self.assertNotIn("synaptic.desktop", self.table)

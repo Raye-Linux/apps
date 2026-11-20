@@ -15,6 +15,8 @@ raye-apps (1.0~beta2) resolute; urgency=medium
   * KDE's System Settings stays out of Start and search on every desktop:
     Raye Settings does its work. Synaptic is no longer hidden, so a copy
     you install yourself shows in Start.
+  * Btrfs Assistant no longer shows in Start as "Restore Points": restore
+    points are in Settings > Recovery.
 
  -- techoraye <190692880+techoraye@users.noreply.github.com>  Thu, 19 Nov 2026 16:00:00 +0000
 

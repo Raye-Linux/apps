@@ -121,7 +121,8 @@
       "name": {"en": "Restore Points", "fr": "Points de restauration"},
       "comment": {"en": "Go back to an earlier state of your system", "fr": "Revenir à un état antérieur de votre système"},
       "keywords": {"en": "snapshot;backup;rollback;", "fr": "instantané;sauvegarde;restauration;"},
-      "icon": "raye-restore"
+      "icon": "raye-restore",
+      "hidden": true
     },
     "org.kde.ksystemlog.desktop": {
       "name": {"en": "Event Viewer", "fr": "Observateur d'événements"},
