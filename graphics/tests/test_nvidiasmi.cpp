@@ -49,9 +49,12 @@ private Q_SLOTS:
     void askedForTheRightColumns()
     {
         const QStringList a = nvidiaSmiArguments();
-        QCOMPARE(a.size(), 2);
+        QCOMPARE(a.size(), 4);
         QCOMPARE(a.at(0).count(','), 12);
         QVERIFY(a.at(1).contains("nounits"));
+        // one long-lived nvidia-smi, a line a second, never one per reading
+        QCOMPARE(a.at(2), QStringLiteral("-lms"));
+        QCOMPARE(a.at(3), QStringLiteral("1000"));
     }
 };
 

@@ -66,7 +66,7 @@ QQC2.ScrollView {
             title: i18nc("@label", "NVIDIA Control Panel")
             description: page.model.nvidiaPanel
                          ? i18nc("@info", "Change this card's settings: performance, displays, color and more.")
-                         : i18nc("@info", "It comes with the NVIDIA driver, which Raye installs when the PC is online. Check Settings > Raye Update > Drivers.")
+                         : i18nc("@info", "It comes with the NVIDIA driver, which Raye installs when the PC is online. Check Settings > Raye Update > Optional updates.")
             AccentButton {
                 visible: page.model.nvidiaPanel
                 text: i18nc("@action:button", "Open")

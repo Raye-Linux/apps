@@ -44,7 +44,7 @@ QStringList nvidiaSmiArguments()
     for (const char *f : fields)
         names.append(QLatin1String(f));
     return {QStringLiteral("--query-gpu=") + names.join(QLatin1Char(',')),
-            QStringLiteral("--format=csv,noheader,nounits")};
+            QStringLiteral("--format=csv,noheader,nounits"), QStringLiteral("-lms"), QStringLiteral("1000")};
 }
 
 QList<NvidiaReading> parseNvidiaSmi(const QByteArray &csv)

@@ -203,8 +203,8 @@ msgid "Change this card's settings: performance, displays, color and more."
 msgstr "Modifier les paramètres de cette carte : performances, écrans, couleurs et plus."
 
 msgctxt "@info"
-msgid "It comes with the NVIDIA driver, which Raye installs when the PC is online. Check Settings > Raye Update > Drivers."
-msgstr "Il est fourni avec le pilote NVIDIA, que Raye installe dès que le PC est en ligne. Voir Paramètres > Raye Update > Pilotes."
+msgid "It comes with the NVIDIA driver, which Raye installs when the PC is online. Check Settings > Raye Update > Optional updates."
+msgstr "Il est fourni avec le pilote NVIDIA, que Raye installe dès que le PC est en ligne. Voir Paramètres > Raye Update > Mises à jour facultatives."
 
 msgctxt "@action:button"
 msgid "Open"
